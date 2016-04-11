@@ -1,0 +1,81 @@
+@import "font.faces.scss";
+
+// Roboto Mixins
+//
+// Use the mixin to generate a font style.
+//
+// Example:
+// .font-roboto-thin-normal { @include font-roboto-thin-normal(); }
+//
+// Styleguide 1.2
+@mixin font-roboto-thin-normal() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-normal;
+  font-weight:  $font-weight-roboto-thin;
+}
+
+@mixin font-roboto-thin-italic() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-italic;
+  font-weight:  $font-weight-roboto-thin;
+}
+
+@mixin font-roboto-light-normal() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-normal;
+  font-weight:  $font-weight-roboto-light;
+}
+
+@mixin font-roboto-light-italic() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-italic;
+  font-weight:  $font-weight-roboto-light;
+}
+
+@mixin font-roboto-regular-normal() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-normal;
+  font-weight:  $font-weight-roboto-regular;
+}
+
+@mixin font-roboto-regular-italic() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-italic;
+  font-weight:  $font-weight-roboto-regular;
+}
+
+@mixin font-roboto-medium-normal() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-normal;
+  font-weight:  $font-weight-roboto-medium;
+}
+
+@mixin font-roboto-medium-italic() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-italic;
+  font-weight:  $font-weight-roboto-medium;
+}
+
+@mixin font-roboto-bold-normal() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-normal;
+  font-weight:  $font-weight-roboto-bold;
+}
+
+@mixin font-roboto-bold-italic() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-italic;
+  font-weight:  $font-weight-roboto-bold;
+}
+
+@mixin font-roboto-black-normal() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-normal;
+  font-weight:  $font-weight-roboto-black;
+}
+
+@mixin font-roboto-black-italic() {
+  font-family:  $font-family-roboto;
+  font-style:   $font-style-roboto-italic;
+  font-weight:  $font-weight-roboto-black;
+}

@@ -1,0 +1,122 @@
+@import "font.mixins.scss";
+
+// Roboto Thin Normal
+//
+// markup:
+// <div class="font-roboto-thin-normal">
+//    Roboto Thin Normal
+// </div>
+//
+// Styleguide 1.3
+.font-roboto-thin-normal { @include font-roboto-thin-normal(); }
+
+// Roboto Thin Italic
+//
+// markup:
+// <div class="font-roboto-thin-italic">
+//    Roboto Thin Italic
+// </div>
+//
+// Styleguide 1.4
+.font-roboto-thin-italic { @include font-roboto-thin-italic(); }
+
+// Roboto Light Normal
+//
+// markup:
+// <div class="font-roboto-light-normal">
+//    Roboto Light Normal
+// </div>
+//
+// Styleguide 1.5
+.font-roboto-light-normal { @include font-roboto-light-normal(); }
+
+// Roboto Light Italic
+//
+// markup:
+// <div class="font-roboto-light-italic">
+//    Roboto Light Italic
+// </div>
+//
+// Styleguide 1.6
+.font-roboto-light-italic { @include font-roboto-light-italic(); }
+
+// Roboto Regular Normal
+//
+// markup:
+// <div class="font-roboto-regular-normal">
+//    Roboto Regular Normal
+// </div>
+//
+// Styleguide 1.7
+.font-roboto-regular-normal { @include font-roboto-regular-normal(); }
+
+// Roboto Regular Italic
+//
+// markup:
+// <div class="font-roboto-regular-italic">
+//    Roboto Regular Italic
+// </div>
+//
+// Styleguide 1.8
+.font-roboto-regular-italic { @include font-roboto-regular-italic(); }
+
+// Roboto Medium Normal
+//
+// markup:
+// <div class="font-roboto-medium-normal">
+//    Roboto Medium Normal
+// </div>
+//
+// Styleguide 1.9
+.font-roboto-medium-normal { @include font-roboto-medium-normal(); }
+
+// Roboto Medium Italic
+//
+// markup:
+// <div class="font-roboto-medium-italic">
+//    Roboto Medium Italic
+// </div>
+//
+// Styleguide 1.10
+.font-roboto-medium-italic { @include font-roboto-medium-italic(); }
+
+// Roboto Bold Normal
+//
+// markup:
+// <div class="font-roboto-bold-normal">
+//    Roboto Bold Normal
+// </div>
+//
+// Styleguide 1.11
+.font-roboto-bold-normal { @include font-roboto-bold-normal(); }
+
+// Roboto Bold Italic
+//
+// markup:
+// <div class="font-roboto-bold-italic">
+//    Roboto Bold Italic
+// </div>
+//
+// Styleguide 1.12
+.font-roboto-bold-italic { @include font-roboto-bold-italic(); }
+
+// Roboto Black Normal
+//
+// markup:
+// <div class="font-roboto-black-normal">
+//    Roboto Black Normal
+// </div>
+//
+// Styleguide 1.13
+.font-roboto-black-normal { @include font-roboto-black-normal(); }
+
+// Roboto Black Italic
+//
+// markup:
+// <div class="font-roboto-black-italic">
+//    Roboto Black Italic
+// </div>
+//
+// Styleguide 1.14
+.font-roboto-black-italic { @include font-roboto-black-italic(); }
+

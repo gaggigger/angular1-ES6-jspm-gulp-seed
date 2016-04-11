@@ -1,0 +1,34 @@
+// Fonts
+//
+// Font files are stored locally, located at:
+// client/styles/fonts/
+//
+// Styleguide 1.0
+
+// Roboto Font Path
+//
+// JSPM import will concatenate the "styles" directory to:
+// "styles/fonts/roboto/
+//
+// Styleguide 1.1
+$roboto-font-path:    "fonts/roboto/";
+
+$font-family-roboto: 'Roboto';
+
+$font-style-roboto-normal:    normal;
+
+$font-style-roboto-italic:    italic;
+
+$font-weight-roboto-thin:     100;
+
+$font-weight-roboto-light:    300;
+
+$font-weight-roboto-regular:  400;
+
+$font-weight-roboto-medium:   500;
+
+$font-weight-roboto-bold:     700;
+
+$font-weight-roboto-black:    900;
+
+

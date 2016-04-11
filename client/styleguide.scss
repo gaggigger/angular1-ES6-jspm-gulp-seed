@@ -1,0 +1,9 @@
+@import 'styles/global.scss';
+@import 'styles/styleguide_helpers.scss';
+
+/* begin-scss-inject:js */
+@import 'app/components/about/about.scss';
+@import 'app/components/home/home.scss';
+@import 'app/common/hero/hero.scss';
+@import 'app/common/navbar/navbar.scss';
+/* end-scss-inject:js */

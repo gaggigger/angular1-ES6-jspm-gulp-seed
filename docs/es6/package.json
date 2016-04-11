@@ -1,0 +1,99 @@
+{
+  "name": "angular-jspm-starter",
+  "version": "0.0.1",
+  "description": "starter",
+  "dependencies": {},
+  "scripts": {
+    "test": "karma start",
+    "postinstall": "jspm install",
+    "e2e": "./node_modules/.bin/protractor protractor.conf.js"
+  },
+  "keywords": [
+    "angular",
+    "jspm",
+    "es6"
+  ],
+  "author": "AngularClass",
+  "license": "ISC",
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.0",
+      "angular-mocks": "npm:angular-mocks@^1.4.0",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
+      "clean-css": "npm:clean-css@^3.4.9",
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "normalize.css": "github:necolas/normalize.css@^3.0.3",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.6",
+      "text": "github:systemjs/plugin-text@^0.0.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-register": "^6.7.2",
+    "browser-sync": "^2.7.6",
+    "chai": "^3.5.0",
+    "chokidar-socket-emitter": "^0.5.0",
+    "commitizen": "^2.7.2",
+    "cz-conventional-changelog": "^1.1.5",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-esdoc": "^0.2.0",
+    "gulp-html-replace": "^1.5.0",
+    "gulp-if": "^2.0.0",
+    "gulp-inject": "^4.0.0",
+    "gulp-istanbul-enforcer": "^1.0.3",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-ng-annotate": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-template": "^3.0.0",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.7",
+    "isparta": "^4.0.0",
+    "istanbul": "github:gotwarlost/istanbul#source-map",
+    "jasmine-reporters": "^2.1.1",
+    "jasmine-spec-reporter": "^2.4.0",
+    "jspm": "^0.16.15",
+    "karma": "^0.13.22",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-coverage": "github:douglasduteil/karma-coverage#next",
+    "karma-coveralls": "^1.1.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-jspm": "^2.0.2",
+    "karma-junit-reporter": "^0.4.0",
+    "karma-mocha": "^0.1.10",
+    "karma-mocha-reporter": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-safari-launcher": "^0.1.1",
+    "mocha": "^2.4.5",
+    "moment": "^2.12.0",
+    "phantomjs-prebuilt": "^2.1.6",
+    "protractor": "3.2.0",
+    "protractor-jasmine2-screenshot-reporter": "^0.3.0",
+    "require-dir": "^0.3.0",
+    "rimraf": "^2.5.2",
+    "run-sequence": "^1.1.5",
+    "sc5-styleguide": "^0.3.45",
+    "yargs": "^3.10.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

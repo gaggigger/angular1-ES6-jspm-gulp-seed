@@ -1,0 +1,10 @@
+.DS_Store
+.git
+.idea
+node_modules
+jspm_packages
+.settings
+*.log
+dist/
+test-reports/
+tmp/
