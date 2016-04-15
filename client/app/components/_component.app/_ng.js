@@ -1,9 +1,9 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import Views from '../../views/views';
-import Components from '../../components/components';
-import Services from '../../services/services'
-import LayoutHome from '../../layouts/layout.home/layout.home.ng';
+import Views from '../../views/_ng.views';
+import Components from '../../components/_ng.components';
+import Services from '../../services/_ng.services'
+import LayoutHome from '../../layouts/_ng.layouts';
 import AppComponent from './app.component';
 
 let appModule = angular.module('app', [

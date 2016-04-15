@@ -1,8 +1,8 @@
 import angular from 'angular';
-import SampleOne from './component.sampleOne/sampleOne.ng';
-import SampleTwo from './component.sampleTwo/sampleTwo.ng';
-import Hero from './hero/hero.ng';
-import NavBar from './navbar/navbar.ng';
+import SampleOne from './component.sampleOne/_ng';
+import SampleTwo from './component.sampleTwo/_ng';
+import Hero from './component.hero/_ng';
+import NavBar from './component.navbar/_ng';
 
 let componentModule = angular.module('app.components', [
     SampleOne.name,

@@ -1,4 +1,4 @@
-import template from './view.about.html!text';
+import template from './about.html!text';
 
 let layoutAboutRoutes = function($stateProvider){
 

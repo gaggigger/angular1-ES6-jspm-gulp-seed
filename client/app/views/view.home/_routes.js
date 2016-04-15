@@ -1,4 +1,4 @@
-import template from './view.home.html!text';
+import template from './home.html!text';
 
 let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
 
