@@ -1,7 +1,7 @@
 import angular from 'angular';
 import 'angular-ui-router';
 
-import viewAboutRoutes from './routes';
+import viewAboutRoutes from './view.about.routes';
 
 viewAboutRoutes.$inject = ['$stateProvider'];
 

@@ -12,7 +12,7 @@ import '../styles/global.css!';
 /**
  * app directive that contains the whole application.
  */
-import appModule from './component.app/ng';
+import appModule from './components/component.app/app.ng';
 
 // let appModule = angular.module('app', [
 //         'ui.router',

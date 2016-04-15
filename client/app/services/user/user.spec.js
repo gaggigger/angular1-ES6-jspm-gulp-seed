@@ -2,9 +2,9 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import UserModule from './user';
+import UserModule from './user.ng';
 import UserFactory from './user.factory';
-import test from './user-test';
+import test from './user.test';
 
 describe('User', ()=>{
   it('should run this test', ()=> {

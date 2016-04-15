@@ -1,6 +1,6 @@
 import angular from 'angular';
-import Home from './view.home/ng';
-import About from './view.about/ng';
+import Home from './view.home/view.home.ng';
+import About from './view.about/view.about.ng';
 
 let viewsModule = angular.module('app.views', [
 	Home.name,

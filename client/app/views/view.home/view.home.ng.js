@@ -1,7 +1,7 @@
 import angular from 'angular';
 import 'angular-ui-router';
 
-import viewHomeRoutes from './routes';
+import viewHomeRoutes from './view.home.routes';
 
 viewHomeRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];
 
