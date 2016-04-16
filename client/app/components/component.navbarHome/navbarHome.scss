@@ -1,0 +1,23 @@
+
+@import '../../../scss/styleguide_variables';
+
+.navbar-home {
+  height: 65px;
+  background-color: #4c25ff; /* primaryColor */
+  padding: 10px;
+
+  .logo {
+    color: #F5F5F5; /* lightTextColor */
+    margin-right: 50%;
+  }
+
+  .nav-links, .logo {
+    display: inline-block;
+  }
+
+  .nav-links span {
+    color: #F5F5F5; /* lightTextColor */
+    font-size: 1.6rem;
+  }
+}
+

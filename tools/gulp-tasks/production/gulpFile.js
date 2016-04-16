@@ -16,39 +16,27 @@ function loadTasks(gulp, plugins) {
 
   gulp.task('build', ['style'], build(gulp, plugins));
 
-  gulp.task('watch.style', function(done) {
-
+  gulp.task('watch.style.dist', function(done) {
     gulp.watch(paths.watch.styles, function(e) {
-
       runSequence(
           'build',
           'copy.fonts');
     });
-
     done();
-
   });
 
   gulp.task('watch.js', function(done) {
-
     gulp.watch(paths.watch.js, function(e) {
-
       runSequence(['build']);
     });
-
     done();
-
   });
 
   gulp.task('watch.html', function(done) {
-
     gulp.watch(paths.watch.html, function(e) {
-
       runSequence(['build']);
     });
-
     done();
-
   });
 
   gulp.task('serve.dist', function(done) {
@@ -59,9 +47,9 @@ function loadTasks(gulp, plugins) {
         serveDist(gulp, plugins));
   });
 
-  gulp.task('watch.dist', function(done) {
+  gulp.task('prod', function(done) {
     runSequence(
-      'watch.style',
+      'watch.style.dist',
       'watch.js',
       'watch.html',
       'serve.dist',

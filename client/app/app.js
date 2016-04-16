@@ -7,7 +7,7 @@ import 'angular-animate';
 // Load CSS
 import 'normalize.css';
 // Contains Roboto font required by angular material
-import '../styles/global.css!';
+import '../scss/global.css!';
 
 /**
  * app directive that contains the whole application.
