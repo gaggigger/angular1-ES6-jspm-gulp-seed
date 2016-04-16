@@ -1,10 +1,10 @@
+// Load Angular libraries
+
 import angular from 'angular';
 import 'angular-ui-router';
-// import Common from './common/common';
-// import Components from './components/components';
-// import Layouts from './layouts/layouts';
-// import AppComponent from './app.component';
+import 'angular-animate';
 
+// Load CSS
 import 'normalize.css';
 // Contains Roboto font required by angular material
 import '../styles/global.css!';
@@ -13,14 +13,6 @@ import '../styles/global.css!';
  * app directive that contains the whole application.
  */
 import appModule from './components/_component.app/_ng';
-
-// let appModule = angular.module('app', [
-//         'ui.router',
-//         Common.name,
-//         Components.name,
-//         Layouts.name
-//     ])
-//     .directive('app', AppComponent);
 
 /**
  * As we are using ES6 with Angular 1.x we can't use ng-app directive
@@ -46,9 +38,11 @@ angular.element(document).ready(() => {
         }
     }
     // End of hot reloader code
-    angular.bootstrap(container, [appModule.name]), {
+    angular.bootstrap(container, [
+        appModule.name,
+        'ngAnimate'], {
         strictDi: true
-    }
+    });
 });
 
 export default appModule;

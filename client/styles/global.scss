@@ -2,6 +2,8 @@
 @import "mixins.scss";
 @import "fonts/roboto/font.styles.scss";
 
+@import "partials/_animations.scss";
+
 body {
   height: 100%;
   font-family: 'Times New Roman', serif;
