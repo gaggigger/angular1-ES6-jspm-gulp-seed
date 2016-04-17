@@ -47,7 +47,7 @@
     "commitizen": "^2.7.2",
     "cz-conventional-changelog": "^1.1.5",
     "del": "^2.2.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-esdoc": "^0.2.0",
     "gulp-html-replace": "^1.5.0",

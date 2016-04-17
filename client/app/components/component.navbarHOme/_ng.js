@@ -6,5 +6,5 @@ let navbarModule = angular.module('component.navbarHome', [
 	'ui.router'
 ])
 .directive('navbarHome', navbarComponent);
-
+ 
 export default navbarModule;

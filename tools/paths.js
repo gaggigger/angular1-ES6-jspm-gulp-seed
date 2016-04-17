@@ -41,9 +41,8 @@ const paths = {
           all:          [`${root}/client/**/*.scss`, `!${root}/client/jspm_packages/**/*`], // styleguide
           app:          `${root}/client/app/**/*.scss`
         },
-        fonts:          `${root}/client/**/*.{eot,svg,ttf,woff,woff2}`,
-        images:         `${root}/client/images/**/*.{png,gif,jpg,jpeg}`,
-        svg:            `${root}/client/svg/**/*.svg`,
+        fonts:          `${root}/client/scss/**/*.{eot,svg,ttf,woff,woff2}`,
+        assets:         `${root}/client/assets/**/*`,
         components:     `${root}/client/app/components/`,
         UIDK:           `${root}/client/UIDK/`,
         html: [
@@ -74,9 +73,9 @@ const paths = {
     dist:               `${root}/dist/`,
 
     watch: {
-        styles:         `${root}/app/**/*.scss`,
-        js:             `${root}/app/**/*.js`,
-        html:           `${root}/app/**/*.html`
+        scss:           `client/app/**/*.scss`,
+        js:             `client/app/**/*.js`,
+        html:           `client/app/**/*.html`
     },
 
     /**
