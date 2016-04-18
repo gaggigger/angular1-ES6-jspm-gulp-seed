@@ -1,8 +1,8 @@
-class AboutController {
+class SampleTwoController {
 	constructor(){
-		this.name = 'about';
+		this.name = 'Sample Two Component';
 	}
 }
 
 
-export default AboutController;
+export default SampleTwoController;

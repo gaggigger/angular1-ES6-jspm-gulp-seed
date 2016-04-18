@@ -1,15 +1,17 @@
+import controller from './contact.controller';
 import template from './contact.html!text';
 
-let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
-
-    // $urlRouterProvider.otherwise('/home');
-
+let layoutHomeRoutes = function($stateProvider){
+    
     $stateProvider
         .state('layoutSupport.contact', {
             url: '/contact',
             views: {
                 'content@layoutSupport': {
-                    template: template
+                    template: template,
+                    controller: controller,
+                    controllerAs: 'vm',
+                    indToController: true
                 }
             }
         });

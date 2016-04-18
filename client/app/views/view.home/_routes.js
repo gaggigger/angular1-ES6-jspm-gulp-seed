@@ -1,3 +1,4 @@
+import controller from './home.controller';
 import template from './home.html!text';
 
 let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
@@ -9,7 +10,10 @@ let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
             url: '/home',
             views: {
                 'content@layoutHome': {
-                    template: template
+                    template: template,
+                    controller: controller,
+                    controllerAs: 'vm',
+                    indToController: true
                 }
             }
         });

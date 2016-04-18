@@ -1,15 +1,17 @@
+import controller from './shared.controller';
 import template from './shared.html!text';
 
-let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
-
-    // $urlRouterProvider.otherwise('/home');
-
+let layoutHomeRoutes = function($stateProvider){
+    
     $stateProvider
         .state('layoutSupport.shared', {
             url: '/home/shared',
             views: {
                 'content@layoutSupport': {
-                    template: template
+                    template: template,
+                    controller: controller,
+                    controllerAs: 'vm',
+                    indToController: true
                 }
             }
         });
@@ -19,7 +21,10 @@ let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
             url: '/support/shared',
             views: {
                 'content@layoutHome': {
-                    template: template
+                    template: template,
+                    controller: controller,
+                    controllerAs: 'vm',
+                    indToController: true
                 }
             }
         });
