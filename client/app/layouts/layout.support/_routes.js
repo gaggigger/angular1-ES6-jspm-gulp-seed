@@ -7,7 +7,7 @@ let layoutSupportRoutes = function($stateProvider, $urlRouterProvider){
 
     $stateProvider
         .state('layoutSupport', {
-            url: '',
+            url: '/support',
             template: template,
             redirectTo: 'layoutSupport.support'
         });

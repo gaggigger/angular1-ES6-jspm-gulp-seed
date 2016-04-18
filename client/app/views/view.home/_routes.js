@@ -7,7 +7,7 @@ let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
 
     $stateProvider
         .state('layoutHome.home', {
-            url: '/home',
+            url: '',
             views: {
                 'content@layoutHome': {
                     template: template,

@@ -2,32 +2,31 @@ import controller from './shared.controller';
 import template from './shared.html!text';
 
 let layoutHomeRoutes = function($stateProvider){
-    
+
+    let views = {
+        template: template,
+        controller: controller,
+        controllerAs: 'vm',
+        indToController: true
+    };
+
     $stateProvider
         .state('layoutSupport.shared', {
-            url: '/home/shared',
+            url: '/shared',
             views: {
-                'content@layoutSupport': {
-                    template: template,
-                    controller: controller,
-                    controllerAs: 'vm',
-                    indToController: true
-                }
+                'content@layoutSupport': views
             }
         });
 
     $stateProvider
         .state('layoutHome.shared', {
-            url: '/support/shared',
+            url: '/shared',
             views: {
-                'content@layoutHome': {
-                    template: template,
-                    controller: controller,
-                    controllerAs: 'vm',
-                    indToController: true
-                }
+                'content@layoutHome': views
             }
         });
+
+
 };
 
 export default layoutHomeRoutes;

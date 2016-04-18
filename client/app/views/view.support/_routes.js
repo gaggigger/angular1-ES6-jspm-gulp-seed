@@ -5,7 +5,7 @@ let layoutHomeRoutes = function($stateProvider){
 
     $stateProvider
         .state('layoutSupport.support', {
-            url: '/support',
+            url: '',
             views: {
                 'content@layoutSupport': {
                     template: template,

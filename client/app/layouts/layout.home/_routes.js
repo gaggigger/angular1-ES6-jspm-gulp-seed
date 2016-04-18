@@ -7,7 +7,7 @@ let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
 
     $stateProvider
         .state('layoutHome', {
-            url: '',
+            url: '/home',
             template: template,
             redirectTo: 'layoutHome.home'
         });
