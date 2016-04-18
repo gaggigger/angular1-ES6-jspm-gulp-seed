@@ -1,6 +1,8 @@
 import controller from './about.controller';
 import template from './about.html!text';
 
+controller.$inject = ['$log'];
+
 let layoutAboutRoutes = function($stateProvider){
 
     $stateProvider
