@@ -1,4 +1,5 @@
 import template from './support.html!text';
+import './support.css!';
 
 let layoutSupportRoutes = function($stateProvider, $urlRouterProvider){
 

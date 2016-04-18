@@ -28,16 +28,16 @@ const paths = {
      * - 'config'       contains Angular app config files
      */
     client: {
-        basePath:       `${root}/client/`,
+        basePath:       `${root}/client`,
         app: {
             basePath:   `${root}/client/app`,
             app:        `${root}/client/app/app.js`
         },
         styles: {
-          basePath:     `${root}/client`,
+          basePath:     `${root}/client/scss`,
           styleguide:   `${root}/client/styleguide.scss`,
-          global:       `${root}/client/styles/global.scss`,
-          globalCss:    `${root}/client/styles/**/*.css`,  // clean task
+          global:       `${root}/client/scss/global.scss`,
+          globalCss:    `${root}/client/scss/**/*.css`,  // clean task
           all:          [`${root}/client/**/*.scss`, `!${root}/client/jspm_packages/**/*`], // styleguide
           app:          `${root}/client/app/**/*.scss`
         },
@@ -109,7 +109,7 @@ const paths = {
      */
     tmp: {
         basePath:       `${root}/.tmp/`,
-        styles:         `${root}/.tmp/styles/`,
+        styles:         `${root}/.tmp/scss/`,
         scripts:        `${root}/.tmp/scripts/`
     },
 
@@ -127,7 +127,7 @@ const paths = {
             basePath:   `${root}/build/dist/`,
             fonts:      `${root}/build/dist/fonts/`,
             images:     `${root}/build/dist/images/`,
-            styles:     `${root}/build/dist/styles/`,
+            styles:     `${root}/build/dist/scss/`,
             scripts:    `${root}/build/dist/scripts/`
         },
         docs:           `${root}/build/docs/`,

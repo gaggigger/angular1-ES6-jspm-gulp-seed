@@ -1,7 +1,17 @@
 <!--Anything you want to be on every page, place it in this file-->
-<div class="layout-home">
-    <navbar-home></navbar-home>
-    <h1>Support</h1>
+<div class="layout-support">
 
-    <div ui-view="content" class="ix-animate" ng-animate-children ></div>
+    <header>
+        <a ui-sref="layoutHome.home">
+            <img src="../../../assets/svg/acme_logo.svg" class="logo"/>
+        </a>
+        <div class="layout-label">
+            ( layout: support )
+        </div>
+        <navbar></navbar>
+    </header>
+
+    <div class="layout-content-container">
+        <div ui-view="content" class="ix-animate" ng-animate-children ng-animate="ix-animate" ></div>
+    </div>
 </div>

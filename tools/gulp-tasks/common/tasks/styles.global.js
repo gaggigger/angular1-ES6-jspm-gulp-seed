@@ -15,7 +15,7 @@ export default function(gulp, plugins) {
 
     return gulp.src(paths.client.styles.global)
       .pipe(plugins.sass({outputStyle: 'compressed'}).on('error', plugins.sass.logError))
-      .pipe(gulp.dest('client/styles'));
+      .pipe(gulp.dest(paths.client.styles.basePath));
 
   };
 };

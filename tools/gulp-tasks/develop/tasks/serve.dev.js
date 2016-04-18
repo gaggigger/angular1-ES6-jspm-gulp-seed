@@ -9,8 +9,8 @@ export default function(gulp, plugins) {
     'use strict';
     require('chokidar-socket-emitter')({
       port: 8081,
-      path: paths.client.basePath,
-      relativeTo: paths.client.basePath,
+      path: paths.client.basePath + '/',
+      relativeTo: paths.client.basePath + '/',
       dir: process.cwd()
     });
     serve({
@@ -21,7 +21,7 @@ export default function(gulp, plugins) {
         paths.client.html
       ),
       server: {
-        baseDir: paths.client.basePath,
+        baseDir: paths.client.basePath + '/',
         // serve our jspm dependencies with the client folder
         routes: {
           '/jspm.config.js': './jspm.config.js',

@@ -1,11 +1,39 @@
 @import '../../../scss/styleguide_variables';
 
-// Home View
+// Support View
 //
 // Markup:
-// <div style="layout-home"></div>
+// <div style="layout-support"></div>
 //
-// Styleguide 5.0
-.layout-home {
-	color: $color-red;
+// Styleguide 5.1
+.layout-support {
+	padding: 20px;
+
+	header {
+		border-bottom: 1px solid #7e7e7e;
+
+		.logo {
+			width: 124px;
+			float: left;
+			margin-right: 10px;
+		}
+
+		.layout-label {
+			position: relative;
+			float: left;
+			margin-right: 10px;
+			line-height: 50px;
+		}
+	}
+
+	.navbar {
+		.nav-links {
+			margin-right: 15px;
+			line-height: 28px;
+		}
+	}
+
+	.layout-content-container {
+		position: relative;
+	}
 }

@@ -2,7 +2,7 @@ import 'UIDK/com.uix.validate.number';
 
 class HomeController {
 	constructor(){
-		this.name = 'home';
+		this.name = 'components/component.sampleOne/sampleOne.html';
 	}
 }
 

@@ -1,11 +1,24 @@
 <!--Anything you want to be on every page, place it in this file-->
 <div class="layout-home">
-    <img src="../../../assets/svg/acme_logo.svg" class="logo"/>
-    <navbar-home></navbar-home>
+
     <header>
-        <hero></hero>
+        <a ui-sref="layoutHome.home">
+            <img src="../../../assets/svg/acme_logo.svg" class="logo"/>
+        </a>
+        <div class="layout-label">
+            ( layout: home )
+        </div>
+
     </header>
-    <h1>Home</h1>
-    <div ui-view="content" class="ix-animate" ng-animate-children ng-animate="ix-animate" ></div>
+    <div class="clear"></div>
+
+    <navbar></navbar>
+
+    <div class="layout-content-container">
+
+        <hero></hero>
+
+        <div ui-view="content" class="ix-animate" ng-animate-children ng-animate="ix-animate"></div>
+    </div>
 
 </div>

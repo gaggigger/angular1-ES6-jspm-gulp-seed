@@ -1,0 +1,17 @@
+
+@import '../../../scss/styleguide_variables';
+
+.navbar {
+  padding: 10px;
+
+  .nav-links{
+    display: inline-block;
+
+    span {
+      color: #F5F5F5; /* lightTextColor */
+      font-size: 1rem;
+    }
+  }
+
+}
+

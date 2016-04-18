@@ -27,7 +27,7 @@ export default function(gulp, plugins) {
                 }
             }))
 
-            .pipe(gulp.dest(paths.client.styles.basePath));
+            .pipe(gulp.dest(paths.client.basePath));
 
     };
 };

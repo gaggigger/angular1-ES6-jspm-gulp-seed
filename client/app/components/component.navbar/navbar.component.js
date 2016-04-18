@@ -1,6 +1,6 @@
-import template from './navbarHome.html!text';
-import controller from './navbarHome.controller';
-import './navbarHome.css!';
+import template from './navbar.html!text';
+import controller from './navbar.controller';
+import './navbar.css!';
 
 let navbarComponent = function(){
 	return {
