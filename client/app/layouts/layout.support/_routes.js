@@ -1,10 +1,8 @@
 import template from './support.html!text';
 import './support.css!';
 
-let layoutSupportRoutes = function($stateProvider, $urlRouterProvider){
-
-    // $urlRouterProvider.otherwise('/');
-
+let layoutSupportRoutes = function($stateProvider){
+    
     $stateProvider
         .state('layoutSupport', {
             url: '',

@@ -17,6 +17,20 @@ let layoutAboutRoutes = function($stateProvider){
                 }
             }
         });
+
+    // flowProvider.flow({
+    //     layout: 'layoutHome',
+    //     uiView: 'content',
+    //     state: {
+    //         name: 'about',
+    //         url: '/about',
+    //         template: template,
+    //         controller: controller,
+    //         controllerAs: 'vm',
+    //         indToController: true
+    //     }
+    //
+    // });
 };
 
 export default layoutAboutRoutes;
