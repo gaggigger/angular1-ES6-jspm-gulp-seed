@@ -5,30 +5,30 @@ const SAMPLE_CLASS_SERVICE  = new WeakMap();
 const JOHN_PAPA_SERVICE     = new WeakMap();
 const ES6_FACTORY           = new WeakMap();
 
-class SampleOneController {
+class SampleTwoController {
 	constructor($log, angularES6Class, johnPapaService){
-		this.name = 'sampleOneController';
+		this.name = 'sampleTwoComponent';
         let vm = this;
-  
-		LOG.set(this, $log);
+
+        LOG.set(this, $log);
         SAMPLE_CLASS_SERVICE.set(this, angularES6Class);
         JOHN_PAPA_SERVICE.set(this, johnPapaService);
 
-        
+
         // ANGULAR ES6
         vm.input = '';
         angularES6Class.subscribe(this.name, function(data) {
             vm.input = data;
         });
 
-        
+
         // ANGULAR JOHN PAPA
         vm.papa = '';
         johnPapaService.subscribe(this.name, function(data) {
             vm.papa = data;
         });
-        
-        
+
+
         // ES6 ONLY
         vm.es6 = '';
         ES6_FACTORY.set(this, es6Factory() );
@@ -58,4 +58,5 @@ class SampleOneController {
     }
 }
 
-export default SampleOneController;
+
+export default SampleTwoController;

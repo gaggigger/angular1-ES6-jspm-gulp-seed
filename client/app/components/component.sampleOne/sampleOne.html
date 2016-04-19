@@ -1,6 +1,18 @@
 <div class="sample-one">
+    <h3>Sample One Directive</h3>
     <div>
-        <h3>Sample One Directive</h3>
-        <p><input type="text" ng-model="vm.input" ng-change="vm.onChange()"/></p>
+        <div class="column-1">
+            <label>Angular ES6:</label>
+            <p><input type="text" ng-model="vm.input" ng-change="vm.onChange()"/></p>
+        </div>
+        <div class="column-2">
+            <label>Angular John Papa:</label>
+            <p><input type="text" ng-model="vm.papa" ng-change="vm.onChange()"/></p>
+        </div>
+        <div class="column-3">
+            <label>ES6 Only:</label>
+            <p><input type="text" ng-model="vm.es6" ng-change="vm.onChange()"/></p>
+        </div>
     </div>
+    <div class="clear-float"></div>
 </div>

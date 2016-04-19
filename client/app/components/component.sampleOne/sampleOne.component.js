@@ -2,7 +2,7 @@ import controller from './sampleOne.controller';
 import template from './sampleOne.html!text';
 import './sampleOne.css!';
 
-controller.$inject = ['$log', 'sampleClassService'];
+controller.$inject = ['$log', 'angularES6Class', 'johnPapaService'];
 
 /**
  * This is the Home Component.

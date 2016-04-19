@@ -46,8 +46,8 @@ class SampleClassFactory {
         });
     }
 
-    unsubscribe(key) {
-        delete this._cache[key];
+    unsubscribe(id) {
+        delete this._cache[id];
     }
 
     static factory($log, $timeout) {

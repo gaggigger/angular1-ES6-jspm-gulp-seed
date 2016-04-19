@@ -9,4 +9,19 @@
 .sample-one {
 	padding: 10px;
 	background-color: $dev-background;
+
+	.column-1, .column-2, .column-3 {
+		position:relative;
+		float: left;
+		padding-right: 10px;
+		width: 30%;
+
+		input {
+			width: 85%;
+		}
+	}
+
+	.clear-float {
+		clear:both;
+	}
 }

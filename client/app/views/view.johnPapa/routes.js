@@ -1,7 +1,17 @@
-import controller from './support.controller';
-import template from './support.html!text';
+import controller from './johnPapaController';
+import template from './johnPapa.html!text';
 
-let layoutHomeRoutes = function($stateProvider){
+// (function () {
+//     "use strict";
+
+// angular
+//     .module('app')
+//     .config(routesConfig);
+
+routesConfig.$inject = ['$stateProvider'];
+
+/* istanbul ignore next */
+export default function routesConfig($stateProvider) {
 
     $stateProvider
         .state('layoutSupport.support', {
@@ -15,6 +25,7 @@ let layoutHomeRoutes = function($stateProvider){
                 }
             }
         });
-};
 
-export default layoutHomeRoutes;
+}
+// })();
+
