@@ -1,13 +1,13 @@
 const LOG = new WeakMap();
 const SAMPLE_CLASS_SERVICE = new WeakMap();
 
-class SampleOneController {
+class SampleTwoController {
 	constructor($log, sampleClassService){
-		this.name = 'sampleOneController';
+		this.name = 'sampleTwoComponent';
         let vm = this;
         vm.input = '';
 
-		LOG.set(this, $log);
+        LOG.set(this, $log);
         SAMPLE_CLASS_SERVICE.set(this, sampleClassService);
 
         sampleClassService.subscribe(this.name, function(data) {
@@ -23,4 +23,5 @@ class SampleOneController {
     }
 }
 
-export default SampleOneController;
+
+export default SampleTwoController;
