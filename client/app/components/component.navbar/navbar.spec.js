@@ -2,7 +2,7 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import NavbarModule from './navbar';
+import NavbarModule from './_ng';
 import NavbarController from './navbar.controller';
 import NavbarComponent from './navbar.component';
 import NavbarTemplate from './navbar.html!text';
@@ -39,9 +39,9 @@ describe('Navbar', ()=>{
 		// test the template
 		// use Regexes to test that you are using the right bindings {{  }}
 
-		it('should have name in template [REMOVE]', ()=>{
-			// expect(NavbarTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-			expect(NavbarTemplate).toEqual(jasmine.stringMatching(/{{\s?vm\.name\s?}}/g));
+		it('should layoutHome.home in template [REMOVE]', ()=>{
+			// expect(NavbarTemplate).toEqual(jasmine.stringMatching(/{{\s?layoutHome\.home\s?}}/g));
+			expect(NavbarTemplate).toEqual(jasmine.stringMatching(/\s?layoutHome\.home\s?/g));
 		});
 	});
 

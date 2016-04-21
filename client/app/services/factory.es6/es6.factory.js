@@ -1,20 +1,20 @@
-import forOwn from 'lodash/lodash/forown';
+// import forOwn from 'lodash/lodash/forOwn';
+import { forOwn } from 'lodash/lodash';
+// import _ from 'lodash/lodash';
 
-class ES6Factory {
+class ES6FactoryClass {
     constructor() {
         this._cache = '';
         this.subscribers = {};
-        
-        console.log('ES6 Factory Created!');
-    }
-
-    set data(newValue) {
-        this._cache = newValue.data;
-        this.notify(newValue.id);
     }
 
     get data() {
         return this._cache;
+    }
+
+    publish(id, newValue) {
+        this._cache = newValue;
+        this.notify(id);
     }
 
     subscribe(uniqueName, callback) {
@@ -29,24 +29,30 @@ class ES6Factory {
         let cache = this._cache;
 
         forOwn(this.subscribers, function(subscriber, key) {
-            if (typeof subscriber === 'function' && id !== key) {
+
+            /**
+             * Make sure subscriber is a function.
+             *
+             * To minimize $digest cycles, only publish to 
+             * subscribers that do not have the 
+             * same id as the publisher. 
+             */
+            if (typeof subscriber === 'function' && (!id || id && id !== key)) {
                 subscriber.call(null, cache);
             }
         });
     }
 
     unsubscribe(id) {
-        delete this._cache[id];
+        delete this.subscribers[id];
     }
 }
 
-
 let es6FactorySingleton = null;
-
 export default function es6Factory() {
     if (!es6FactorySingleton) {
-        es6FactorySingleton = new ES6Factory();
+        es6FactorySingleton = new ES6FactoryClass();
     }
-    
+
     return es6FactorySingleton;
 };

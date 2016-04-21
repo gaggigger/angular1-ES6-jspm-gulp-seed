@@ -2,7 +2,7 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import UserModule from './user.ng';
+import UserModule from './_ng';
 import UserFactory from './user.factory';
 import test from './user.test';
 

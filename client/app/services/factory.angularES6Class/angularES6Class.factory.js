@@ -1,4 +1,5 @@
-import forOwn from 'lodash/lodash/forown';
+// import forOwn from 'lodash/lodash/forOwn';
+import { forOwn } from 'lodash/lodash';
 
 const LOG = new WeakMap();
 const TIMEOUT = new WeakMap();
@@ -13,7 +14,6 @@ class SampleClassFactory {
 
         LOG.get(this).log('Instantiating SampleClassFactory');
 
-
     }
 
     set data(newValue) {
@@ -23,6 +23,11 @@ class SampleClassFactory {
 
     get data() {
         return this._cache;
+    }
+
+    publish(id, newValue) {
+        this._cache = newValue;
+        this.notify(id);
     }
 
     subscribe(uniqueName, callback) {
@@ -38,7 +43,15 @@ class SampleClassFactory {
         let cache = this._cache;
 
         forOwn(this.subscribers, function(subscriber, key) {
-            if (typeof subscriber === 'function' && id !== key) {
+
+            /**
+             * Make sure subscriber is a function.
+             *
+             * To minimize $digest cycles, only publish to
+             * subscribers that do not have the
+             * same id as the publisher.
+             */
+            if (typeof subscriber === 'function' && (!id || id && id !== key)) {
                 $timeout(function() {
                     subscriber.call(null, cache);
                 }, 0, true)
@@ -47,9 +60,16 @@ class SampleClassFactory {
     }
 
     unsubscribe(id) {
-        delete this._cache[id];
+        delete this.subscribers[id];
     }
 
+    /**
+     * Angular factory requires a function, not a class.
+     *
+     * @param $log
+     * @param $timeout
+     * @returns {SampleClassFactory}
+     */
     static factory($log, $timeout) {
         return new SampleClassFactory($log, $timeout);
     }

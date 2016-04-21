@@ -1,4 +1,5 @@
-import forOwn from 'lodash/lodash/forown';
+// import forOwn from 'lodash/lodash/forOwn';
+import { forOwn } from 'lodash/lodash';
 
 // (function() {
 //     "use strict";
@@ -14,7 +15,7 @@ export default function factoryJohnPapa($log, $timeout) {
      * Factory API
      */
     var service = {
-        setData: setData,
+        publish: publish,
         getData: getData,
         subscribe: subscribe,
         unsubscribe: unsubscribe
@@ -22,14 +23,14 @@ export default function factoryJohnPapa($log, $timeout) {
 
     var _cache = '';
     var subscribers = {};
-
-    function setData(newValue) {
-        _cache = newValue.data;
-        notify(newValue.id);
-    }
-
+    
     function getData() {
         return _cache;
+    }
+
+    function publish(id, newValue) {
+        _cache = newValue;
+        notify(id);
     }
 
     function subscribe(uniqueName, callback) {
@@ -41,9 +42,17 @@ export default function factoryJohnPapa($log, $timeout) {
     }
 
     function notify(id) {
-
+        
         forOwn(subscribers, function(subscriber, key) {
-            if (typeof subscriber === 'function' && id !== key) {
+
+            /**
+             * Make sure subscriber is a function.
+             *
+             * To minimize $digest cycles, only publish to
+             * subscribers that do not have the
+             * same id as the publisher.
+             */
+            if (typeof subscriber === 'function' && (!id || id && id !== key)) {
                 $timeout(function() {
                     subscriber.call(null, _cache);
                 }, 0, true)
@@ -52,7 +61,7 @@ export default function factoryJohnPapa($log, $timeout) {
     }
 
     function unsubscribe(id) {
-        delete _cache[id];
+        delete subscribers[id];
     }
 
     return service;

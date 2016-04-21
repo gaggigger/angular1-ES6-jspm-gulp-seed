@@ -2,20 +2,47 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import HomeModule from './home'
-import HomeController from './home.controller';
-import HomeComponent from './home.component';
-import HomeTemplate from './home.html!text';
+import createES6Factory from '../../services/factory.es6/es6.factory';
+import SampleOneModule from './_ng'
+import sampleOneController from './sampleOne.controller';
+import sampleOneComponent from './sampleOne.component';
+import sampleOneTemplate from './sampleOne.html!text';
 
-describe('Home', ()=>{
-	let $rootScope,
-	makeController;
+describe('sampleOne', ()=>{
+	let $rootScope;
+    let $log;
+    let $timeout;
+    let angularES6Class;
+    let johnPapaService;
+    let es6Factory;
+    let makeController;
 
-	beforeEach(angular.mock.module(HomeModule.name));
-	beforeEach(angular.mock.inject((_$rootScope_)=>{
-		$rootScope = _$rootScope_;
-		makeController = ()=> new HomeController();
+	// beforeEach(angular.mock.module(services.name));
+	beforeEach(angular.mock.module(SampleOneModule.name));
+	beforeEach(angular.mock.inject(($injector)=>{
+        $rootScope              = $injector.get('$rootScope');
+        $log                    = $injector.get('$log');
+        $timeout                = $injector.get('$timeout');
+        angularES6Class         = $injector.get('angularES6Class');
+        johnPapaService         = $injector.get('johnPapaService');
+
+        es6Factory              = createES6Factory();
+        es6Factory.publish(null, ''); // reset
+		makeController          = ()=> new sampleOneController($log, $timeout, angularES6Class, johnPapaService);
+
 	}));
+
+    afterEach(function() {
+        es6Factory.publish(null, ''); // reset
+
+        $rootScope = null;
+        $log = null;
+        $timeout = null;
+        angularES6Class = null;
+        johnPapaService = null;
+        es6Factory = null;
+        makeController = null;
+    });
 
 	describe('Module', ()=>{
 		// test things about the component module
@@ -23,6 +50,52 @@ describe('Home', ()=>{
 		// test for best practices with naming too
 		// test for routing
 	});
+
+    describe('es6Factory', ()=>{
+        it('should subscribe to es6Factory', ()=> {
+            let controller = makeController();
+
+            es6Factory.publish(null, 'BAZ');
+
+            $timeout.flush();
+
+            expect(controller.es6).toEqual('BAZ');
+        });
+
+        it('should publish to es6Factory', ()=> {
+            let controller = makeController();
+            controller.es6 = 'BAR';
+            controller.onES6Change();
+
+            $timeout.flush();
+
+            expect(es6Factory.data).toEqual('BAR');
+        });
+    });
+
+    describe('angularES6Class', ()=>{
+        it('should subscribe to angularES6Class', ()=> {
+            let controller = makeController();
+
+            angularES6Class.publish(null, 'FOO');
+
+            $timeout.flush();
+
+            expect(controller.input).toEqual('FOO');
+        })
+    });
+
+    describe('johnPapaService', ()=>{
+        it('should subscribe to johnPapaService', ()=> {
+            let controller = makeController();
+
+            johnPapaService.publish(null, 'BAR');
+
+            $timeout.flush();
+
+            expect(controller.papa).toEqual('BAR');
+        })
+    });
 
 	describe('Controller', ()=>{
 		// test your controller here
@@ -39,20 +112,22 @@ describe('Home', ()=>{
 		// test the template
 		// use Regexes to test that you are using the right bindings {{  }}
 
-		it('should have name in template [REMOVE]', ()=>{
-			// expect(HomeTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-			expect(HomeTemplate).toEqual(jasmine.stringMatching(/{{\s?vm\.name\s?}}/g));
+		it('should have vm.input in template [REMOVE]', ()=>{
+			// expect(sampleOneTemplate).toEqual(jasmine.stringMatching(/{{\s?vm\.input\s?}}/g));
+			expect(sampleOneTemplate).toEqual(jasmine.stringMatching(/\s?vm\.input\s?/g));
+			expect(sampleOneTemplate).toEqual(jasmine.stringMatching(/\s?vm\.papa\s?/g));
+			expect(sampleOneTemplate).toEqual(jasmine.stringMatching(/\s?vm\.es6\s?/g));
 		});
 	});
 
 
 	describe('Component', ()=>{
 			// test the component/directive itself
-			let component = HomeComponent();
+			let component = sampleOneComponent();
 
 			it('should use the right template',()=>{
-				// expect(component.template).to.equal(HomeTemplate);
-				expect(component.template).toEqual(HomeTemplate);
+				// expect(component.template).to.equal(sampleOneTemplate);
+				expect(component.template).toEqual(sampleOneTemplate);
 			});
 
 			it('should use controllerAs', ()=>{
@@ -61,8 +136,8 @@ describe('Home', ()=>{
 			});
 
 			it('should use the right controller', ()=>{
-				// expect(component.controller).to.equal(HomeController);
-				expect(component.controller).toEqual(HomeController);
+				// expect(component.controller).to.equal(sampleOneController);
+				expect(component.controller).toEqual(sampleOneController);
 			});
 	});
 });

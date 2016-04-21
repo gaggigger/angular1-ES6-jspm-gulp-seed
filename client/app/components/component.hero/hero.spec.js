@@ -2,7 +2,7 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import HeroModule from './hero';
+import HeroModule from './_ng';
 import HeroController from './hero.controller';
 import HeroComponent from './hero.component';
 import HeroTemplate from './hero.html!text';

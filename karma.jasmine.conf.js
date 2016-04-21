@@ -64,7 +64,8 @@ module.exports = function(config) {
 
         proxies: {
             '/jspm_packages': '/base/client/jspm_packages',
-            '/UIDK': '/base/client/UIDK'
+            '/app'  : '/base/client/app',
+            '/UIDK' : '/base/client/UIDK'
         },
 
         // list of files to exclude
