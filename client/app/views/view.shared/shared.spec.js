@@ -53,8 +53,8 @@ describe('Shared', ()=>{
         beforeEach(()=>{
             supportState = states['layoutSupport.shared'];
             homeState = states['layoutHome.shared'];
-            sharedStateHomeView = supportState.views['content@layoutSupport'];
-            sharedStateSupportView = supportState.views['content@layoutHome'];
+            sharedStateHomeView = homeState.views['content@layoutHome'];
+            sharedStateSupportView = supportState.views['content@layoutSupport'];
         });
 
         afterEach(()=>{
@@ -62,32 +62,65 @@ describe('Shared', ()=>{
             sharedStateHomeView = null;
         });
 
-        it('should register state', ()=>{
-            expect(supportState).toBeDefined();
+        describe('support', ()=>{
+            it('should register state', ()=>{
+                expect(supportState).toBeDefined();
+            });
+
+            it('should assign url', ()=>{
+                expect(supportState.url).toEqual('/shared');
+            });
+
+            it('should have content@layoutSupport view', ()=>{
+                expect(sharedStateSupportView).toBeDefined();
+            });
+
+            it('should have a view template property', ()=>{
+                expect(sharedStateSupportView.template).toEqual(jasmine.stringMatching(/\s?Shared\s?/g));
+            });
+
+            it('should have a view controller property', ()=>{
+                expect(sharedStateSupportView.controller).toBeDefined();
+            });
+
+            it('should have a view controllerAs property', ()=>{
+                expect(sharedStateSupportView.controllerAs).toEqual('vm');
+            });
+
+            it('should have a bindToController property', ()=>{
+                expect(sharedStateSupportView.bindToController).toBeTruthy();
+            });
         });
 
-        it('should assign url', ()=>{
-            expect(supportState.url).toEqual('');
-        });
+        describe('home', ()=>{
 
-        it('should have content@layoutSupport view', ()=>{
-            expect(sharedStateHomeView).toBeDefined();
-        });
+            it('should register state', ()=>{
+                expect(homeState).toBeDefined();
+            });
 
-        it('should have a view template property', ()=>{
-            expect(sharedStateHomeView.template).toEqual(jasmine.stringMatching(/\s?ix\-sample\-one\s?/g));
-        });
+            it('should assign url', ()=>{
+                expect(homeState.url).toEqual('/shared');
+            });
 
-        it('should have a view controller property', ()=>{
-            expect(sharedStateHomeView.controller).toBeDefined();
-        });
+            it('should have content@layoutSupport view', ()=>{
+                expect(sharedStateHomeView).toBeDefined();
+            });
 
-        it('should have a view controllerAs property', ()=>{
-            expect(sharedStateHomeView.controllerAs).toEqual('vm');
-        });
+            it('should have a view template property', ()=>{
+                expect(sharedStateHomeView.template).toEqual(jasmine.stringMatching(/\s?Shared\s?/g));
+            });
 
-        it('should have a bindToController property', ()=>{
-            expect(sharedStateHomeView.bindToController).toBeTruthy();
+            it('should have a view controller property', ()=>{
+                expect(sharedStateHomeView.controller).toBeDefined();
+            });
+
+            it('should have a view controllerAs property', ()=>{
+                expect(sharedStateHomeView.controllerAs).toEqual('vm');
+            });
+
+            it('should have a bindToController property', ()=>{
+                expect(sharedStateHomeView.bindToController).toBeTruthy();
+            });
         });
     });
 
