@@ -13,7 +13,7 @@ let layoutHomeRoutes = function($stateProvider, $urlRouterProvider){
                     template: template,
                     controller: controller,
                     controllerAs: 'vm',
-                    indToController: true
+                    bindToController: true
                 }
             }
         });

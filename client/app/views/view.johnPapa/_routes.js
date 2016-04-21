@@ -1,4 +1,4 @@
-import controller from './johnPapaController';
+import controller from './johnPapa.controller';
 import template from './johnPapa.html!text';
 
 // (function () {
@@ -8,7 +8,7 @@ import template from './johnPapa.html!text';
 //     .module('app')
 //     .config(routesConfig);
 
-routesConfig.$inject = ['$stateProvider'];
+// routesConfig.$inject = ['$stateProvider'];
 
 /* istanbul ignore next */
 export default function routesConfig($stateProvider) {
@@ -21,7 +21,7 @@ export default function routesConfig($stateProvider) {
                     template: template,
                     controller: controller,
                     controllerAs: 'vm',
-                    indToController: true
+                    bindToController: true
                 }
             }
         });

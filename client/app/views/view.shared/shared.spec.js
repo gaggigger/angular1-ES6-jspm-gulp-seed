@@ -1,74 +1,115 @@
-// // Have to import angular first before angular-mocks
-// // https://github.com/Workiva/karma-jspm/issues/23
-// import angular from 'angular';
-// import 'angular-mocks';
-// import HomeModule from './home'
-// import HomeController from './home.controller';
-// import HomeComponent from './home.component';
-// import HomeTemplate from './home.html!text';
-//
-// describe('Home', ()=>{
-// 	let $rootScope,
-// 	makeController;
-//
-// 	beforeEach(angular.mock.module(HomeModule.name));
-// 	beforeEach(angular.mock.inject((_$rootScope_)=>{
-// 		$rootScope = _$rootScope_;
-// 		makeController = ()=> new HomeController();
-// 	}));
-//
-// 	describe('Module', ()=>{
-// 		// test things about the component module
-// 		// checking to see if it registers certain things and what not
-// 		// test for best practices with naming too
-// 		// test for routing
-// 	});
-//
-// 	describe('Controller', ()=>{
-// 		// test your controller here
-//
-// 		it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
-// 			let controller = makeController();
-//
-// 			// expect(controller).to.have.property('name');
-// 			expect(controller.name).toEqual(jasmine.anything());
-// 		});
-// 	});
-//
-// 	describe('Template', ()=>{
-// 		// test the template
-// 		// use Regexes to test that you are using the right bindings {{  }}
-//
-// 		it('should have name in template [REMOVE]', ()=>{
-// 			// expect(HomeTemplate).to.match(/{{\s?vm\.name\s?}}/g);
-// 			expect(HomeTemplate).toEqual(jasmine.stringMatching(/{{\s?vm\.name\s?}}/g));
-// 		});
-// 	});
-//
-//
-// 	describe('Component', ()=>{
-// 			// test the component/directive itself
-// 			let component = HomeComponent();
-//
-// 			it('should use the right template',()=>{
-// 				// expect(component.template).to.equal(HomeTemplate);
-// 				expect(component.template).toEqual(HomeTemplate);
-// 			});
-//
-// 			it('should use controllerAs', ()=>{
-// 				// expect(component).to.have.property('controllerAs');
-// 				expect(component.controllerAs).toEqual(jasmine.anything());
-// 			});
-//
-// 			it('should use the right controller', ()=>{
-// 				// expect(component.controller).to.equal(HomeController);
-// 				expect(component.controller).toEqual(HomeController);
-// 			});
-// 	});
-// });
-//
-//
-//
-//
-//
-//
+// Have to import angular first before angular-mocks
+// https://github.com/Workiva/karma-jspm/issues/23
+import angular from 'angular';
+import 'angular-mocks';
+import SharedModule from './_ng'
+import SharedRoutes from './_routes';
+import SharedController from './shared.controller';
+import SharedTemplate from './shared.html!text';
+
+describe('Shared', ()=>{
+    let $log;
+    let makeController;
+    let routes;
+
+    let states;
+    let $stateProvider;
+
+    beforeEach(angular.mock.module(SharedModule.name));
+    beforeEach(angular.mock.inject(($injector)=>{
+        $log                    = $injector.get('$log');
+        makeController = ()=> new SharedController($log);
+
+        states = {};
+        $stateProvider = {
+            state: function(key, state) {
+                states[key] = state;
+            }
+        };
+
+        SharedRoutes($stateProvider);
+    }));
+
+    afterEach(function() {
+        states 			= null;
+        $stateProvider 	= null;
+        routes			= null;
+    });
+
+    describe('Module', ()=>{
+        // test things shared the component module
+        // checking to see if it registers certain things and what not
+        // test for best practices with naming too
+        // test for routing
+    });
+
+    describe('Routes', ()=>{
+
+        var supportState;
+        var homeState;
+        var sharedStateHomeView;
+        var sharedStateSupportView;
+
+        beforeEach(()=>{
+            supportState = states['layoutSupport.shared'];
+            homeState = states['layoutHome.shared'];
+            sharedStateHomeView = supportState.views['content@layoutSupport'];
+            sharedStateSupportView = supportState.views['content@layoutHome'];
+        });
+
+        afterEach(()=>{
+            supportState = null;
+            sharedStateHomeView = null;
+        });
+
+        it('should register state', ()=>{
+            expect(supportState).toBeDefined();
+        });
+
+        it('should assign url', ()=>{
+            expect(supportState.url).toEqual('');
+        });
+
+        it('should have content@layoutSupport view', ()=>{
+            expect(sharedStateHomeView).toBeDefined();
+        });
+
+        it('should have a view template property', ()=>{
+            expect(sharedStateHomeView.template).toEqual(jasmine.stringMatching(/\s?ix\-sample\-one\s?/g));
+        });
+
+        it('should have a view controller property', ()=>{
+            expect(sharedStateHomeView.controller).toBeDefined();
+        });
+
+        it('should have a view controllerAs property', ()=>{
+            expect(sharedStateHomeView.controllerAs).toEqual('vm');
+        });
+
+        it('should have a bindToController property', ()=>{
+            expect(sharedStateHomeView.bindToController).toBeTruthy();
+        });
+    });
+
+    describe('Controller', ()=>{
+        // test your controller here
+
+        it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
+            let controller = makeController();
+
+            // expect(controller).to.have.property('name');
+            expect(controller.name).toEqual(jasmine.anything());
+        });
+    });
+
+    describe('Template', ()=>{
+        // test the template
+        // use Regexes to test that you are using the right bindings {{  }}
+
+        it('should have ix-sample-one [REMOVE]', ()=>{
+            // expect(SharedTemplate).to.match(/{{\s?vm\.name\s?}}/g);
+            expect(SharedTemplate).toEqual(jasmine.stringMatching(/\s?Shared\s?/g));
+        });
+    });
+
+});

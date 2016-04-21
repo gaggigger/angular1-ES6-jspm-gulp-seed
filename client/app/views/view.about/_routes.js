@@ -13,7 +13,7 @@ let layoutAboutRoutes = function($stateProvider){
                     template: template,
                     controller: controller,
                     controllerAs: 'vm',
-                    indToController: true
+                    bindToController: true
                 }
             }
         });
