@@ -8,3 +8,4 @@ jspm_packages
 dist/
 test-reports/
 tmp/
+client/app/**/*.css
