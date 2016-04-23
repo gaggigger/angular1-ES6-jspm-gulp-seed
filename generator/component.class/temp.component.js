@@ -2,6 +2,8 @@ import template from './<%= name %>.html!text';
 import controller from './<%= name %>.controller';
 import './<%= name %>.css!';
 
+controller.$inject = ['$log'];
+
 let <%= name %>Component = function(){
 	return {
 		template,

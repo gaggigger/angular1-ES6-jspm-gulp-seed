@@ -2,7 +2,7 @@ import angular from 'angular';
 import 'angular-ui-router';
 import Views from '../../views/_ng.views';
 import Components from '../../components/_ng.components';
-import Services from '../../services/_ng.services'
+import Services from '../../services/_ng.services';
 import LayoutHome from '../../layouts/_ng.layouts';
 import AppComponent from './app.component';
 
