@@ -6,7 +6,7 @@ class SampleOneController {
 		this.name = 'sampleOneController';
         let vm = this;
 
-        this.model = ixSampleOneModel.get( $scope.componentId ? $scope.componentId : 'ixSampleOneModel');
+        this.model = ixSampleOneModel.get( $scope.componentId ? $scope.componentId : this.name);
         MODEL.set(this, this.model);
 
         // ANGULAR ES6
@@ -44,7 +44,7 @@ class SampleOneController {
 
     onPapaChange() {
         // ANGULAR JOHN PAPA
-        MODEL.get(this).publshJohnPapa(this.papa);
+        MODEL.get(this).publishJohnPapa(this.papa);
     }
 
 }

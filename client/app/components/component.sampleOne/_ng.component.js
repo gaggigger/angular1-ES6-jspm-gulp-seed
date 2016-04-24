@@ -30,7 +30,7 @@ export function modelFactory($log, $q, angularES6Class, johnPapaService) {
 		if (!singletons[componentId]) {
 			singletons[componentId] = new Model(componentId, $log, $q, angularES6Class, johnPapaService);
 		}
-		
+
 		return singletons[componentId];
 	}
 

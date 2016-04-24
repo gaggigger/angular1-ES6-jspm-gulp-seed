@@ -35,7 +35,7 @@ class SampleOneModel {
     }
 
     publisAngularES6Class(data) {
-        SAMPLE_CLASS_SERVICE.get(this).publish(this.name, data);
+        SAMPLE_CLASS_SERVICE.get(this).publish(this.id, data);
     }
 
     subscribeES6() {
@@ -49,7 +49,7 @@ class SampleOneModel {
     }
 
     publishEs6(data) {
-        ES6_FACTORY.get(this).publish(this.input, data);
+        ES6_FACTORY.get(this).publish(this.id, data);
     }
 
     subscribeJohnPapa() {
@@ -62,7 +62,7 @@ class SampleOneModel {
         return this.subscriberJohnPapa.promise;
     }
 
-    publshJohnPapa(data) {
+    publishJohnPapa(data) {
         JOHN_PAPA_SERVICE.get(this).publish(this.id, data);
     }
 }

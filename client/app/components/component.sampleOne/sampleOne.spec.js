@@ -2,46 +2,47 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import createES6Factory from '../../services/factory.es6/es6.factory';
 import SampleOneModule from './_ng'
 import sampleOneController from './sampleOne.controller';
-import sampleOneComponent from './sampleOne.component';
+import {sampleOneComponent} from './_ng.component';
 import sampleOneTemplate from './sampleOne.html!text';
 
 describe('sampleOne', ()=>{
 	let $rootScope;
-    let $log;
-    let $timeout;
-    let angularES6Class;
-    let johnPapaService;
-    let es6Factory;
     let makeController;
+	let makeController2;
+    let makeModel;
+	let ixSampleOneModel;
+    let $scope;
+	let $scope2;
+    let $timeout;
 
 	// beforeEach(angular.mock.module(services.name));
 	beforeEach(angular.mock.module(SampleOneModule.name));
 	beforeEach(angular.mock.inject(($injector)=>{
         $rootScope              = $injector.get('$rootScope');
-        $log                    = $injector.get('$log');
+        ixSampleOneModel    	= $injector.get('ixSampleOneModel');
         $timeout                = $injector.get('$timeout');
-        angularES6Class         = $injector.get('angularES6Class');
-        johnPapaService         = $injector.get('johnPapaService');
+        $scope                  = $rootScope.$new();
+        $scope2                 = $rootScope.$new();
 
-        es6Factory              = createES6Factory();
-        es6Factory.publish(null, ''); // reset
-		makeController          = ()=> new sampleOneController($log, $timeout, angularES6Class, johnPapaService);
+		makeController          = ()=> new sampleOneController($scope, ixSampleOneModel);
+		makeController2         = ()=> new sampleOneController($scope2, ixSampleOneModel);
+		makeModel	            = (componentId)=> {
+			return ixSampleOneModel.get(componentId);
+		};
 
 	}));
 
     afterEach(function() {
-        es6Factory.publish(null, ''); // reset
 
-        $rootScope = null;
-        $log = null;
-        $timeout = null;
-        angularES6Class = null;
-        johnPapaService = null;
-        es6Factory = null;
-        makeController = null;
+        $rootScope      = null;
+        $timeout        = null;
+        makeController  = null;
+		makeController2 = null;
+		makeModel		= null;
+        $scope          = null;
+		$scope2			= null;
     });
 
 	describe('Module', ()=>{
@@ -51,50 +52,131 @@ describe('sampleOne', ()=>{
 		// test for routing
 	});
 
-    describe('es6Factory', ()=>{
-        it('should subscribe to es6Factory', ()=> {
-            let controller = makeController();
+    describe('model', ()=>{
 
-            es6Factory.publish(null, 'BAZ');
+		describe('subscribe componentId', function() {
+			let model;
 
-            $timeout.flush();
+			beforeEach(function() {
 
-            expect(controller.es6).toEqual('BAZ');
-        });
+				$scope.componentId		= 'foo';
+				model 					= makeModel($scope.componentId);
 
-        it('should publish to es6Factory', ()=> {
-            let controller = makeController();
-            controller.es6 = 'BAR';
-            controller.onES6Change();
+				spyOn(model, 'subscribeAngularES6Class').and.callThrough();
+				spyOn(model, 'subscribeJohnPapa').and.callThrough();
+				spyOn(model, 'subscribeES6').and.callThrough();
 
-            $timeout.flush();
+			});
 
-            expect(es6Factory.data).toEqual('BAR');
-        });
-    });
+			afterEach(function() {
+				model = null;
+			});
 
-    describe('angularES6Class', ()=>{
-        it('should subscribe to angularES6Class', ()=> {
-            let controller = makeController();
+			it('should subscribe to subscribeAngularES6Class', ()=> {
+				makeController();
 
-            angularES6Class.publish(null, 'FOO');
+				expect(model.subscribeAngularES6Class).toHaveBeenCalled();
+			});
 
-            $timeout.flush();
+			it('should subscribe to subscribeJohnPapa', ()=> {
+				makeController();
 
-            expect(controller.input).toEqual('FOO');
-        })
-    });
+				expect(model.subscribeJohnPapa).toHaveBeenCalled();
+			});
 
-    describe('johnPapaService', ()=>{
-        it('should subscribe to johnPapaService', ()=> {
-            let controller = makeController();
+			it('should subscribe to subscribeES6', ()=> {
+				makeController();
 
-            johnPapaService.publish(null, 'BAR');
+				expect(model.subscribeES6).toHaveBeenCalled();
+			});
+		});
 
-            $timeout.flush();
+		describe('subscribe default', function() {
+			let model;
 
-            expect(controller.papa).toEqual('BAR');
-        })
+			beforeEach(function() {
+
+				//id same as controller name
+				$scope.componentId = null;
+				model = makeModel('sampleOneController');
+
+				spyOn(model, 'subscribeAngularES6Class').and.callThrough();
+				spyOn(model, 'subscribeJohnPapa').and.callThrough();
+				spyOn(model, 'subscribeES6').and.callThrough();
+
+			});
+
+			afterEach(function() {
+				model = null;
+			});
+
+			it('should subscribe to subscribeAngularES6Class', ()=> {
+				makeController();
+
+				expect(model.subscribeAngularES6Class).toHaveBeenCalled();
+			});
+
+			it('should subscribe to subscribeJohnPapa', ()=> {
+				makeController();
+
+				expect(model.subscribeJohnPapa).toHaveBeenCalled();
+			});
+
+			it('should subscribe to subscribeES6', ()=> {
+				makeController();
+
+				expect(model.subscribeES6).toHaveBeenCalled();
+			});
+		});
+
+		describe('publish', function() {
+
+			beforeEach(function() {
+				$scope2.componentId = 'foo2';
+			});
+
+			it('should publish onClassChange', ()=> {
+
+				let controller = makeController();
+				let controller2 = makeController2();
+
+
+				expect(controller2.input).toEqual('');
+
+				controller.input = 'input value';
+				controller.onClassChange();
+				$timeout.flush();
+
+				expect(controller2.input).toEqual('input value');
+			});
+
+			it('should publish onES6Change', ()=> {
+				let controller = makeController();
+				let controller2 = makeController2();
+
+				expect(controller2.es6).toEqual('');
+
+				controller.es6 = 'input value';
+				controller.onES6Change();
+				$timeout.flush();
+
+				expect(controller2.es6).toEqual('input value');
+			});
+
+			it('should publish onPapaChange', ()=> {
+				let controller = makeController();
+				let controller2 = makeController2();
+
+				expect(controller2.papa).toEqual('');
+
+				controller.papa = 'input value';
+				controller.onPapaChange();
+				$timeout.flush();
+
+				expect(controller2.papa).toEqual('input value');
+			});
+		});
+
     });
 
 	describe('Controller', ()=>{

@@ -23,7 +23,7 @@ export default function factoryJohnPapa($log, $timeout) {
 
     var _cache = '';
     var subscribers = {};
-    
+
     function getData() {
         return _cache;
     }
@@ -42,7 +42,6 @@ export default function factoryJohnPapa($log, $timeout) {
     }
 
     function notify(id) {
-        
         forOwn(subscribers, function(subscriber, key) {
 
             /**
