@@ -1,7 +1,15 @@
+
+const LOG = new WeakMap();
+const Q = new WeakMap();
+
 class <%= camelCaseName %>Factory {
-	constructor($log) {
-		this.name = '<%= name %>';
-		this.$log = $log;
+	constructor($log, $q) {
+		this.name = '<%= name %>.factory';
+
+		LOG.set(this, $log);
+		Q.set(this, $q);
+
+
 		this._data = 'bar'
 	}
 
@@ -13,8 +21,8 @@ class <%= camelCaseName %>Factory {
 		this._data = val;
 	}
 
-	static factory($log) {
-		return new <%= camelCaseName %>Factory($log);
+	static factory($log, $q) {
+		return new <%= camelCaseName %>Factory($log, $q);
 	}
 }
 

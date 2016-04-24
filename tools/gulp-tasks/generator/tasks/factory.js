@@ -2,6 +2,8 @@
 
 import paths from '../../../paths';
 import yargsModule from 'yargs';
+import cap from './common/cap';
+import camel from './common/camel'
 var yargs = yargsModule.argv;
 
 
@@ -9,25 +11,10 @@ export default function(gulp, plugins) {
 
   return function(done) {
 
-    var camel = function(val) {
-      var segments =  val.split('.');
-
-      for (var i = 0; i < segments.length; i++) {
-        segments[i] = cap(segments[i]);
-      }
-
-      return segments.join('');
-
-    };
-
-    var cap = function(val) {
-      return val.charAt(0).toUpperCase() + val.slice(1);
-    };
-
     var name = yargs.name;
     var parentPath = yargs.parent || '';
     parentPath = (parentPath.length) ? parentPath + '/' : parentPath;
-    var destPath = paths.client.UIDK + parentPath + name + '.module';
+    var destPath = paths.client.services + parentPath + 'factory.' + name;
 
     return gulp.src(paths.blankTemplates.factory)
       .pipe(plugins.template({

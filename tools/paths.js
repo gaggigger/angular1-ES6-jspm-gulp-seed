@@ -44,6 +44,7 @@ const paths = {
         fonts:          `${root}/client/scss/**/*.{eot,svg,ttf,woff,woff2}`,
         assets:         `${root}/client/assets/**/*`,
         components:     `${root}/client/app/components/`,
+        services:       `${root}/client/app/services/`,
         UIDK:           `${root}/client/UIDK/`,
         html: [
                         `${root}/client/app/**/*.html`,

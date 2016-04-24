@@ -1,7 +1,6 @@
 'use strict';
 
 import paths from '../../../paths';
-import path from 'path';
 import yargsModule from 'yargs';
 import cap from './common/cap';
 import camel from './common/camel'

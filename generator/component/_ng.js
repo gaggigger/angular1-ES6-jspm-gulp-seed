@@ -12,7 +12,7 @@ import {<%= name %>Component, <%= name %>ModelFactory} from './_ng.component';
 
 // END IMPORT MODULE DEPENDENCIES
 
-let <%= name %>Module = angular.module('<%= name %>', [
+let <%= name %>Module = angular.module('<%= name %>.component', [
 	'ui.router'
 	// someService.name
 ])
