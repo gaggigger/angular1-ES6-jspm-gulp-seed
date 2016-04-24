@@ -7,7 +7,7 @@ import NavbarController from './navbar.controller';
 import NavbarComponent from './navbar.component';
 import NavbarTemplate from './navbar.html!text';
 
-describe('Navbar', ()=>{
+describe('Navbar Component', ()=>{
 	let $rootScope,
 	makeController;
 

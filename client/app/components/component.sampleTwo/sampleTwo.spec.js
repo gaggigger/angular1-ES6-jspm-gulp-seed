@@ -8,7 +8,7 @@ import SampleTwoController from './sampleTwo.controller';
 import SampleTwoComponent from './sampleTwo.component';
 import SampleTwoTemplate from './sampleTwo.html!text';
 
-describe('SampleTwo', ()=>{
+describe('SampleTwo Component', ()=>{
 	let $rootScope;
     let $log;
     let $timeout;

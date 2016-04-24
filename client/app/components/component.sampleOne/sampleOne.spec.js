@@ -7,7 +7,7 @@ import sampleOneController from './sampleOne.controller';
 import {sampleOneComponent} from './_ng.component';
 import sampleOneTemplate from './sampleOne.html!text';
 
-describe('sampleOne', ()=>{
+describe('sampleOne Component', ()=>{
 	let $rootScope;
     let makeController;
 	let makeController2;
@@ -208,17 +208,14 @@ describe('sampleOne', ()=>{
 			let component = sampleOneComponent();
 
 			it('should use the right template',()=>{
-				// expect(component.template).to.equal(sampleOneTemplate);
 				expect(component.template).toEqual(sampleOneTemplate);
 			});
 
 			it('should use controllerAs', ()=>{
-				// expect(component).to.have.property('controllerAs');
 				expect(component.controllerAs).toEqual(jasmine.anything());
 			});
 
-			it('should use the right controller', ()=>{
-				// expect(component.controller).to.equal(sampleOneController);
+			it('should use the correct controller', ()=>{
 				expect(component.controller).toEqual(sampleOneController);
 			});
 	});

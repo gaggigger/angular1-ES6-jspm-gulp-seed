@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import <%= name %>Component from './<%= name %>.component';
+import {<%= name %>Component, <%= name %>ModelFactory} from './_ng.component';
 
 // BEGIN IMPORT MODULE DEPENDENCIES
 
@@ -16,6 +16,7 @@ let <%= name %>Module = angular.module('<%= name %>', [
 	'ui.router'
 	// someService.name
 ])
-.directive('<%= name %>', <%= name %>Component);
+	.directive('<%= name %>', <%= name %>Component)
+	.factory('<%= name %>Model', <%= name %>ModelFactory);
 
 export default <%= name %>Module;

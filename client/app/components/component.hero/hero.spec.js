@@ -7,7 +7,7 @@ import HeroController from './hero.controller';
 import HeroComponent from './hero.component';
 import HeroTemplate from './hero.html!text';
 
-describe('Hero', ()=>{
+describe('Hero Component', ()=>{
 	let $rootScope,
 	makeController;
 

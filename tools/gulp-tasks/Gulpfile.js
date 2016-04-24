@@ -6,6 +6,7 @@ import test from './test/gulpFile';
 import common from './common/gulpFile';
 import develop from './develop/gulpFile';
 import production from './production/gulpFile';
+import generator from './generator/gulpFile';
 
 let plugins = gulpLoadPlugins();
 
@@ -28,5 +29,10 @@ develop(gulp, plugins);
  * production
  */
 production(gulp, plugins);
+
+/**
+ * generator
+ */
+generator(gulp, plugins);
 
 gulp.task('default', ['serve']);

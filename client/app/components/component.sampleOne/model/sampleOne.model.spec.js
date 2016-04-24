@@ -7,7 +7,7 @@ import createES6Factory from '../../../services/factory.es6/es6.factory.js';
 import sampleOneModule from '../_ng';
 
 
-describe('SampleOneModel', function() {
+describe('SampleOne Model', function() {
     let componentId;
     let $log;
     let $q;

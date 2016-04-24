@@ -12,7 +12,7 @@ function loadTasks(gulp, plugins, paths) {
   /**
    * The 'test.nocoverage' task run unit tests without coverage check.
    */
-  gulp.task('test.unit', testUnit(gulp, plugins));
+  gulp.task('test.unit', ['style'], testUnit(gulp, plugins));
   gulp.task('unit', ['test.unit'], generateUnitTestCoverageReport(gulp, plugins));
 
   function getProtractorBinary(binaryName){
