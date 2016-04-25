@@ -15,11 +15,6 @@ export default function(gulp, plugins) {
 
     return function(done) {
 
-        if (!yargs.layout) {
-            LOG(COLORS.red(`Error: The param --layout=[layout name] must be provided.`));
-            return false;
-        }
-
         var name = yargs.name;
         var layout = yargs.layout;
         var route = yargs.route ? dash(yargs.route) : dash(name);
@@ -30,14 +25,13 @@ export default function(gulp, plugins) {
 
         var parentPath = yargs.parent || '';
         parentPath = (parentPath.length) ? parentPath + '/' : parentPath;
-        var destPath = paths.client.views + parentPath + 'view.' + name;
+        var destPath = paths.client.layouts + parentPath + 'layout.' + name;
 
-        return gulp.src(paths.blankTemplates.view)
+        return gulp.src(paths.blankTemplates.layout)
             .pipe(plugins.template({
                 name: name,
                 InitialCaseName: cap(camel(name)),
                 camelCaseName: camel(name),
-                layout: cap(layout),
                 route: route
             }))
             .pipe(plugins.rename(function(path) {
