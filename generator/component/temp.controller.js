@@ -1,7 +1,7 @@
 const LOG                   = new WeakMap();
 const MODEL                 = new WeakMap();
 
-class <%= upCaseName %>Controller {
+class <%= InitialCaseName %>Controller {
 	constructor($scope, $log, <%= name %>Model){
 		this.name = '<%= name %>';
 		LOG.set(this, $log);
@@ -17,4 +17,4 @@ class <%= upCaseName %>Controller {
 	}
 }
 
-export default <%= upCaseName %>Controller;
+export default <%= InitialCaseName %>Controller;

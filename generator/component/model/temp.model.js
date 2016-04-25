@@ -1,7 +1,7 @@
 const LOG       = new WeakMap();
 const Q        = new WeakMap();
 
-class <%= upCaseName %>Model {
+class <%= InitialCaseName %>Model {
     constructor(componentId, $log, $q) {
         this.id = componentId;
         LOG.set(this, $log);
@@ -15,4 +15,4 @@ class <%= upCaseName %>Model {
     }
 }
 
-export default <%= upCaseName %>Model;
+export default <%= InitialCaseName %>Model;

@@ -2,7 +2,7 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import <%= upCaseName %>Model from './<%= name %>.model';
+import <%= InitialCaseName %>Model from './<%= name %>.model';
 import <%= name %>Module from '../_ng';
 
 describe('<%= name %> Model', function() {
@@ -19,7 +19,7 @@ describe('<%= name %> Model', function() {
 
         componentId             = 'foo';
         makeModel 		        = ()=>{
-            return new <%= upCaseName %>Model(componentId, $log, $q);
+            return new <%= InitialCaseName %>Model(componentId, $log, $q);
         };
     }));
 

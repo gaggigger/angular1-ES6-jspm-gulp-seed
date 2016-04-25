@@ -5,7 +5,7 @@ import 'angular-mocks';
 import <%= camelCaseName %>Module from './_ng'
 import <%= camelCaseName %>Factory from './<%= name %>.factory';
 
-describe('<%= camelCaseName %>', ()=>{
+describe('<%= camelCaseName %> Factory', ()=>{
 
 	let createFactory;
 	let $log;

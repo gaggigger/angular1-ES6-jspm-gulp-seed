@@ -45,6 +45,7 @@ const paths = {
         assets:         `${root}/client/assets/**/*`,
         components:     `${root}/client/app/components/`,
         services:       `${root}/client/app/services/`,
+        views:          `${root}/client/app/views/`,
         UIDK:           `${root}/client/UIDK/`,
         html: [
                         `${root}/client/app/**/*.html`,
@@ -68,7 +69,7 @@ const paths = {
     blankTemplates: {
         component:      `${root}/generator/component/**/*.**`,
         factory:        `${root}/generator/factory/**/*.**`,
-        reference:      `${root}/generator/reference.js`
+        view:           `${root}/generator/view/**/*.**`
     },
 
     dist:               `${root}/dist/`,

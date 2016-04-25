@@ -2,10 +2,10 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
-import <%= upCaseName %>Module from './_ng'
+import <%= InitialCaseName %>Module from './_ng'
 import {<%= name %>Component} from './_ng.component';
-import <%= upCaseName %>Controller from './<%= name %>.controller';
-import <%= upCaseName %>Template from './<%= name %>.html!text';
+import <%= InitialCaseName %>Controller from './<%= name %>.controller';
+import <%= InitialCaseName %>Template from './<%= name %>.html!text';
 
 describe('<%= name %> Component', ()=>{
 	let $log;
@@ -14,7 +14,7 @@ describe('<%= name %> Component', ()=>{
 	let <%= name %>Model;
     let makeController;
 
-	beforeEach(angular.mock.module(<%= upCaseName %>Module.name));
+	beforeEach(angular.mock.module(<%= InitialCaseName %>Module.name));
 	beforeEach(angular.mock.inject(($injector)=>{
 		$log 				= $injector.get('$log');
         $rootScope          = $injector.get('$rootScope');
@@ -22,7 +22,7 @@ describe('<%= name %> Component', ()=>{
 
         $scope = $rootScope.$new();
 		makeController 		= ()=>{
-			return new <%= upCaseName %>Controller($scope, $log, <%= name %>Model);
+			return new <%= InitialCaseName %>Controller($scope, $log, <%= name %>Model);
 		};
 	}));
 
@@ -62,7 +62,7 @@ describe('<%= name %> Component', ()=>{
 		// use Regexes to test that you are using the right bindings {{  }}
 
 		it('should have name in template [REMOVE]', ()=>{
-			expect(<%= upCaseName %>Template).toEqual(jasmine.stringMatching(/\s?vm\.name\s?/g));
+			expect(<%= InitialCaseName %>Template).toEqual(jasmine.stringMatching(/\s?vm\.name\s?/g));
 
 		});
 	});
@@ -81,7 +81,7 @@ describe('<%= name %> Component', ()=>{
         });
 
         it('should use the right template',()=>{
-            expect(component.template).toEqual(<%= upCaseName %>Template);
+            expect(component.template).toEqual(<%= InitialCaseName %>Template);
         });
 
         it('should use controllerAs', ()=>{
@@ -89,7 +89,7 @@ describe('<%= name %> Component', ()=>{
         });
 
         it('should use the right controller', ()=>{
-            expect(component.controller).toEqual(<%= upCaseName %>Controller);
+            expect(component.controller).toEqual(<%= InitialCaseName %>Controller);
         });
 	});
 });

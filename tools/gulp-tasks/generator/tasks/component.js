@@ -19,7 +19,7 @@ export default function(gulp, plugins) {
     return gulp.src(paths.blankTemplates.component)
       .pipe(plugins.template({
         name: name,
-        upCaseName: cap(name),
+        InitialCaseName: cap(name),
         camelCaseName: camel(name)
       }))
       .pipe(plugins.rename(function(path) {
