@@ -76,3 +76,4 @@ The only difference from a regular `Karma` setup is the use of [`karma-jspm`](ht
 * See [FACTORY](./generator/FACTORY.md) doc.
 * See [LAYOUT](./generator/LAYOUT.md) doc.
 * See [VIEW](./generator/VIEW.md) doc.
+
