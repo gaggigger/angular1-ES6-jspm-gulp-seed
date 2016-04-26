@@ -46,16 +46,12 @@ module.exports = function(config) {
             // Edit this to your needs
             config: 'jspm.config.js',
             loadFiles: [
-                'client/app/**/*.spec.js',
-                'client/UIDK/**/*.spec.js'
+                'client/app/**/*.spec.js'
             ],
             serveFiles: [
                 'client/app/**/*.js',
                 'client/app/**/*.html',
-                'client/app/**/*.css',
-                'client/UIDK/**/*.js',
-                'client/UIDK/**/*.html',
-                'client/UIDK/**/*.css'
+                'client/app/**/*.css'
             ],
             paths: {
                 '*': 'base/*.js'
@@ -64,8 +60,7 @@ module.exports = function(config) {
 
         proxies: {
             '/jspm_packages': '/base/client/jspm_packages',
-            '/app'  : '/base/client/app',
-            '/UIDK' : '/base/client/UIDK'
+            '/app'  : '/base/client/app'
         },
 
         // list of files to exclude
@@ -109,8 +104,7 @@ module.exports = function(config) {
         preprocessors: {
             // source files, that you wanna generate coverage for - do not include tests or libraries
             // (these files will be instrumented by Istanbul)
-            'client/app/**/!(*.spec|*.mock|*-mock|*.e2e|*.po|*.test).js': ['babel', 'coverage'],
-            'client/UIDK/**/!(*.spec|*.mock|*-mock|*.e2e|*.po|*.test).js': ['babel', 'coverage']
+            'client/app/**/!(*.spec|*.mock|*-mock|*.e2e|*.po|*.test).js': ['babel', 'coverage']
         },
 
         // transpile with babel since the coverage reporter throws error on ES6 syntax
