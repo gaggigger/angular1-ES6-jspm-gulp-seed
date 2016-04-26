@@ -11,11 +11,11 @@ Following a good practice allows us to guarantee certain things. We can take adv
 
 To generate a layout, we must use the `gulp layout --name layoutName --route routeName` task.
 
-The `--name` flag is the name of the layout you want to create. Be sure to be unique, or it will override an existing layout.
+The `--name` (REQUIRED) flag is the name of the view you want to create. Be sure to be unique, or it will override an existing view.
 
-The optional `--route` flag is the url of the route. If a rpute is not provided, it will be created using the `--name` flag.
+The `--route` (OPTIONAL) flag is the url of the route. If a rpute is not provided, it will be created using the `--name` flag.
 
-The optional `--redirectTo` flag is the default url of the route. If a redirectTo is not provided, it will be created using the `--name` flag.
+The `--redirectTo` (OPTIONAL) flag is the default url of the route. If a redirectTo is not provided, it will be created using the `--name` flag.
 
 
 The layout will be created by default on the root of `client/app/layouts`.

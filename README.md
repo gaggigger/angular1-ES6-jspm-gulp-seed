@@ -18,6 +18,7 @@ ___
     * [Running the app](#running-the-app)
         * [Gulp tasks](#gulp-tasks)
         * [Testing](#testing)
+    * [Generating Components](#generating-components)
 
 
 # Testing Setup
@@ -69,3 +70,9 @@ To run test without coverate reports, just run `gulp test.unit`.
 To run test with coverate reports, just run `gulp unit`.
 
 The only difference from a regular `Karma` setup is the use of [`karma-jspm`](https://github.com/Workiva/karma-jspm) plugin to let JSPM handle spec files as modules. `Karma` will run all files that match `.spec.js` inside the `app` folder. This is awesome because we can write tests for our components in the same folder with the rest of the component. Be sure to include your `spec` files in the appropriate component directory. You must name the spec file like so, `[name].spec.js`. If you don't want to use the `.spec.js` extension, you must change the `jspm.loadFiles` glob in `karma.conf.js` to look for whatever file(s) you want.
+
+## Generating components
+* See [COMPONENT](./generator/COMPONENT.md) doc.
+* See [FACTORY](./generator/FACTORY.md) doc.
+* See [LAYOUT](./generator/LAYOUT.md) doc.
+* See [VIEW](./generator/VIEW.md) doc.

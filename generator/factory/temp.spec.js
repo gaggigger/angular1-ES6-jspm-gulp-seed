@@ -33,7 +33,7 @@ describe('<%= camelCaseName %> Factory', ()=>{
 		// test for routing
 
 		it('should have module name', function() {
-			expect(<%= camelCaseName %>Module.name).toEqual('<%= name %>.factory');
+			expect(<%= camelCaseName %>Module.name).toEqual('factory.<%= name %>');
 		})
 	});
 
