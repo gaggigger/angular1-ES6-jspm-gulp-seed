@@ -39,7 +39,8 @@ const paths = {
           global:       `${root}/client/scss/global.scss`,
           globalCss:    `${root}/client/scss/**/*.css`,  // clean task
           all:          [`${root}/client/**/*.scss`, `!${root}/client/jspm_packages/**/*`], // styleguide
-          app:          `${root}/client/app/**/*.scss`
+          app:          `${root}/client/app/**/*.scss`, 
+          css:          `${root}/client/app/**/*.css`
         },
         fonts:          `${root}/client/scss/**/*.{eot,svg,ttf,woff,woff2}`,
         assets:         `${root}/client/assets/**/*`,
@@ -51,8 +52,7 @@ const paths = {
         html: [
                         `${root}/client/app/**/*.html`,
                         `${root}/client/index.html`
-        ],
-        css:            `${root}/client/app/**/*.css`
+        ]
     },
 
     docs: {

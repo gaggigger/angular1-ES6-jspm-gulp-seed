@@ -17,7 +17,7 @@ export default function(gulp, plugins) {
       port: process.env.PORT || 3000,
       open: true,
       files: [].concat(
-        [paths.client.css],
+        [paths.client.styles.css],
         paths.client.html
       ),
       server: {

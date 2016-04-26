@@ -7,13 +7,19 @@ import common from './common/gulpFile';
 import develop from './develop/gulpFile';
 import production from './production/gulpFile';
 import generator from './generator/gulpFile';
+import styles from './styles/gulpFile';
 
 let plugins = gulpLoadPlugins();
 
 /**
- * common
+ * test
  */
 test(gulp, plugins);
+
+/**
+ * styles
+ */
+styles(gulp, plugins);
 
 /**
  * common

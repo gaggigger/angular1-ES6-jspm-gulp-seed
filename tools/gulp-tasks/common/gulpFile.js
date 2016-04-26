@@ -1,27 +1,14 @@
 'use strict';
 
-import stylApp from './tasks/styles.app';
-import stylGlobal from './tasks/styles.global';
 import generate from './tasks/styleguide.generate';
 import apply from './tasks/styleguide.apply';
 import inject from './tasks/styleguide.inject';
-import cleanStyles from './tasks/clean.styles.css.app';
 import esDoc from './tasks/esDoc';
 import serveEsDoc from './tasks/esDoc.serve';
 import paths from '../../paths';
 
 function loadTasks(gulp, plugins) {
     'use strict';
-
-    gulp.task('clean:global', cleanStyles(gulp, plugins));
-
-    gulp.task('clean', ['clean:global']);
-
-    gulp.task('style.app', stylApp(gulp, plugins));
-
-    gulp.task('style.global', stylGlobal(gulp, plugins));
-
-    gulp.task('style', ['style.app', 'style.global']);
 
     gulp.task('styleguide:generate', ['style'], generate(gulp, plugins));
 
