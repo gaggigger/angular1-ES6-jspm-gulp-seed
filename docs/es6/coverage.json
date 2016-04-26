@@ -1,9 +1,20 @@
 {
-  "coverage": "3.84%",
-  "expectCount": 26,
+  "coverage": "1.08%",
+  "expectCount": 92,
   "actualCount": 1,
   "files": {
-    "app/components/about/about.controller.js": {
+    "app/views/view.about/about.controller.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        12,
+        5,
+        16
+      ]
+    },
+    "app/views/view.contact/contact.controller.js": {
       "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
@@ -12,7 +23,7 @@
         3
       ]
     },
-    "app/common/hero/hero.controller.js": {
+    "app/components/component.hero/hero.controller.js": {
       "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
@@ -21,7 +32,7 @@
         3
       ]
     },
-    "app/components/home/home.controller.js": {
+    "app/views/view.home/home.controller.js": {
       "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
@@ -30,7 +41,7 @@
         3
       ]
     },
-    "app/common/navbar/navbar.controller.js": {
+    "app/components/component.navbar/navbar.controller.js": {
       "expectCount": 3,
       "actualCount": 0,
       "undocumentLines": [
@@ -39,100 +50,324 @@
         3
       ]
     },
-    "app/common/user/user.factory.js": {
+    "app/services/factory.angularES6Class/angularES6Class.factory.js": {
+      "expectCount": 10,
+      "actualCount": 1,
+      "undocumentLines": [
+        7,
+        8,
+        24,
+        19,
+        41,
+        28,
+        33,
+        10,
+        62
+      ]
+    },
+    "app/components/component.sampleOne/sampleOne.controller.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        6,
+        35,
+        40,
+        45
+      ]
+    },
+    "app/components/component.sampleOne/model/sampleOne.model.js": {
+      "expectCount": 12,
+      "actualCount": 0,
+      "undocumentLines": [
+        10,
+        11,
+        12,
+        37,
+        51,
+        65,
+        27,
+        41,
+        55,
+        16,
+        17,
+        18
+      ]
+    },
+    "app/components/component.sampleTwo/sampleTwo.controller.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        9,
+        10,
+        43,
+        48,
+        53
+      ]
+    },
+    "app/views/view.shared/shared.controller.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3
+      ]
+    },
+    "app/views/view.johnPapa/johnPapa.controller.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        10
+      ]
+    },
+    "app/services/factory.user/user.factory.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         1
       ]
     },
-    "app/components/about/about.component.js": {
+    "app/components/component.sampleTwo/sampleTwo.component.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        5
+        7
       ]
     },
-    "app/components/about/about.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
-    },
-    "app/app.component.js": {
+    "app/components/_component.app/app.component.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         4
       ]
     },
-    "app/app.js": {
+    "app/components/_component.app/_ng.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        11
+        9
       ]
     },
-    "app/common/common.js": {
+    "app/components/_ng.components.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        10
+      ]
+    },
+    "app/data.access.layers/_ng.dal.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "app/services/factory.es6/es6.factory.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        52
+      ]
+    },
+    "app/services/factory.johnPapa/johnPapa.factory.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        12
+      ]
+    },
+    "app/components/component.hero/hero.component.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "app/components/component.hero/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "app/services/factory.johnPapa/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "app/views/view.about/_routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         6
       ]
     },
-    "app/components/components.js": {
+    "app/layouts/layout.home/_ng.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        5
+        8
       ]
     },
-    "app/common/hero/hero.component.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
-    },
-    "app/common/hero/hero.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
-    },
-    "app/components/home/home.component.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "app/components/home/home.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
-    },
-    "app/common/navbar/navbar.component.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
-    },
-    "app/common/navbar/navbar.js": {
-      "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        5
-      ]
-    },
-    "app/common/user/user.js": {
+    "app/views/view.shared/_routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         4
+      ]
+    },
+    "app/layouts/layout.home/_routes.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "app/views/view.contact/_routes.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "app/views/view.home/_routes.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "app/layouts/_ng.layouts.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "app/layouts/layout.support/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "app/layouts/layout.support/_routes.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "app/components/component.sampleOne/_ng.component.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        21,
+        7
+      ]
+    },
+    "app/components/component.navbar/navbar.component.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "app/components/component.navbar/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "app/views/view.johnPapa/_routes.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        14
+      ]
+    },
+    "app/services/factory.angularES6Class/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "app/components/component.sampleOne/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "app/components/component.sampleTwo/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "app/services/_ng.services.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "app/services/factory.user/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "app/views/view.contact/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "app/views/view.home/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "app/views/view.about/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "app/views/view.johnPapa/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "app/views/view.shared/_ng.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "app/views/_ng.views.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        9
       ]
     }
   }

@@ -1,110 +1,284 @@
 window.esdocSearchIndex = [
   [
-    "angular-jspm-starter/app/components/about/about.controller.js~aboutcontroller",
-    "class/app/components/about/about.controller.js~AboutController.html",
-    "<span>AboutController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/about/about.controller.js</span>",
+    "angular-jspm-starter/app/views/view.about/about.controller.js~aboutcontroller",
+    "class/app/views/view.about/about.controller.js~AboutController.html",
+    "<span>AboutController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.about/about.controller.js</span>",
     "class"
   ],
   [
-    "angular-jspm-starter/app/common/hero/hero.controller.js~herocontroller",
-    "class/app/common/hero/hero.controller.js~HeroController.html",
-    "<span>HeroController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/hero/hero.controller.js</span>",
+    "angular-jspm-starter/app/views/view.contact/contact.controller.js~contactcontroller",
+    "class/app/views/view.contact/contact.controller.js~ContactController.html",
+    "<span>ContactController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.contact/contact.controller.js</span>",
     "class"
   ],
   [
-    "angular-jspm-starter/app/components/home/home.controller.js~homecontroller",
-    "class/app/components/home/home.controller.js~HomeController.html",
-    "<span>HomeController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/home/home.controller.js</span>",
+    "angular-jspm-starter/app/components/component.hero/hero.controller.js~herocontroller",
+    "class/app/components/component.hero/hero.controller.js~HeroController.html",
+    "<span>HeroController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.hero/hero.controller.js</span>",
     "class"
   ],
   [
-    "angular-jspm-starter/app/common/navbar/navbar.controller.js~navbarcontroller",
-    "class/app/common/navbar/navbar.controller.js~NavbarController.html",
-    "<span>NavbarController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/navbar/navbar.controller.js</span>",
+    "angular-jspm-starter/app/views/view.home/home.controller.js~homecontroller",
+    "class/app/views/view.home/home.controller.js~HomeController.html",
+    "<span>HomeController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.home/home.controller.js</span>",
     "class"
   ],
   [
-    "angular-jspm-starter/app/common/user/user.factory.js~userfactory",
+    "angular-jspm-starter/app/components/component.navbar/navbar.controller.js~navbarcontroller",
+    "class/app/components/component.navbar/navbar.controller.js~NavbarController.html",
+    "<span>NavbarController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.navbar/navbar.controller.js</span>",
+    "class"
+  ],
+  [
+    "angular-jspm-starter/app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html",
+    "<span>SampleClassFactory</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/services/factory.angularES6Class/angularES6Class.factory.js</span>",
+    "class"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.sampleone/sampleone.controller.js~sampleonecontroller",
+    "class/app/components/component.sampleOne/sampleOne.controller.js~SampleOneController.html",
+    "<span>SampleOneController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleOne/sampleOne.controller.js</span>",
+    "class"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.sampleone/model/sampleone.model.js~sampleonemodel",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html",
+    "<span>SampleOneModel</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleOne/model/sampleOne.model.js</span>",
+    "class"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.sampletwo/sampletwo.controller.js~sampletwocontroller",
+    "class/app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController.html",
+    "<span>SampleTwoController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleTwo/sampleTwo.controller.js</span>",
+    "class"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.shared/shared.controller.js~sharedcontroller",
+    "class/app/views/view.shared/shared.controller.js~SharedController.html",
+    "<span>SharedController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.shared/shared.controller.js</span>",
+    "class"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.johnpapa/johnpapa.controller.js~supportcontroller",
+    "function/index.html#static-function-SupportController",
+    "<span>SupportController</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.johnPapa/johnPapa.controller.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/services/factory.user/user.factory.js~userfactory",
     "function/index.html#static-function-UserFactory",
-    "<span>UserFactory</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/user/user.factory.js</span>",
+    "<span>UserFactory</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/services/factory.user/user.factory.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/components/about/about.component.js~aboutcomponent",
+    "angular-jspm-starter/app/components/component.sampletwo/sampletwo.component.js~aboutcomponent",
     "function/index.html#static-function-aboutComponent",
-    "<span>aboutComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/about/about.component.js</span>",
+    "<span>aboutComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleTwo/sampleTwo.component.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/components/about/about.js~aboutmodule",
-    "variable/index.html#static-variable-aboutModule",
-    "<span>aboutModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/about/about.js</span>",
-    "variable"
-  ],
-  [
-    "angular-jspm-starter/app/app.component.js~appcomponent",
+    "angular-jspm-starter/app/components/_component.app/app.component.js~appcomponent",
     "variable/index.html#static-variable-appComponent",
-    "<span>appComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/app.component.js</span>",
+    "<span>appComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/_component.app/app.component.js</span>",
     "variable"
   ],
   [
-    "angular-jspm-starter/app/app.js~appmodule",
+    "angular-jspm-starter/app/components/_component.app/_ng.js~appmodule",
     "variable/index.html#static-variable-appModule",
-    "<span>appModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/app.js</span>",
+    "<span>appModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/_component.app/_ng.js</span>",
     "variable"
   ],
   [
-    "angular-jspm-starter/app/common/common.js~commonmodule",
-    "variable/index.html#static-variable-commonModule",
-    "<span>commonModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/common.js</span>",
-    "variable"
-  ],
-  [
-    "angular-jspm-starter/app/components/components.js~componentmodule",
+    "angular-jspm-starter/app/components/_ng.components.js~componentmodule",
     "variable/index.html#static-variable-componentModule",
-    "<span>componentModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/components.js</span>",
+    "<span>componentModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/_ng.components.js</span>",
     "variable"
   ],
   [
-    "angular-jspm-starter/app/common/hero/hero.component.js~herocomponent",
+    "angular-jspm-starter/app/data.access.layers/_ng.dal.js~dalmodule",
+    "variable/index.html#static-variable-dalModule",
+    "<span>dalModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/data.access.layers/_ng.dal.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/services/factory.es6/es6.factory.js~es6factory",
+    "function/index.html#static-function-es6Factory",
+    "<span>es6Factory</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/services/factory.es6/es6.factory.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/services/factory.johnpapa/johnpapa.factory.js~factoryjohnpapa",
+    "function/index.html#static-function-factoryJohnPapa",
+    "<span>factoryJohnPapa</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/services/factory.johnPapa/johnPapa.factory.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.hero/hero.component.js~herocomponent",
     "function/index.html#static-function-heroComponent",
-    "<span>heroComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/hero/hero.component.js</span>",
+    "<span>heroComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.hero/hero.component.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/common/hero/hero.js~heromodule",
+    "angular-jspm-starter/app/components/component.hero/_ng.js~heromodule",
     "variable/index.html#static-variable-heroModule",
-    "<span>heroModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/hero/hero.js</span>",
+    "<span>heroModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.hero/_ng.js</span>",
     "variable"
   ],
   [
-    "angular-jspm-starter/app/components/home/home.component.js~homecomponent",
-    "function/index.html#static-function-homeComponent",
-    "<span>homeComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/home/home.component.js</span>",
+    "angular-jspm-starter/app/services/factory.johnpapa/_ng.js~johnpapafactorymodule",
+    "variable/index.html#static-variable-johnPapaFactoryModule",
+    "<span>johnPapaFactoryModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/services/factory.johnPapa/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.about/_routes.js~layoutaboutroutes",
+    "function/index.html#static-function-layoutAboutRoutes",
+    "<span>layoutAboutRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.about/_routes.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/components/home/home.js~homemodule",
-    "variable/index.html#static-variable-homeModule",
-    "<span>homeModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/home/home.js</span>",
+    "angular-jspm-starter/app/layouts/layout.home/_ng.js~layouthomemodule",
+    "variable/index.html#static-variable-layoutHomeModule",
+    "<span>layoutHomeModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/layout.home/_ng.js</span>",
     "variable"
   ],
   [
-    "angular-jspm-starter/app/common/navbar/navbar.component.js~navbarcomponent",
+    "angular-jspm-starter/app/layouts/layout.home/_routes.js~layouthomeroutes",
+    "function/index.html#static-function-layoutHomeRoutes",
+    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/layout.home/_routes.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.contact/_routes.js~layouthomeroutes",
+    "function/index.html#static-function-layoutHomeRoutes",
+    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.contact/_routes.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.home/_routes.js~layouthomeroutes",
+    "function/index.html#static-function-layoutHomeRoutes",
+    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.home/_routes.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.shared/_routes.js~layouthomeroutes",
+    "function/index.html#static-function-layoutHomeRoutes",
+    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.shared/_routes.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/layouts/_ng.layouts.js~layoutmodule",
+    "variable/index.html#static-variable-layoutModule",
+    "<span>layoutModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/_ng.layouts.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/layouts/layout.support/_ng.js~layoutsupportmodule",
+    "variable/index.html#static-variable-layoutSupportModule",
+    "<span>layoutSupportModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/layout.support/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/layouts/layout.support/_routes.js~layoutsupportroutes",
+    "function/index.html#static-function-layoutSupportRoutes",
+    "<span>layoutSupportRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/layout.support/_routes.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.sampleone/_ng.component.js~modelfactory",
+    "function/index.html#static-function-modelFactory",
+    "<span>modelFactory</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleOne/_ng.component.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.navbar/navbar.component.js~navbarcomponent",
     "function/index.html#static-function-navbarComponent",
-    "<span>navbarComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/navbar/navbar.component.js</span>",
+    "<span>navbarComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.navbar/navbar.component.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/common/navbar/navbar.js~navbarmodule",
+    "angular-jspm-starter/app/components/component.navbar/_ng.js~navbarmodule",
     "variable/index.html#static-variable-navbarModule",
-    "<span>navbarModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/navbar/navbar.js</span>",
+    "<span>navbarModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.navbar/_ng.js</span>",
     "variable"
   ],
   [
-    "angular-jspm-starter/app/common/user/user.js~usermodule",
+    "angular-jspm-starter/app/views/view.johnpapa/_routes.js~routesconfig",
+    "function/index.html#static-function-routesConfig",
+    "<span>routesConfig</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.johnPapa/_routes.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/services/factory.angulares6class/_ng.js~sampleclassmodule",
+    "variable/index.html#static-variable-sampleClassModule",
+    "<span>sampleClassModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/services/factory.angularES6Class/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.sampleone/_ng.component.js~sampleonecomponent",
+    "function/index.html#static-function-sampleOneComponent",
+    "<span>sampleOneComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleOne/_ng.component.js</span>",
+    "function"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.sampleone/_ng.js~sampleonemodule",
+    "variable/index.html#static-variable-sampleOneModule",
+    "<span>sampleOneModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleOne/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/components/component.sampletwo/_ng.js~sampletwomodule",
+    "variable/index.html#static-variable-sampleTwoModule",
+    "<span>sampleTwoModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleTwo/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/services/_ng.services.js~servicesmodule",
+    "variable/index.html#static-variable-servicesModule",
+    "<span>servicesModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/services/_ng.services.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/services/factory.user/_ng.js~usermodule",
     "variable/index.html#static-variable-userModule",
-    "<span>userModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/common/user/user.js</span>",
+    "<span>userModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/services/factory.user/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.contact/_ng.js~viewcontactmodule",
+    "variable/index.html#static-variable-viewContactModule",
+    "<span>viewContactModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.contact/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.about/_ng.js~viewhomemodule",
+    "variable/index.html#static-variable-viewHomeModule",
+    "<span>viewHomeModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.about/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.home/_ng.js~viewhomemodule",
+    "variable/index.html#static-variable-viewHomeModule",
+    "<span>viewHomeModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.home/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.johnpapa/_ng.js~viewjohnpapa",
+    "variable/index.html#static-variable-viewJohnPapa",
+    "<span>viewJohnPapa</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.johnPapa/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/views/view.shared/_ng.js~viewsharedmodule",
+    "variable/index.html#static-variable-viewSharedModule",
+    "<span>viewSharedModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.shared/_ng.js</span>",
+    "variable"
+  ],
+  [
+    "angular-jspm-starter/app/views/_ng.views.js~viewsmodule",
+    "variable/index.html#static-variable-viewsModule",
+    "<span>viewsModule</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/_ng.views.js</span>",
     "variable"
   ],
   [
@@ -438,195 +612,651 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "app/app.component.js",
-    "file/app/app.component.js.html",
-    "app/app.component.js",
-    "file"
-  ],
-  [
     "app/app.js",
     "file/app/app.js.html",
     "app/app.js",
     "file"
   ],
   [
-    "app/common/common.js",
-    "file/app/common/common.js.html",
-    "app/common/common.js",
+    "app/components/_component.app/_ng.js",
+    "file/app/components/_component.app/_ng.js.html",
+    "app/components/_component.app/_ng.js",
     "file"
   ],
   [
-    "app/common/hero/hero.component.js",
-    "file/app/common/hero/hero.component.js.html",
-    "app/common/hero/hero.component.js",
+    "app/components/_component.app/app.component.js",
+    "file/app/components/_component.app/app.component.js.html",
+    "app/components/_component.app/app.component.js",
     "file"
   ],
   [
-    "app/common/hero/hero.controller.js",
-    "file/app/common/hero/hero.controller.js.html",
-    "app/common/hero/hero.controller.js",
+    "app/components/_ng.components.js",
+    "file/app/components/_ng.components.js.html",
+    "app/components/_ng.components.js",
     "file"
   ],
   [
-    "app/common/hero/hero.controller.js~herocontroller#constructor",
-    "class/app/common/hero/hero.controller.js~HeroController.html#instance-constructor-constructor",
-    "app/common/hero/hero.controller.js~HeroController#constructor",
+    "app/components/component.hero/_ng.js",
+    "file/app/components/component.hero/_ng.js.html",
+    "app/components/component.hero/_ng.js",
+    "file"
+  ],
+  [
+    "app/components/component.hero/hero.component.js",
+    "file/app/components/component.hero/hero.component.js.html",
+    "app/components/component.hero/hero.component.js",
+    "file"
+  ],
+  [
+    "app/components/component.hero/hero.controller.js",
+    "file/app/components/component.hero/hero.controller.js.html",
+    "app/components/component.hero/hero.controller.js",
+    "file"
+  ],
+  [
+    "app/components/component.hero/hero.controller.js~herocontroller#constructor",
+    "class/app/components/component.hero/hero.controller.js~HeroController.html#instance-constructor-constructor",
+    "app/components/component.hero/hero.controller.js~HeroController#constructor",
     "method"
   ],
   [
-    "app/common/hero/hero.controller.js~herocontroller#name",
-    "class/app/common/hero/hero.controller.js~HeroController.html#instance-member-name",
-    "app/common/hero/hero.controller.js~HeroController#name",
+    "app/components/component.hero/hero.controller.js~herocontroller#name",
+    "class/app/components/component.hero/hero.controller.js~HeroController.html#instance-member-name",
+    "app/components/component.hero/hero.controller.js~HeroController#name",
     "member"
   ],
   [
-    "app/common/hero/hero.js",
-    "file/app/common/hero/hero.js.html",
-    "app/common/hero/hero.js",
+    "app/components/component.hero/hero.spec.js",
+    "file/app/components/component.hero/hero.spec.js.html",
+    "app/components/component.hero/hero.spec.js",
     "file"
   ],
   [
-    "app/common/hero/hero.spec.js",
-    "file/app/common/hero/hero.spec.js.html",
-    "app/common/hero/hero.spec.js",
+    "app/components/component.navbar/_ng.js",
+    "file/app/components/component.navbar/_ng.js.html",
+    "app/components/component.navbar/_ng.js",
     "file"
   ],
   [
-    "app/common/navbar/navbar.component.js",
-    "file/app/common/navbar/navbar.component.js.html",
-    "app/common/navbar/navbar.component.js",
+    "app/components/component.navbar/navbar.component.js",
+    "file/app/components/component.navbar/navbar.component.js.html",
+    "app/components/component.navbar/navbar.component.js",
     "file"
   ],
   [
-    "app/common/navbar/navbar.controller.js",
-    "file/app/common/navbar/navbar.controller.js.html",
-    "app/common/navbar/navbar.controller.js",
+    "app/components/component.navbar/navbar.controller.js",
+    "file/app/components/component.navbar/navbar.controller.js.html",
+    "app/components/component.navbar/navbar.controller.js",
     "file"
   ],
   [
-    "app/common/navbar/navbar.controller.js~navbarcontroller#constructor",
-    "class/app/common/navbar/navbar.controller.js~NavbarController.html#instance-constructor-constructor",
-    "app/common/navbar/navbar.controller.js~NavbarController#constructor",
+    "app/components/component.navbar/navbar.controller.js~navbarcontroller#constructor",
+    "class/app/components/component.navbar/navbar.controller.js~NavbarController.html#instance-constructor-constructor",
+    "app/components/component.navbar/navbar.controller.js~NavbarController#constructor",
     "method"
   ],
   [
-    "app/common/navbar/navbar.controller.js~navbarcontroller#name",
-    "class/app/common/navbar/navbar.controller.js~NavbarController.html#instance-member-name",
-    "app/common/navbar/navbar.controller.js~NavbarController#name",
+    "app/components/component.navbar/navbar.controller.js~navbarcontroller#name",
+    "class/app/components/component.navbar/navbar.controller.js~NavbarController.html#instance-member-name",
+    "app/components/component.navbar/navbar.controller.js~NavbarController#name",
     "member"
   ],
   [
-    "app/common/navbar/navbar.js",
-    "file/app/common/navbar/navbar.js.html",
-    "app/common/navbar/navbar.js",
+    "app/components/component.navbar/navbar.spec.js",
+    "file/app/components/component.navbar/navbar.spec.js.html",
+    "app/components/component.navbar/navbar.spec.js",
     "file"
   ],
   [
-    "app/common/navbar/navbar.spec.js",
-    "file/app/common/navbar/navbar.spec.js.html",
-    "app/common/navbar/navbar.spec.js",
+    "app/components/component.sampleone/_ng.component.js",
+    "file/app/components/component.sampleOne/_ng.component.js.html",
+    "app/components/component.sampleOne/_ng.component.js",
     "file"
   ],
   [
-    "app/common/user/user-test.js",
-    "file/app/common/user/user-test.js.html",
-    "app/common/user/user-test.js",
+    "app/components/component.sampleone/_ng.js",
+    "file/app/components/component.sampleOne/_ng.js.html",
+    "app/components/component.sampleOne/_ng.js",
     "file"
   ],
   [
-    "app/common/user/user.factory.js",
-    "file/app/common/user/user.factory.js.html",
-    "app/common/user/user.factory.js",
+    "app/components/component.sampleone/model/sampleone.model.js",
+    "file/app/components/component.sampleOne/model/sampleOne.model.js.html",
+    "app/components/component.sampleOne/model/sampleOne.model.js",
     "file"
   ],
   [
-    "app/common/user/user.js",
-    "file/app/common/user/user.js.html",
-    "app/common/user/user.js",
-    "file"
-  ],
-  [
-    "app/common/user/user.spec.js",
-    "file/app/common/user/user.spec.js.html",
-    "app/common/user/user.spec.js",
-    "file"
-  ],
-  [
-    "app/components/about/about.component.js",
-    "file/app/components/about/about.component.js.html",
-    "app/components/about/about.component.js",
-    "file"
-  ],
-  [
-    "app/components/about/about.controller.js",
-    "file/app/components/about/about.controller.js.html",
-    "app/components/about/about.controller.js",
-    "file"
-  ],
-  [
-    "app/components/about/about.controller.js~aboutcontroller#constructor",
-    "class/app/components/about/about.controller.js~AboutController.html#instance-constructor-constructor",
-    "app/components/about/about.controller.js~AboutController#constructor",
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#constructor",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-constructor-constructor",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#constructor",
     "method"
   ],
   [
-    "app/components/about/about.controller.js~aboutcontroller#name",
-    "class/app/components/about/about.controller.js~AboutController.html#instance-member-name",
-    "app/components/about/about.controller.js~AboutController#name",
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#id",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-member-id",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#id",
     "member"
   ],
   [
-    "app/components/about/about.js",
-    "file/app/components/about/about.js.html",
-    "app/components/about/about.js",
-    "file"
-  ],
-  [
-    "app/components/about/about.spec.js",
-    "file/app/components/about/about.spec.js.html",
-    "app/components/about/about.spec.js",
-    "file"
-  ],
-  [
-    "app/components/components.js",
-    "file/app/components/components.js.html",
-    "app/components/components.js",
-    "file"
-  ],
-  [
-    "app/components/home/home.component.js",
-    "file/app/components/home/home.component.js.html",
-    "app/components/home/home.component.js",
-    "file"
-  ],
-  [
-    "app/components/home/home.controller.js",
-    "file/app/components/home/home.controller.js.html",
-    "app/components/home/home.controller.js",
-    "file"
-  ],
-  [
-    "app/components/home/home.controller.js~homecontroller#constructor",
-    "class/app/components/home/home.controller.js~HomeController.html#instance-constructor-constructor",
-    "app/components/home/home.controller.js~HomeController#constructor",
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#publisangulares6class",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-method-publisAngularES6Class",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#publisAngularES6Class",
     "method"
   ],
   [
-    "app/components/home/home.controller.js~homecontroller#name",
-    "class/app/components/home/home.controller.js~HomeController.html#instance-member-name",
-    "app/components/home/home.controller.js~HomeController#name",
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#publishes6",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-method-publishEs6",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#publishEs6",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#publishjohnpapa",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-method-publishJohnPapa",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#publishJohnPapa",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#subscribeangulares6class",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-method-subscribeAngularES6Class",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#subscribeAngularES6Class",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#subscribees6",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-method-subscribeES6",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#subscribeES6",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#subscribejohnpapa",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-method-subscribeJohnPapa",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#subscribeJohnPapa",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#subscriberangulares6class",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-member-subscriberAngularES6Class",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#subscriberAngularES6Class",
     "member"
   ],
   [
-    "app/components/home/home.js",
-    "file/app/components/home/home.js.html",
-    "app/components/home/home.js",
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#subscriberes6",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-member-subscriberES6",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#subscriberES6",
+    "member"
+  ],
+  [
+    "app/components/component.sampleone/model/sampleone.model.js~sampleonemodel#subscriberjohnpapa",
+    "class/app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel.html#instance-member-subscriberJohnPapa",
+    "app/components/component.sampleOne/model/sampleOne.model.js~SampleOneModel#subscriberJohnPapa",
+    "member"
+  ],
+  [
+    "app/components/component.sampleone/model/sampleone.model.spec.js",
+    "file/app/components/component.sampleOne/model/sampleOne.model.spec.js.html",
+    "app/components/component.sampleOne/model/sampleOne.model.spec.js",
     "file"
   ],
   [
-    "app/components/home/home.spec.js",
-    "file/app/components/home/home.spec.js.html",
-    "app/components/home/home.spec.js",
+    "app/components/component.sampleone/sampleone.controller.js",
+    "file/app/components/component.sampleOne/sampleOne.controller.js.html",
+    "app/components/component.sampleOne/sampleOne.controller.js",
+    "file"
+  ],
+  [
+    "app/components/component.sampleone/sampleone.controller.js~sampleonecontroller#constructor",
+    "class/app/components/component.sampleOne/sampleOne.controller.js~SampleOneController.html#instance-constructor-constructor",
+    "app/components/component.sampleOne/sampleOne.controller.js~SampleOneController#constructor",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/sampleone.controller.js~sampleonecontroller#model",
+    "class/app/components/component.sampleOne/sampleOne.controller.js~SampleOneController.html#instance-member-model",
+    "app/components/component.sampleOne/sampleOne.controller.js~SampleOneController#model",
+    "member"
+  ],
+  [
+    "app/components/component.sampleone/sampleone.controller.js~sampleonecontroller#name",
+    "class/app/components/component.sampleOne/sampleOne.controller.js~SampleOneController.html#instance-member-name",
+    "app/components/component.sampleOne/sampleOne.controller.js~SampleOneController#name",
+    "member"
+  ],
+  [
+    "app/components/component.sampleone/sampleone.controller.js~sampleonecontroller#onclasschange",
+    "class/app/components/component.sampleOne/sampleOne.controller.js~SampleOneController.html#instance-method-onClassChange",
+    "app/components/component.sampleOne/sampleOne.controller.js~SampleOneController#onClassChange",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/sampleone.controller.js~sampleonecontroller#ones6change",
+    "class/app/components/component.sampleOne/sampleOne.controller.js~SampleOneController.html#instance-method-onES6Change",
+    "app/components/component.sampleOne/sampleOne.controller.js~SampleOneController#onES6Change",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/sampleone.controller.js~sampleonecontroller#onpapachange",
+    "class/app/components/component.sampleOne/sampleOne.controller.js~SampleOneController.html#instance-method-onPapaChange",
+    "app/components/component.sampleOne/sampleOne.controller.js~SampleOneController#onPapaChange",
+    "method"
+  ],
+  [
+    "app/components/component.sampleone/sampleone.spec.js",
+    "file/app/components/component.sampleOne/sampleOne.spec.js.html",
+    "app/components/component.sampleOne/sampleOne.spec.js",
+    "file"
+  ],
+  [
+    "app/components/component.sampletwo/_ng.js",
+    "file/app/components/component.sampleTwo/_ng.js.html",
+    "app/components/component.sampleTwo/_ng.js",
+    "file"
+  ],
+  [
+    "app/components/component.sampletwo/sampletwo.component.js",
+    "file/app/components/component.sampleTwo/sampleTwo.component.js.html",
+    "app/components/component.sampleTwo/sampleTwo.component.js",
+    "file"
+  ],
+  [
+    "app/components/component.sampletwo/sampletwo.controller.js",
+    "file/app/components/component.sampleTwo/sampleTwo.controller.js.html",
+    "app/components/component.sampleTwo/sampleTwo.controller.js",
+    "file"
+  ],
+  [
+    "app/components/component.sampletwo/sampletwo.controller.js~sampletwocontroller#constructor",
+    "class/app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController.html#instance-constructor-constructor",
+    "app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController#constructor",
+    "method"
+  ],
+  [
+    "app/components/component.sampletwo/sampletwo.controller.js~sampletwocontroller#name",
+    "class/app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController.html#instance-member-name",
+    "app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController#name",
+    "member"
+  ],
+  [
+    "app/components/component.sampletwo/sampletwo.controller.js~sampletwocontroller#onclasschange",
+    "class/app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController.html#instance-method-onClassChange",
+    "app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController#onClassChange",
+    "method"
+  ],
+  [
+    "app/components/component.sampletwo/sampletwo.controller.js~sampletwocontroller#ones6change",
+    "class/app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController.html#instance-method-onES6Change",
+    "app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController#onES6Change",
+    "method"
+  ],
+  [
+    "app/components/component.sampletwo/sampletwo.controller.js~sampletwocontroller#onpapachange",
+    "class/app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController.html#instance-method-onPapaChange",
+    "app/components/component.sampleTwo/sampleTwo.controller.js~SampleTwoController#onPapaChange",
+    "method"
+  ],
+  [
+    "app/components/component.sampletwo/sampletwo.spec.js",
+    "file/app/components/component.sampleTwo/sampleTwo.spec.js.html",
+    "app/components/component.sampleTwo/sampleTwo.spec.js",
+    "file"
+  ],
+  [
+    "app/data.access.layers/_ng.dal.js",
+    "file/app/data.access.layers/_ng.dal.js.html",
+    "app/data.access.layers/_ng.dal.js",
+    "file"
+  ],
+  [
+    "app/data.access.layers/dal.noaa/_ng.js",
+    "file/app/data.access.layers/dal.noaa/_ng.js.html",
+    "app/data.access.layers/dal.noaa/_ng.js",
+    "file"
+  ],
+  [
+    "app/layouts/_ng.layouts.js",
+    "file/app/layouts/_ng.layouts.js.html",
+    "app/layouts/_ng.layouts.js",
+    "file"
+  ],
+  [
+    "app/layouts/layout.home/_ng.js",
+    "file/app/layouts/layout.home/_ng.js.html",
+    "app/layouts/layout.home/_ng.js",
+    "file"
+  ],
+  [
+    "app/layouts/layout.home/_routes.js",
+    "file/app/layouts/layout.home/_routes.js.html",
+    "app/layouts/layout.home/_routes.js",
+    "file"
+  ],
+  [
+    "app/layouts/layout.support/_ng.js",
+    "file/app/layouts/layout.support/_ng.js.html",
+    "app/layouts/layout.support/_ng.js",
+    "file"
+  ],
+  [
+    "app/layouts/layout.support/_routes.js",
+    "file/app/layouts/layout.support/_routes.js.html",
+    "app/layouts/layout.support/_routes.js",
+    "file"
+  ],
+  [
+    "app/services/_ng.services.js",
+    "file/app/services/_ng.services.js.html",
+    "app/services/_ng.services.js",
+    "file"
+  ],
+  [
+    "app/services/factory.angulares6class/_ng.js",
+    "file/app/services/factory.angularES6Class/_ng.js.html",
+    "app/services/factory.angularES6Class/_ng.js",
+    "file"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js",
+    "file/app/services/factory.angularES6Class/angularES6Class.factory.js.html",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js",
+    "file"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory#constructor",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#instance-constructor-constructor",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#constructor",
+    "method"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory#data",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#instance-set-data",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#data",
+    "member"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory#data",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#instance-get-data",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#data",
+    "member"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory#notify",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#instance-method-notify",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#notify",
+    "method"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory#publish",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#instance-method-publish",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#publish",
+    "method"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory#subscribe",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#instance-method-subscribe",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#subscribe",
+    "method"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory#subscribers",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#instance-member-subscribers",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#subscribers",
+    "member"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory#unsubscribe",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#instance-method-unsubscribe",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#unsubscribe",
+    "method"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.js~sampleclassfactory.factory",
+    "class/app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.html#static-method-factory",
+    "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.factory",
+    "method"
+  ],
+  [
+    "app/services/factory.angulares6class/angulares6class.factory.spec.js",
+    "file/app/services/factory.angularES6Class/angularES6Class.factory.spec.js.html",
+    "app/services/factory.angularES6Class/angularES6Class.factory.spec.js",
+    "file"
+  ],
+  [
+    "app/services/factory.es6/es6.factory.js",
+    "file/app/services/factory.es6/es6.factory.js.html",
+    "app/services/factory.es6/es6.factory.js",
+    "file"
+  ],
+  [
+    "app/services/factory.es6/es6.factory.spec.js",
+    "file/app/services/factory.es6/es6.factory.spec.js.html",
+    "app/services/factory.es6/es6.factory.spec.js",
+    "file"
+  ],
+  [
+    "app/services/factory.johnpapa/_ng.js",
+    "file/app/services/factory.johnPapa/_ng.js.html",
+    "app/services/factory.johnPapa/_ng.js",
+    "file"
+  ],
+  [
+    "app/services/factory.johnpapa/johnpapa.factory.js",
+    "file/app/services/factory.johnPapa/johnPapa.factory.js.html",
+    "app/services/factory.johnPapa/johnPapa.factory.js",
+    "file"
+  ],
+  [
+    "app/services/factory.johnpapa/johnpapa.factory.spec.js",
+    "file/app/services/factory.johnPapa/johnPapa.factory.spec.js.html",
+    "app/services/factory.johnPapa/johnPapa.factory.spec.js",
+    "file"
+  ],
+  [
+    "app/services/factory.user/_ng.js",
+    "file/app/services/factory.user/_ng.js.html",
+    "app/services/factory.user/_ng.js",
+    "file"
+  ],
+  [
+    "app/services/factory.user/user.factory.js",
+    "file/app/services/factory.user/user.factory.js.html",
+    "app/services/factory.user/user.factory.js",
+    "file"
+  ],
+  [
+    "app/services/factory.user/user.spec.js",
+    "file/app/services/factory.user/user.spec.js.html",
+    "app/services/factory.user/user.spec.js",
+    "file"
+  ],
+  [
+    "app/services/factory.user/user.test.js",
+    "file/app/services/factory.user/user.test.js.html",
+    "app/services/factory.user/user.test.js",
+    "file"
+  ],
+  [
+    "app/views/_ng.views.js",
+    "file/app/views/_ng.views.js.html",
+    "app/views/_ng.views.js",
+    "file"
+  ],
+  [
+    "app/views/view.about/_ng.js",
+    "file/app/views/view.about/_ng.js.html",
+    "app/views/view.about/_ng.js",
+    "file"
+  ],
+  [
+    "app/views/view.about/_routes.js",
+    "file/app/views/view.about/_routes.js.html",
+    "app/views/view.about/_routes.js",
+    "file"
+  ],
+  [
+    "app/views/view.about/about.controller.js",
+    "file/app/views/view.about/about.controller.js.html",
+    "app/views/view.about/about.controller.js",
+    "file"
+  ],
+  [
+    "app/views/view.about/about.controller.js~aboutcontroller#constructor",
+    "class/app/views/view.about/about.controller.js~AboutController.html#instance-constructor-constructor",
+    "app/views/view.about/about.controller.js~AboutController#constructor",
+    "method"
+  ],
+  [
+    "app/views/view.about/about.controller.js~aboutcontroller#init",
+    "class/app/views/view.about/about.controller.js~AboutController.html#instance-method-init",
+    "app/views/view.about/about.controller.js~AboutController#init",
+    "method"
+  ],
+  [
+    "app/views/view.about/about.controller.js~aboutcontroller#name",
+    "class/app/views/view.about/about.controller.js~AboutController.html#instance-member-name",
+    "app/views/view.about/about.controller.js~AboutController#name",
+    "member"
+  ],
+  [
+    "app/views/view.about/about.controller.js~aboutcontroller#sendtoconsole",
+    "class/app/views/view.about/about.controller.js~AboutController.html#instance-method-sendToConsole",
+    "app/views/view.about/about.controller.js~AboutController#sendToConsole",
+    "method"
+  ],
+  [
+    "app/views/view.about/about.spec.js",
+    "file/app/views/view.about/about.spec.js.html",
+    "app/views/view.about/about.spec.js",
+    "file"
+  ],
+  [
+    "app/views/view.contact/_ng.js",
+    "file/app/views/view.contact/_ng.js.html",
+    "app/views/view.contact/_ng.js",
+    "file"
+  ],
+  [
+    "app/views/view.contact/_routes.js",
+    "file/app/views/view.contact/_routes.js.html",
+    "app/views/view.contact/_routes.js",
+    "file"
+  ],
+  [
+    "app/views/view.contact/contact.controller.js",
+    "file/app/views/view.contact/contact.controller.js.html",
+    "app/views/view.contact/contact.controller.js",
+    "file"
+  ],
+  [
+    "app/views/view.contact/contact.controller.js~contactcontroller#constructor",
+    "class/app/views/view.contact/contact.controller.js~ContactController.html#instance-constructor-constructor",
+    "app/views/view.contact/contact.controller.js~ContactController#constructor",
+    "method"
+  ],
+  [
+    "app/views/view.contact/contact.controller.js~contactcontroller#name",
+    "class/app/views/view.contact/contact.controller.js~ContactController.html#instance-member-name",
+    "app/views/view.contact/contact.controller.js~ContactController#name",
+    "member"
+  ],
+  [
+    "app/views/view.contact/contact.spec.js",
+    "file/app/views/view.contact/contact.spec.js.html",
+    "app/views/view.contact/contact.spec.js",
+    "file"
+  ],
+  [
+    "app/views/view.home/_ng.js",
+    "file/app/views/view.home/_ng.js.html",
+    "app/views/view.home/_ng.js",
+    "file"
+  ],
+  [
+    "app/views/view.home/_routes.js",
+    "file/app/views/view.home/_routes.js.html",
+    "app/views/view.home/_routes.js",
+    "file"
+  ],
+  [
+    "app/views/view.home/home.controller.js",
+    "file/app/views/view.home/home.controller.js.html",
+    "app/views/view.home/home.controller.js",
+    "file"
+  ],
+  [
+    "app/views/view.home/home.controller.js~homecontroller#constructor",
+    "class/app/views/view.home/home.controller.js~HomeController.html#instance-constructor-constructor",
+    "app/views/view.home/home.controller.js~HomeController#constructor",
+    "method"
+  ],
+  [
+    "app/views/view.home/home.controller.js~homecontroller#name",
+    "class/app/views/view.home/home.controller.js~HomeController.html#instance-member-name",
+    "app/views/view.home/home.controller.js~HomeController#name",
+    "member"
+  ],
+  [
+    "app/views/view.home/home.spec.js",
+    "file/app/views/view.home/home.spec.js.html",
+    "app/views/view.home/home.spec.js",
+    "file"
+  ],
+  [
+    "app/views/view.johnpapa/_ng.js",
+    "file/app/views/view.johnPapa/_ng.js.html",
+    "app/views/view.johnPapa/_ng.js",
+    "file"
+  ],
+  [
+    "app/views/view.johnpapa/_routes.js",
+    "file/app/views/view.johnPapa/_routes.js.html",
+    "app/views/view.johnPapa/_routes.js",
+    "file"
+  ],
+  [
+    "app/views/view.johnpapa/johnpapa.controller.js",
+    "file/app/views/view.johnPapa/johnPapa.controller.js.html",
+    "app/views/view.johnPapa/johnPapa.controller.js",
+    "file"
+  ],
+  [
+    "app/views/view.johnpapa/johnpapa.spec.js",
+    "file/app/views/view.johnPapa/johnPapa.spec.js.html",
+    "app/views/view.johnPapa/johnPapa.spec.js",
+    "file"
+  ],
+  [
+    "app/views/view.shared/_ng.js",
+    "file/app/views/view.shared/_ng.js.html",
+    "app/views/view.shared/_ng.js",
+    "file"
+  ],
+  [
+    "app/views/view.shared/_routes.js",
+    "file/app/views/view.shared/_routes.js.html",
+    "app/views/view.shared/_routes.js",
+    "file"
+  ],
+  [
+    "app/views/view.shared/shared.controller.js",
+    "file/app/views/view.shared/shared.controller.js.html",
+    "app/views/view.shared/shared.controller.js",
+    "file"
+  ],
+  [
+    "app/views/view.shared/shared.controller.js~sharedcontroller#constructor",
+    "class/app/views/view.shared/shared.controller.js~SharedController.html#instance-constructor-constructor",
+    "app/views/view.shared/shared.controller.js~SharedController#constructor",
+    "method"
+  ],
+  [
+    "app/views/view.shared/shared.controller.js~sharedcontroller#name",
+    "class/app/views/view.shared/shared.controller.js~SharedController.html#instance-member-name",
+    "app/views/view.shared/shared.controller.js~SharedController#name",
+    "member"
+  ],
+  [
+    "app/views/view.shared/shared.spec.js",
+    "file/app/views/view.shared/shared.spec.js.html",
+    "app/views/view.shared/shared.spec.js",
     "file"
   ]
 ]

@@ -3,7 +3,7 @@
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import test from './test/gulpFile';
-import common from './common/gulpFile';
+import esDoc from './esDoc/gulpFile';
 import develop from './develop/gulpFile';
 import production from './production/gulpFile';
 import generator from './generator/gulpFile';
@@ -23,9 +23,9 @@ test(gulp, plugins);
 styles(gulp, plugins);
 
 /**
- * common
+ * esDoc
  */
-common(gulp, plugins);
+esDoc(gulp, plugins);
 
 /**
  * develop

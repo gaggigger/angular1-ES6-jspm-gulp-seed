@@ -1,0 +1,995 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "angular",
+            "range": [
+              7,
+              14
+            ],
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 7
+              },
+              "end": {
+                "line": 1,
+                "column": 14
+              }
+            }
+          },
+          "range": [
+            7,
+            14
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 7
+            },
+            "end": {
+              "line": 1,
+              "column": 14
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "angular",
+        "raw": "'angular'",
+        "range": [
+          20,
+          29
+        ],
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 20
+          },
+          "end": {
+            "line": 1,
+            "column": 29
+          }
+        }
+      },
+      "range": [
+        0,
+        30
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "SampleClassFactory",
+            "range": [
+              38,
+              56
+            ],
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 7
+              },
+              "end": {
+                "line": 2,
+                "column": 25
+              }
+            }
+          },
+          "range": [
+            38,
+            56
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 7
+            },
+            "end": {
+              "line": 2,
+              "column": 25
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./angularES6Class.factory",
+        "raw": "'./angularES6Class.factory'",
+        "range": [
+          62,
+          89
+        ],
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 31
+          },
+          "end": {
+            "line": 2,
+            "column": 58
+          }
+        }
+      },
+      "range": [
+        31,
+        90
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "MemberExpression",
+            "computed": false,
+            "object": {
+              "type": "Identifier",
+              "name": "SampleClassFactory",
+              "range": [
+                92,
+                110
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 0
+                },
+                "end": {
+                  "line": 4,
+                  "column": 18
+                }
+              }
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "factory",
+              "range": [
+                111,
+                118
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 19
+                },
+                "end": {
+                  "line": 4,
+                  "column": 26
+                }
+              }
+            },
+            "range": [
+              92,
+              118
+            ],
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 0
+              },
+              "end": {
+                "line": 4,
+                "column": 26
+              }
+            }
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "$inject",
+            "range": [
+              119,
+              126
+            ],
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 27
+              },
+              "end": {
+                "line": 4,
+                "column": 34
+              }
+            }
+          },
+          "range": [
+            92,
+            126
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 4,
+              "column": 34
+            }
+          }
+        },
+        "right": {
+          "type": "ArrayExpression",
+          "elements": [
+            {
+              "type": "Literal",
+              "value": "$log",
+              "raw": "'$log'",
+              "range": [
+                130,
+                136
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 38
+                },
+                "end": {
+                  "line": 4,
+                  "column": 44
+                }
+              }
+            },
+            {
+              "type": "Literal",
+              "value": "$timeout",
+              "raw": "'$timeout'",
+              "range": [
+                138,
+                148
+              ],
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 46
+                },
+                "end": {
+                  "line": 4,
+                  "column": 56
+                }
+              }
+            }
+          ],
+          "range": [
+            129,
+            149
+          ],
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 37
+            },
+            "end": {
+              "line": 4,
+              "column": 57
+            }
+          }
+        },
+        "range": [
+          92,
+          149
+        ],
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 57
+          }
+        }
+      },
+      "range": [
+        92,
+        150
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": "Identifier",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "sampleClassModule",
+            "range": [
+              156,
+              173
+            ],
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 4
+              },
+              "end": {
+                "line": 6,
+                "column": 21
+              }
+            }
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "angular",
+                    "range": [
+                      176,
+                      183
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 24
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 31
+                      }
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "module",
+                    "range": [
+                      184,
+                      190
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 38
+                      }
+                    }
+                  },
+                  "range": [
+                    176,
+                    190
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 38
+                    }
+                  }
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "value": "factory.angularES6Class",
+                    "raw": "'factory.angularES6Class'",
+                    "range": [
+                      191,
+                      216
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 39
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 64
+                      }
+                    }
+                  },
+                  {
+                    "type": "ArrayExpression",
+                    "elements": [],
+                    "range": [
+                      218,
+                      220
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 66
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 68
+                      }
+                    }
+                  }
+                ],
+                "range": [
+                  176,
+                  221
+                ],
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 24
+                  },
+                  "end": {
+                    "line": 6,
+                    "column": 69
+                  }
+                }
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "factory",
+                "range": [
+                  227,
+                  234
+                ],
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 5
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 12
+                  }
+                }
+              },
+              "range": [
+                176,
+                234
+              ],
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 24
+                },
+                "end": {
+                  "line": 7,
+                  "column": 12
+                }
+              }
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "angularES6Class",
+                "raw": "'angularES6Class'",
+                "range": [
+                  235,
+                  252
+                ],
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 13
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 30
+                  }
+                }
+              },
+              {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "SampleClassFactory",
+                  "range": [
+                    254,
+                    272
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 32
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 50
+                    }
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "factory",
+                  "range": [
+                    273,
+                    280
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 51
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 58
+                    }
+                  }
+                },
+                "range": [
+                  254,
+                  280
+                ],
+                "loc": {
+                  "start": {
+                    "line": 7,
+                    "column": 32
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 58
+                  }
+                }
+              }
+            ],
+            "range": [
+              176,
+              281
+            ],
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 24
+              },
+              "end": {
+                "line": 7,
+                "column": 59
+              }
+            }
+          },
+          "range": [
+            156,
+            281
+          ],
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 4
+            },
+            "end": {
+              "line": 7,
+              "column": 59
+            }
+          }
+        }
+      ],
+      "kind": "let",
+      "range": [
+        152,
+        282
+      ],
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 60
+        }
+      },
+      "name": "_",
+      "leadingComments": [],
+      "trailingComments": []
+    },
+    {
+      "type": "Identifier",
+      "declaration": {
+        "type": "Identifier",
+        "name": "sampleClassModule",
+        "range": [
+          299,
+          316
+        ],
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 15
+          },
+          "end": {
+            "line": 9,
+            "column": 32
+          }
+        }
+      },
+      "range": [
+        284,
+        317
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 0
+        }
+      },
+      "name": "_",
+      "leadingComments": [],
+      "trailingComments": []
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "sampleClassModule",
+              "range": [
+                156,
+                173
+              ],
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 4
+                },
+                "end": {
+                  "line": 6,
+                  "column": 21
+                }
+              }
+            },
+            "init": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "angular",
+                      "range": [
+                        176,
+                        183
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 24
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 31
+                        }
+                      }
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "module",
+                      "range": [
+                        184,
+                        190
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 32
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 38
+                        }
+                      }
+                    },
+                    "range": [
+                      176,
+                      190
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 6,
+                        "column": 24
+                      },
+                      "end": {
+                        "line": 6,
+                        "column": 38
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "factory.angularES6Class",
+                      "raw": "'factory.angularES6Class'",
+                      "range": [
+                        191,
+                        216
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 39
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 64
+                        }
+                      }
+                    },
+                    {
+                      "type": "ArrayExpression",
+                      "elements": [],
+                      "range": [
+                        218,
+                        220
+                      ],
+                      "loc": {
+                        "start": {
+                          "line": 6,
+                          "column": 66
+                        },
+                        "end": {
+                          "line": 6,
+                          "column": 68
+                        }
+                      }
+                    }
+                  ],
+                  "range": [
+                    176,
+                    221
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 69
+                    }
+                  }
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "factory",
+                  "range": [
+                    227,
+                    234
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 12
+                    }
+                  }
+                },
+                "range": [
+                  176,
+                  234
+                ],
+                "loc": {
+                  "start": {
+                    "line": 6,
+                    "column": 24
+                  },
+                  "end": {
+                    "line": 7,
+                    "column": 12
+                  }
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "angularES6Class",
+                  "raw": "'angularES6Class'",
+                  "range": [
+                    235,
+                    252
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 13
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 30
+                    }
+                  }
+                },
+                {
+                  "type": "MemberExpression",
+                  "computed": false,
+                  "object": {
+                    "type": "Identifier",
+                    "name": "SampleClassFactory",
+                    "range": [
+                      254,
+                      272
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 7,
+                        "column": 32
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 50
+                      }
+                    }
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "factory",
+                    "range": [
+                      273,
+                      280
+                    ],
+                    "loc": {
+                      "start": {
+                        "line": 7,
+                        "column": 51
+                      },
+                      "end": {
+                        "line": 7,
+                        "column": 58
+                      }
+                    }
+                  },
+                  "range": [
+                    254,
+                    280
+                  ],
+                  "loc": {
+                    "start": {
+                      "line": 7,
+                      "column": 32
+                    },
+                    "end": {
+                      "line": 7,
+                      "column": 58
+                    }
+                  }
+                }
+              ],
+              "range": [
+                176,
+                281
+              ],
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 24
+                },
+                "end": {
+                  "line": 7,
+                  "column": 59
+                }
+              }
+            },
+            "range": [
+              156,
+              281
+            ],
+            "loc": {
+              "start": {
+                "line": 6,
+                "column": 4
+              },
+              "end": {
+                "line": 7,
+                "column": 59
+              }
+            }
+          }
+        ],
+        "kind": "let",
+        "range": [
+          152,
+          282
+        ],
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 0
+          },
+          "end": {
+            "line": 7,
+            "column": 60
+          }
+        },
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      "range": [
+        284,
+        317
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 0
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    0,
+    317
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 10,
+      "column": 0
+    }
+  },
+  "comments": []
+}

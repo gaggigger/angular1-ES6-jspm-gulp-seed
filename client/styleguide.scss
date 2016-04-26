@@ -2,17 +2,17 @@
 @import 'scss/styleguide_helpers.scss';
 
 /* begin-scss-inject:js */
-@import 'app/components/component.hero/hero.scss';
 @import 'app/components/component.navbar/navbar.scss';
+@import 'app/components/component.hero/hero.scss';
 @import 'app/components/component.sampleOne/sampleOne.scss';
 @import 'app/components/component.sampleTwo/sampleTwo.scss';
-@import 'app/layouts/layout.support/support.scss';
 @import 'app/layouts/layout.home/home.scss';
+@import 'app/layouts/layout.support/support.scss';
 @import 'app/views/view.about/about.scss';
 @import 'app/views/view.contact/contact.scss';
 @import 'app/views/view.home/home.scss';
-@import 'app/views/view.shared/shared.scss';
 @import 'app/views/view.johnPapa/johnPapa.scss';
+@import 'app/views/view.shared/shared.scss';
 /* end-scss-inject:js */
 
 // Components

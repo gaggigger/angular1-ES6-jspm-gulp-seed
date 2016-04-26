@@ -8,7 +8,7 @@ function loadTasks(gulp, plugins) {
 
     gulp.task('esdoc', esDoc(gulp, plugins));
 
-    gulp.task('serve.esdoc', ['esdoc'], serveEsDoc(gulp, plugins));
+    gulp.task('serve.esDoc', ['esdoc'], serveEsDoc(gulp, plugins));
 
 }
 
