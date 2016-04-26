@@ -16,8 +16,8 @@ export default function(gulp, plugins) {
     return function(done) {
 
         var name = yargs.name;
-        var layout = yargs.layout;
         var route = yargs.route ? dash(yargs.route) : dash(name);
+        var redirectTo = yargs.redirectTo ? yargs.redirectTo : camel(name);
 
         if (!yargs.route) {
             LOG(COLORS.yellow(`Warning: --route=[route name] not provided. The route will be derived by the --name param.`));
@@ -32,7 +32,8 @@ export default function(gulp, plugins) {
                 name: name,
                 InitialCaseName: cap(camel(name)),
                 camelCaseName: camel(name),
-                route: route
+                route: route,
+                redirectTo: redirectTo
             }))
             .pipe(plugins.rename(function(path) {
                 path.basename = path.basename.replace('temp', name);

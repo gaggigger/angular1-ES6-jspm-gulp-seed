@@ -9,7 +9,7 @@ let layout<%= InitialCaseName %>Routes = function($stateProvider, $urlRouterProv
         .state('layout<%= InitialCaseName %>', {
             url: '/<%= route %>',
             template: template,
-            redirectTo: 'layout<%= InitialCaseName %>.<%= name %>'
+            redirectTo: 'layout<%= InitialCaseName %>.<%= redirectTo %>'
         });
 };
 

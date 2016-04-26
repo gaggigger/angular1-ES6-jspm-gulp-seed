@@ -4,7 +4,7 @@ import layout<%= InitialCaseName %>Routes from './_routes';
 
 layout<%= InitialCaseName %>Routes.$inject = ['$stateProvider', '$urlRouterProvider'];
 
-let layout<%= InitialCaseName %>Module = angular.module('layout.<%= name %>', [
+let layout<%= InitialCaseName %>Module = angular.module('layout.<%= camelCaseName %>', [
         'ui.router'
     ]).config(layout<%= InitialCaseName %>Routes);
 

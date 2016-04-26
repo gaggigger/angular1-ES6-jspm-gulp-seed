@@ -63,7 +63,7 @@ describe('<%= camelCaseName %> Layout', ()=>{
 		});
 
 		it('should have redirectTo state', ()=>{
-			expect(<%= camelCaseName %>State.redirectTo).toEqual('layout<%= InitialCaseName %>.<%= name %>');
+			expect(<%= camelCaseName %>State.redirectTo).toEqual('layout<%= InitialCaseName %>.<%= redirectTo %>');
 		});
 	});
 
