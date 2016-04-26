@@ -64,6 +64,16 @@ const paths = {
                         `${root}/docs/es6/**/*.html`,
                         `${root}/docs/es6/index.html`
           ]
+      },
+      unitcoverage: {
+          chrome: {
+              basePath:     `${root}/test-reports/coverage/chrome/`,
+              css:          `${root}/test-reports/coverage/chrome/**/*.css`,
+              html: [
+                  `${root}/test-reports/coverage/chrome/**/*.html`,
+                  `${root}/test-reports/coverage/chrome/index.html`
+              ]
+          }
       }
     },
 

@@ -3,8 +3,9 @@
 
 import path from 'path';
 import child_process from 'child_process';
-import testUnit from './tasks/test.unit';
+import unit from './tasks/unit';
 import generateUnitTestCoverageReport from './tasks/unit.coverage';
+import unitServe from './tasks/unit.serve';
 
 function loadTasks(gulp, plugins, paths) {
   'use strict';
@@ -12,8 +13,9 @@ function loadTasks(gulp, plugins, paths) {
   /**
    * The 'test.nocoverage' task run unit tests without coverage check.
    */
-  gulp.task('test.unit', ['style'], testUnit(gulp, plugins));
-  gulp.task('unit', ['test.unit'], generateUnitTestCoverageReport(gulp, plugins));
+  gulp.task('unit.nocoverage', ['style'], unit(gulp, plugins));
+  gulp.task('unit.coverage', ['unit.nocoverage'], generateUnitTestCoverageReport(gulp, plugins));
+  gulp.task('unit', ['unit.nocoverage', 'unit.coverage'], unitServe(gulp, plugins));
 
   function getProtractorBinary(binaryName){
     var winExt = /^win/.test(process.platform)? '.cmd' : '';

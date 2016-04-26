@@ -6,9 +6,9 @@ import serveEsDoc from './tasks/esDoc.serve';
 function loadTasks(gulp, plugins) {
     'use strict';
 
-    gulp.task('esdoc', esDoc(gulp, plugins));
+    gulp.task('esdoc.build', esDoc(gulp, plugins));
 
-    gulp.task('serve.esDoc', ['esdoc'], serveEsDoc(gulp, plugins));
+    gulp.task('esDoc', ['esdoc.build'], serveEsDoc(gulp, plugins));
 
 }
 

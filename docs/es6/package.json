@@ -87,6 +87,7 @@
     "karma-spec-reporter": "0.0.25",
     "mocha": "^2.4.5",
     "moment": "^2.12.0",
+    "open": "0.0.5",
     "phantomjs-prebuilt": "^2.1.6",
     "protractor": "3.2.0",
     "protractor-jasmine2-screenshot-reporter": "^0.3.0",
