@@ -1,9 +1,39 @@
-@import 'styles/global.scss';
-@import 'styles/styleguide_helpers.scss';
+@import 'scss/global.scss';
+@import 'scss/styleguide_helpers.scss';
 
 /* begin-scss-inject:js */
-@import 'app/components/about/about.scss';
-@import 'app/components/home/home.scss';
-@import 'app/common/hero/hero.scss';
-@import 'app/common/navbar/navbar.scss';
+@import 'app/components/component.hero/hero.scss';
+@import 'app/components/component.navbar/navbar.scss';
+@import 'app/components/component.sampleOne/sampleOne.scss';
+@import 'app/components/component.sampleTwo/sampleTwo.scss';
+@import 'app/layouts/layout.support/support.scss';
+@import 'app/layouts/layout.home/home.scss';
+@import 'app/views/view.about/about.scss';
+@import 'app/views/view.contact/contact.scss';
+@import 'app/views/view.home/home.scss';
+@import 'app/views/view.shared/shared.scss';
+@import 'app/views/view.johnPapa/johnPapa.scss';
 /* end-scss-inject:js */
+
+// Components
+//
+// Component files are stored locally, located at:
+// client/app/components/
+//
+// Styleguide 4.0
+
+
+// Layouts
+//
+// Layout files are stored locally, located at:
+// client/app/layouts/
+//
+// Styleguide 5.0
+
+
+// Views
+//
+// View files are stored locally, located at:
+// client/app/views/
+//
+// Styleguide 6.0
