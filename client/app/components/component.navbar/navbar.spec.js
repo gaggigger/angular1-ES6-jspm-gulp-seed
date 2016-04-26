@@ -29,8 +29,6 @@ describe('Navbar Component', ()=>{
 
 		it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
 			let controller = makeController();
-
-			// expect(controller).to.have.property('name');
 			expect(controller.name).toEqual(jasmine.anything());
 		});
 	});
@@ -40,7 +38,6 @@ describe('Navbar Component', ()=>{
 		// use Regexes to test that you are using the right bindings {{  }}
 
 		it('should layoutHome.home in template [REMOVE]', ()=>{
-			// expect(NavbarTemplate).toEqual(jasmine.stringMatching(/{{\s?layoutHome\.home\s?}}/g));
 			expect(NavbarTemplate).toEqual(jasmine.stringMatching(/\s?layoutHome\.home\s?/g));
 		});
 	});
@@ -51,17 +48,14 @@ describe('Navbar Component', ()=>{
 			let component = NavbarComponent();
 
 			it('should use the right template',()=>{
-				// expect(component.template).to.equal(NavbarTemplate);
 				expect(component.template).toEqual(NavbarTemplate);
 			});
 
 			it('should use controllerAs', ()=>{
-				// expect(component).to.have.property('controllerAs');
 				expect(component.controllerAs).toEqual(jasmine.anything());
 			});
 
 			it('should use the right controller', ()=>{
-				// expect(component.controller).to.equal(NavbarController);
 				expect(component.controller).toEqual(NavbarController);
 			});
 	});

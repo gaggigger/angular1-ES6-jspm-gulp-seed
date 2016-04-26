@@ -17,7 +17,6 @@ describe('sampleOne Component', ()=>{
 	let $scope2;
     let $timeout;
 
-	// beforeEach(angular.mock.module(services.name));
 	beforeEach(angular.mock.module(SampleOneModule.name));
 	beforeEach(angular.mock.inject(($injector)=>{
         $rootScope              = $injector.get('$rootScope');
@@ -184,8 +183,6 @@ describe('sampleOne Component', ()=>{
 
 		it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
 			let controller = makeController();
-
-			// expect(controller).to.have.property('name');
 			expect(controller.name).toEqual(jasmine.anything());
 		});
 	});
@@ -195,7 +192,6 @@ describe('sampleOne Component', ()=>{
 		// use Regexes to test that you are using the right bindings {{  }}
 
 		it('should have vm.input in template [REMOVE]', ()=>{
-			// expect(sampleOneTemplate).toEqual(jasmine.stringMatching(/{{\s?vm\.input\s?}}/g));
 			expect(sampleOneTemplate).toEqual(jasmine.stringMatching(/\s?vm\.input\s?/g));
 			expect(sampleOneTemplate).toEqual(jasmine.stringMatching(/\s?vm\.papa\s?/g));
 			expect(sampleOneTemplate).toEqual(jasmine.stringMatching(/\s?vm\.es6\s?/g));

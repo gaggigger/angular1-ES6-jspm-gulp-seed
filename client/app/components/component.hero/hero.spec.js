@@ -30,7 +30,6 @@ describe('Hero Component', ()=>{
 		it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
 			let controller = makeController();
 
-			// expect(controller).to.have.property('name');
 			expect(controller.name).toEqual(jasmine.anything());
 		});
 	});
@@ -40,7 +39,6 @@ describe('Hero Component', ()=>{
 		// use Regexes to test that you are using the right bindings {{  }}
 
 		it('should have name in template [REMOVE]', ()=>{
-			// expect(HeroTemplate).to.match(/{{\s?vm\.name\s?}}/g);
 			expect(HeroTemplate).toEqual(jasmine.stringMatching(/{{\s?vm\.name\s?}}/g));
 		});
 	});
@@ -51,17 +49,14 @@ describe('Hero Component', ()=>{
 			let component = HeroComponent();
 
 			it('should use the right template',()=>{
-				// expect(component.template).to.equal(HeroTemplate);
 				expect(component.template).toEqual(HeroTemplate);
 			});
 
 			it('should use controllerAs', ()=>{
-				// expect(component).to.have.property('controllerAs');
 				expect(component.controllerAs).toEqual(jasmine.anything());
 			});
 
 			it('should use the right controller', ()=>{
-				// expect(component.controller).to.equal(HeroController);
 				expect(component.controller).toEqual(HeroController);
 			});
 	});

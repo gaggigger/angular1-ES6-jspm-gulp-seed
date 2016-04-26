@@ -106,8 +106,6 @@ describe('Home', ()=>{
 
         it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
             let controller = makeController();
-
-            // expect(controller).to.have.property('name');
             expect(controller.name).toEqual(jasmine.anything());
         });
     });
@@ -117,7 +115,6 @@ describe('Home', ()=>{
         // use Regexes to test that you are using the right bindings {{  }}
 
         it('should have vm.sendToConsole [REMOVE]', ()=>{
-            // expect(HomeTemplate).to.match(/{{\s?vm\.name\s?}}/g);
             expect(HomeTemplate).toEqual(jasmine.stringMatching(/\s?ix\-sample\-one\s?/g));
         });
     });

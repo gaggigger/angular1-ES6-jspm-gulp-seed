@@ -129,8 +129,6 @@ describe('Shared', ()=>{
 
         it('should have a name property [REMOVE]', ()=>{ // erase me if you remove this.name from the controller
             let controller = makeController();
-
-            // expect(controller).to.have.property('name');
             expect(controller.name).toEqual(jasmine.anything());
         });
     });
@@ -140,7 +138,6 @@ describe('Shared', ()=>{
         // use Regexes to test that you are using the right bindings {{  }}
 
         it('should have ix-sample-one [REMOVE]', ()=>{
-            // expect(SharedTemplate).to.match(/{{\s?vm\.name\s?}}/g);
             expect(SharedTemplate).toEqual(jasmine.stringMatching(/\s?Shared\s?/g));
         });
     });
