@@ -1,4 +1,4 @@
-**INSTALL LODSAH**
+**INSTALL LODASH**
 
 The es6 version of lodash ( lodash-es ) is installed for the benefit 
 of loading only the methjods needed for a project, rather than 
