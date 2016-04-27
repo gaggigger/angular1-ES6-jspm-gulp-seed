@@ -1,5 +1,11 @@
+// _ map in jspm.config for convenience
+import forOwn from '_/forOwn';
+
+// imports only forOwn feature
 // import forOwn from 'lodash/lodash/forOwn';
-import { forOwn } from 'lodash/lodash';
+
+// imports entire lodash library
+// import { forOwn } from 'lodash/lodash';
 
 const LOG = new WeakMap();
 const TIMEOUT = new WeakMap();

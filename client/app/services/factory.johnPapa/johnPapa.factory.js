@@ -1,5 +1,12 @@
-// import forOwn from 'lodash/lodash/forOwn';
-import { forOwn } from 'lodash/lodash';
+// _ map in jspm.config for convenience
+import forOwn from '_/forOwn';
+
+// imports only forOwn feature
+// import forOwn from 'lodash-es/forOwn';
+
+// imports entire lodash library
+// import { forOwn } from 'lodash/lodash';
+
 
 // (function() {
 //     "use strict";

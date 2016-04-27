@@ -1,6 +1,11 @@
+// _ map in jspm.config for convenience
+import forOwn from '_/forOwn';
+
+// imports only forOwn feature
 // import forOwn from 'lodash/lodash/forOwn';
-import { forOwn } from 'lodash/lodash';
-// import _ from 'lodash/lodash';
+
+// imports entire lodash library
+// import { forOwn } from 'lodash/lodash';
 
 class ES6FactoryClass {
     constructor() {
@@ -33,9 +38,9 @@ class ES6FactoryClass {
             /**
              * Make sure subscriber is a function.
              *
-             * To minimize $digest cycles, only publish to 
-             * subscribers that do not have the 
-             * same id as the publisher. 
+             * To minimize $digest cycles, only publish to
+             * subscribers that do not have the
+             * same id as the publisher.
              */
             if (typeof subscriber === 'function' && (!id || id && id !== key)) {
                 subscriber.call(null, cache);

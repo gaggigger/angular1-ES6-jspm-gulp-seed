@@ -15,6 +15,7 @@ ___
 * [Getting Started](#getting-started)
     * [Dependencies](#dependencies)
     * [Installing](#installing)
+        * [Installing lodash-es](#installing-lodash-es)
     * [Running the app](#running-the-app)
         * [Gulp tasks](#gulp-tasks)
         * [Testing](#testing)
@@ -52,6 +53,9 @@ If this is your first time running JSPM, you'll probably run into a `warn Error 
 
 Fix this by adding your GitHub credentials to JSPM with: `jspm registry config github`.
 
+### Installing lodash-es
+ See [Install Lodash](./docs/install/LODASH.md) doc.
+
 ## Running the app
 NG6 uses Gulp to build and start the dev environment. After you have installed all dependencies you can now run the app.
 Run `gulp` to start a dev server and watch all files. The port will displayed to you.
@@ -76,4 +80,8 @@ The only difference from a regular `Karma` setup is the use of [`karma-jspm`](ht
 * See [FACTORY](./docs/generator/FACTORY.md) doc.
 * See [LAYOUT](./docs/generator/LAYOUT.md) doc.
 * See [VIEW](./docs/generator/VIEW.md) doc.
+
+
+
+
 

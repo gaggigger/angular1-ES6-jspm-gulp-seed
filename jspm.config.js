@@ -13,6 +13,7 @@ System.config({
   },
 
   map: {
+    "_": "github:lodash/lodash@4.11.2-es",
     "angular": "github:angular/bower-angular@1.5.4",
     "angular-animate": "github:angular/bower-angular-animate@1.5.3",
     "angular-mocks": "github:angular/bower-angular-mocks@1.5.3",
@@ -23,7 +24,7 @@ System.config({
     "clean-css": "npm:clean-css@3.4.12",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
-    "lodash/lodash": "github:lodash/lodash@4.11.1-es",
+    "lodash/lodash": "github:lodash/lodash@4.11.2-es",
     "normalize.css": "github:necolas/normalize.css@3.0.3",
     "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.7",
     "text": "github:systemjs/plugin-text@0.0.4",
