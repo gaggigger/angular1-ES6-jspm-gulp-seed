@@ -14,6 +14,10 @@ Use a rest client to call the endpoint serverTwo/v1/data:
 
 `http://localhost:8000/serverOne/v1/data?someParam=100`
 
+or 
+
+`http://localhost:8000/serverTwo/v1/data?someParam=100`
+
 The response will be:
 
 ```
