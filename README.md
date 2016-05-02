@@ -1,5 +1,7 @@
 **Angular 1.x, ES6, JSPM Starter**
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 Credit goes to [NG6 Stater](https://github.com/angularclass/NG6-starter/tree/jspm) for the basic structure of [Angular](https://angularjs.org) + [ES6](https://git.io/es6features) + [JSPM](http://jspm.io/).
 Modifications have been made to push the structure to facilitate stable, scalable, mature software.
 
@@ -33,6 +35,7 @@ ___
 * [Testing](#Testing-Setup)
 * [Getting Started](#getting-started)
     * [Dependencies](#dependencies)
+    * [Commitizen](#commitizen)
     * [Installing](#installing)
         * [Installing lodash-es](#installing-lodash-es)
     * [Running the app](#running-the-app)
@@ -182,6 +185,12 @@ Once you have those, you should install these globals with `npm i -g`:
 * `gulp`
 * `karma`
 * `karma-cli`
+
+# Commitizen
+Commitizen is installed locally, along with the cz-conventional-changelog adapater. 
+See the [Commitizen README.md](https://github.com/commitizen/cz-cli) for usage 
+and configuration.
+
 
 ## Installing
 * `fork` me
