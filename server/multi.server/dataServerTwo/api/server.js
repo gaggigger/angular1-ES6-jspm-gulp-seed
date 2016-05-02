@@ -30,10 +30,6 @@ function setup(server, port, endpointPrefix){
     server.use(restify.CORS(config.CORS.options));
     server.use(CookieParser.parse);
 
-    server.get(/\/public\/?.*/, restify.serveStatic({
-        directory: __dirname
-    }));
-
     server.listen(port, function() {
         console.log('%s listening at %s', server.name, server.url);
     });

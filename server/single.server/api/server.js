@@ -4,9 +4,9 @@ import restify from 'restify';
 import CookieParser from 'restify-cookies';
 import config from './common/apiConfig';
 import each from 'lodash/each';
+import path from 'path';
 
 import someExternalData from './endpoints/someExternalData';
-
 
 let endPoints = [
     someExternalData
@@ -30,8 +30,9 @@ function setup(server, port, endpointPrefix){
     server.use(restify.CORS(config.CORS.options));
     server.use(CookieParser.parse);
 
-    server.get(/\/public\/?.*/, restify.serveStatic({
-        directory: __dirname
+    server.get(/\/?.*/, restify.serveStatic({
+        directory: path.resolve(process.cwd(), '../../', 'dist'),
+        default: 'index.html'
     }));
 
     server.listen(port, function() {
