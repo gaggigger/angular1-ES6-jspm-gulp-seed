@@ -3,7 +3,7 @@
 import angular from 'angular';
 import 'angular-mocks';
 import AboutModule from './_ng'
-import AboutRoutes from './_routes';
+import AboutRoutes from './_ng.routes';
 import AboutController from './about.controller';
 import AboutTemplate from './about.html!text';
 

@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import navbarComponent from './navbar.component';
+import navbarComponent from './_ng.component';
 
 let navbarModule = angular.module('component.navbar', [
 	'ui.router'

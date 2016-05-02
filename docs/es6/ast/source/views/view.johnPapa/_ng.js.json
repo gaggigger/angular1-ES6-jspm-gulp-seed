@@ -189,11 +189,11 @@
       ],
       "source": {
         "type": "Literal",
-        "value": "./_routes",
-        "raw": "'./_routes'",
+        "value": "./_ng.routes",
+        "raw": "'./_ng.routes'",
         "range": [
           117,
-          128
+          131
         ],
         "loc": {
           "start": {
@@ -202,13 +202,13 @@
           },
           "end": {
             "line": 5,
-            "column": 42
+            "column": 45
           }
         }
       },
       "range": [
         86,
-        129
+        132
       ],
       "loc": {
         "start": {
@@ -217,7 +217,7 @@
         },
         "end": {
           "line": 5,
-          "column": 43
+          "column": 46
         }
       }
     },
@@ -233,8 +233,8 @@
             "type": "Identifier",
             "name": "viewJohnPapaRoutes",
             "range": [
-              131,
-              149
+              134,
+              152
             ],
             "loc": {
               "start": {
@@ -251,8 +251,8 @@
             "type": "Identifier",
             "name": "$inject",
             "range": [
-              150,
-              157
+              153,
+              160
             ],
             "loc": {
               "start": {
@@ -266,8 +266,8 @@
             }
           },
           "range": [
-            131,
-            157
+            134,
+            160
           ],
           "loc": {
             "start": {
@@ -288,8 +288,8 @@
               "value": "$stateProvider",
               "raw": "'$stateProvider'",
               "range": [
-                161,
-                177
+                164,
+                180
               ],
               "loc": {
                 "start": {
@@ -304,8 +304,8 @@
             }
           ],
           "range": [
-            160,
-            178
+            163,
+            181
           ],
           "loc": {
             "start": {
@@ -319,8 +319,8 @@
           }
         },
         "range": [
-          131,
-          178
+          134,
+          181
         ],
         "loc": {
           "start": {
@@ -334,8 +334,8 @@
         }
       },
       "range": [
-        131,
-        179
+        134,
+        182
       ],
       "loc": {
         "start": {
@@ -357,8 +357,8 @@
             "type": "Identifier",
             "name": "viewJohnPapa",
             "range": [
-              185,
-              197
+              188,
+              200
             ],
             "loc": {
               "start": {
@@ -385,8 +385,8 @@
                     "type": "Identifier",
                     "name": "angular",
                     "range": [
-                      200,
-                      207
+                      203,
+                      210
                     ],
                     "loc": {
                       "start": {
@@ -403,8 +403,8 @@
                     "type": "Identifier",
                     "name": "module",
                     "range": [
-                      208,
-                      214
+                      211,
+                      217
                     ],
                     "loc": {
                       "start": {
@@ -418,8 +418,8 @@
                     }
                   },
                   "range": [
-                    200,
-                    214
+                    203,
+                    217
                   ],
                   "loc": {
                     "start": {
@@ -438,8 +438,8 @@
                     "value": "view.johnPapa",
                     "raw": "'view.johnPapa'",
                     "range": [
-                      215,
-                      230
+                      218,
+                      233
                     ],
                     "loc": {
                       "start": {
@@ -460,8 +460,8 @@
                         "value": "ui.router",
                         "raw": "'ui.router'",
                         "range": [
-                          235,
-                          246
+                          238,
+                          249
                         ],
                         "loc": {
                           "start": {
@@ -476,8 +476,8 @@
                       }
                     ],
                     "range": [
-                      232,
-                      248
+                      235,
+                      251
                     ],
                     "loc": {
                       "start": {
@@ -492,8 +492,8 @@
                   }
                 ],
                 "range": [
-                  200,
-                  249
+                  203,
+                  252
                 ],
                 "loc": {
                   "start": {
@@ -510,8 +510,8 @@
                 "type": "Identifier",
                 "name": "config",
                 "range": [
-                  251,
-                  257
+                  254,
+                  260
                 ],
                 "loc": {
                   "start": {
@@ -525,8 +525,8 @@
                 }
               },
               "range": [
-                200,
-                257
+                203,
+                260
               ],
               "loc": {
                 "start": {
@@ -544,8 +544,8 @@
                 "type": "Identifier",
                 "name": "viewJohnPapaRoutes",
                 "range": [
-                  258,
-                  276
+                  261,
+                  279
                 ],
                 "loc": {
                   "start": {
@@ -560,8 +560,8 @@
               }
             ],
             "range": [
-              200,
-              277
+              203,
+              280
             ],
             "loc": {
               "start": {
@@ -575,8 +575,8 @@
             }
           },
           "range": [
-            185,
-            277
+            188,
+            280
           ],
           "loc": {
             "start": {
@@ -592,8 +592,8 @@
       ],
       "kind": "let",
       "range": [
-        181,
-        278
+        184,
+        281
       ],
       "loc": {
         "start": {
@@ -615,8 +615,8 @@
         "type": "Identifier",
         "name": "viewJohnPapa",
         "range": [
-          295,
-          307
+          298,
+          310
         ],
         "loc": {
           "start": {
@@ -630,8 +630,8 @@
         }
       },
       "range": [
-        280,
-        308
+        283,
+        311
       ],
       "loc": {
         "start": {
@@ -658,8 +658,8 @@
               "type": "Identifier",
               "name": "viewJohnPapa",
               "range": [
-                185,
-                197
+                188,
+                200
               ],
               "loc": {
                 "start": {
@@ -686,8 +686,8 @@
                       "type": "Identifier",
                       "name": "angular",
                       "range": [
-                        200,
-                        207
+                        203,
+                        210
                       ],
                       "loc": {
                         "start": {
@@ -704,8 +704,8 @@
                       "type": "Identifier",
                       "name": "module",
                       "range": [
-                        208,
-                        214
+                        211,
+                        217
                       ],
                       "loc": {
                         "start": {
@@ -719,8 +719,8 @@
                       }
                     },
                     "range": [
-                      200,
-                      214
+                      203,
+                      217
                     ],
                     "loc": {
                       "start": {
@@ -739,8 +739,8 @@
                       "value": "view.johnPapa",
                       "raw": "'view.johnPapa'",
                       "range": [
-                        215,
-                        230
+                        218,
+                        233
                       ],
                       "loc": {
                         "start": {
@@ -761,8 +761,8 @@
                           "value": "ui.router",
                           "raw": "'ui.router'",
                           "range": [
-                            235,
-                            246
+                            238,
+                            249
                           ],
                           "loc": {
                             "start": {
@@ -777,8 +777,8 @@
                         }
                       ],
                       "range": [
-                        232,
-                        248
+                        235,
+                        251
                       ],
                       "loc": {
                         "start": {
@@ -793,8 +793,8 @@
                     }
                   ],
                   "range": [
-                    200,
-                    249
+                    203,
+                    252
                   ],
                   "loc": {
                     "start": {
@@ -811,8 +811,8 @@
                   "type": "Identifier",
                   "name": "config",
                   "range": [
-                    251,
-                    257
+                    254,
+                    260
                   ],
                   "loc": {
                     "start": {
@@ -826,8 +826,8 @@
                   }
                 },
                 "range": [
-                  200,
-                  257
+                  203,
+                  260
                 ],
                 "loc": {
                   "start": {
@@ -845,8 +845,8 @@
                   "type": "Identifier",
                   "name": "viewJohnPapaRoutes",
                   "range": [
-                    258,
-                    276
+                    261,
+                    279
                   ],
                   "loc": {
                     "start": {
@@ -861,8 +861,8 @@
                 }
               ],
               "range": [
-                200,
-                277
+                203,
+                280
               ],
               "loc": {
                 "start": {
@@ -876,8 +876,8 @@
               }
             },
             "range": [
-              185,
-              277
+              188,
+              280
             ],
             "loc": {
               "start": {
@@ -893,8 +893,8 @@
         ],
         "kind": "let",
         "range": [
-          181,
-          278
+          184,
+          281
         ],
         "loc": {
           "start": {
@@ -910,8 +910,8 @@
         "trailingComments": []
       },
       "range": [
-        280,
-        308
+        283,
+        311
       ],
       "loc": {
         "start": {
@@ -928,7 +928,7 @@
   "sourceType": "module",
   "range": [
     0,
-    308
+    311
   ],
   "loc": {
     "start": {

@@ -152,11 +152,11 @@
       ],
       "source": {
         "type": "Literal",
-        "value": "./_routes",
-        "raw": "'./_routes'",
+        "value": "./_ng.routes",
+        "raw": "'./_ng.routes'",
         "range": [
           89,
-          100
+          103
         ],
         "loc": {
           "start": {
@@ -165,13 +165,13 @@
           },
           "end": {
             "line": 4,
-            "column": 40
+            "column": 43
           }
         }
       },
       "range": [
         60,
-        101
+        104
       ],
       "loc": {
         "start": {
@@ -180,7 +180,7 @@
         },
         "end": {
           "line": 4,
-          "column": 41
+          "column": 44
         }
       }
     },
@@ -196,8 +196,8 @@
             "type": "Identifier",
             "name": "viewSharedRoutes",
             "range": [
-              103,
-              119
+              106,
+              122
             ],
             "loc": {
               "start": {
@@ -214,8 +214,8 @@
             "type": "Identifier",
             "name": "$inject",
             "range": [
-              120,
-              127
+              123,
+              130
             ],
             "loc": {
               "start": {
@@ -229,8 +229,8 @@
             }
           },
           "range": [
-            103,
-            127
+            106,
+            130
           ],
           "loc": {
             "start": {
@@ -251,8 +251,8 @@
               "value": "$stateProvider",
               "raw": "'$stateProvider'",
               "range": [
-                131,
-                147
+                134,
+                150
               ],
               "loc": {
                 "start": {
@@ -270,8 +270,8 @@
               "value": "$urlRouterProvider",
               "raw": "'$urlRouterProvider'",
               "range": [
-                149,
-                169
+                152,
+                172
               ],
               "loc": {
                 "start": {
@@ -286,8 +286,8 @@
             }
           ],
           "range": [
-            130,
-            170
+            133,
+            173
           ],
           "loc": {
             "start": {
@@ -301,8 +301,8 @@
           }
         },
         "range": [
-          103,
-          170
+          106,
+          173
         ],
         "loc": {
           "start": {
@@ -316,8 +316,8 @@
         }
       },
       "range": [
-        103,
-        171
+        106,
+        174
       ],
       "loc": {
         "start": {
@@ -339,8 +339,8 @@
             "type": "Identifier",
             "name": "viewSharedModule",
             "range": [
-              177,
-              193
+              180,
+              196
             ],
             "loc": {
               "start": {
@@ -367,8 +367,8 @@
                     "type": "Identifier",
                     "name": "angular",
                     "range": [
-                      195,
-                      202
+                      198,
+                      205
                     ],
                     "loc": {
                       "start": {
@@ -385,8 +385,8 @@
                     "type": "Identifier",
                     "name": "module",
                     "range": [
-                      203,
-                      209
+                      206,
+                      212
                     ],
                     "loc": {
                       "start": {
@@ -400,8 +400,8 @@
                     }
                   },
                   "range": [
-                    195,
-                    209
+                    198,
+                    212
                   ],
                   "loc": {
                     "start": {
@@ -420,8 +420,8 @@
                     "value": "view.shared",
                     "raw": "'view.shared'",
                     "range": [
-                      210,
-                      223
+                      213,
+                      226
                     ],
                     "loc": {
                       "start": {
@@ -442,8 +442,8 @@
                         "value": "ui.router",
                         "raw": "'ui.router'",
                         "range": [
-                          228,
-                          239
+                          231,
+                          242
                         ],
                         "loc": {
                           "start": {
@@ -458,8 +458,8 @@
                       }
                     ],
                     "range": [
-                      225,
-                      241
+                      228,
+                      244
                     ],
                     "loc": {
                       "start": {
@@ -474,8 +474,8 @@
                   }
                 ],
                 "range": [
-                  195,
-                  242
+                  198,
+                  245
                 ],
                 "loc": {
                   "start": {
@@ -492,8 +492,8 @@
                 "type": "Identifier",
                 "name": "config",
                 "range": [
-                  244,
-                  250
+                  247,
+                  253
                 ],
                 "loc": {
                   "start": {
@@ -507,8 +507,8 @@
                 }
               },
               "range": [
-                195,
-                250
+                198,
+                253
               ],
               "loc": {
                 "start": {
@@ -526,8 +526,8 @@
                 "type": "Identifier",
                 "name": "viewSharedRoutes",
                 "range": [
-                  251,
-                  267
+                  254,
+                  270
                 ],
                 "loc": {
                   "start": {
@@ -542,8 +542,8 @@
               }
             ],
             "range": [
-              195,
-              268
+              198,
+              271
             ],
             "loc": {
               "start": {
@@ -557,8 +557,8 @@
             }
           },
           "range": [
-            177,
-            268
+            180,
+            271
           ],
           "loc": {
             "start": {
@@ -574,8 +574,8 @@
       ],
       "kind": "let",
       "range": [
-        173,
-        269
+        176,
+        272
       ],
       "loc": {
         "start": {
@@ -597,8 +597,8 @@
         "type": "Identifier",
         "name": "viewSharedModule",
         "range": [
-          286,
-          302
+          289,
+          305
         ],
         "loc": {
           "start": {
@@ -612,8 +612,8 @@
         }
       },
       "range": [
-        271,
-        303
+        274,
+        306
       ],
       "loc": {
         "start": {
@@ -640,8 +640,8 @@
               "type": "Identifier",
               "name": "viewSharedModule",
               "range": [
-                177,
-                193
+                180,
+                196
               ],
               "loc": {
                 "start": {
@@ -668,8 +668,8 @@
                       "type": "Identifier",
                       "name": "angular",
                       "range": [
-                        195,
-                        202
+                        198,
+                        205
                       ],
                       "loc": {
                         "start": {
@@ -686,8 +686,8 @@
                       "type": "Identifier",
                       "name": "module",
                       "range": [
-                        203,
-                        209
+                        206,
+                        212
                       ],
                       "loc": {
                         "start": {
@@ -701,8 +701,8 @@
                       }
                     },
                     "range": [
-                      195,
-                      209
+                      198,
+                      212
                     ],
                     "loc": {
                       "start": {
@@ -721,8 +721,8 @@
                       "value": "view.shared",
                       "raw": "'view.shared'",
                       "range": [
-                        210,
-                        223
+                        213,
+                        226
                       ],
                       "loc": {
                         "start": {
@@ -743,8 +743,8 @@
                           "value": "ui.router",
                           "raw": "'ui.router'",
                           "range": [
-                            228,
-                            239
+                            231,
+                            242
                           ],
                           "loc": {
                             "start": {
@@ -759,8 +759,8 @@
                         }
                       ],
                       "range": [
-                        225,
-                        241
+                        228,
+                        244
                       ],
                       "loc": {
                         "start": {
@@ -775,8 +775,8 @@
                     }
                   ],
                   "range": [
-                    195,
-                    242
+                    198,
+                    245
                   ],
                   "loc": {
                     "start": {
@@ -793,8 +793,8 @@
                   "type": "Identifier",
                   "name": "config",
                   "range": [
-                    244,
-                    250
+                    247,
+                    253
                   ],
                   "loc": {
                     "start": {
@@ -808,8 +808,8 @@
                   }
                 },
                 "range": [
-                  195,
-                  250
+                  198,
+                  253
                 ],
                 "loc": {
                   "start": {
@@ -827,8 +827,8 @@
                   "type": "Identifier",
                   "name": "viewSharedRoutes",
                   "range": [
-                    251,
-                    267
+                    254,
+                    270
                   ],
                   "loc": {
                     "start": {
@@ -843,8 +843,8 @@
                 }
               ],
               "range": [
-                195,
-                268
+                198,
+                271
               ],
               "loc": {
                 "start": {
@@ -858,8 +858,8 @@
               }
             },
             "range": [
-              177,
-              268
+              180,
+              271
             ],
             "loc": {
               "start": {
@@ -875,8 +875,8 @@
         ],
         "kind": "let",
         "range": [
-          173,
-          269
+          176,
+          272
         ],
         "loc": {
           "start": {
@@ -892,8 +892,8 @@
         "trailingComments": []
       },
       "range": [
-        271,
-        303
+        274,
+        306
       ],
       "loc": {
         "start": {
@@ -910,7 +910,7 @@
   "sourceType": "module",
   "range": [
     0,
-    303
+    306
   ],
   "loc": {
     "start": {

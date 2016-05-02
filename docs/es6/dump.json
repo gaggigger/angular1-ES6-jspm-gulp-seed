@@ -55,28 +55,28 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/components/_component.app/_ng.js",
+    "name": "app/components/_component.app/_ng.component.js",
     "memberof": null,
-    "longname": "app/components/_component.app/_ng.js",
+    "longname": "app/components/_component.app/_ng.component.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport Views from '../../views/_ng.views';\nimport Components from '../../components/_ng.components';\nimport Services from '../../services/_ng.services';\nimport LayoutHome from '../../layouts/_ng.layouts';\nimport AppComponent from './app.component';\n\nlet appModule = angular.module('app', [\n    'ui.router',\n    Views.name,\n    Components.name,\n    Services.name,\n    LayoutHome.name\n]).run(['$rootScope', '$state', function($rootScope, $state) {\n        $rootScope.$on('$stateChangeStart', function(evt, to, params) {\n            if (to.redirectTo) {\n                evt.preventDefault();\n                $state.go(to.redirectTo, params);\n            }\n        });\n    }])\n    .directive('app', AppComponent);\n\nexport default appModule;\n"
+    "content": "import template from './app.html!text';\n\n\nlet appComponent = ()=>{\n\treturn {\n\t\ttemplate, // because we have a variable name template we can use the shorcut here\n\t\trestrict: 'E'\n\t};\n};\n\nexport default appComponent;\n"
   },
   {
     "__docId__": 4,
     "kind": "variable",
     "static": true,
     "variation": null,
-    "name": "appModule",
-    "memberof": "app/components/_component.app/_ng.js",
-    "longname": "app/components/_component.app/_ng.js~appModule",
+    "name": "appComponent",
+    "memberof": "app/components/_component.app/_ng.component.js",
+    "longname": "app/components/_component.app/_ng.component.js~appComponent",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/components/_component.app/_ng.js",
-    "importStyle": "appModule",
+    "importPath": "angular-jspm-starter/app/components/_component.app/_ng.component.js",
+    "importStyle": "appComponent",
     "description": null,
-    "lineNumber": 9,
+    "lineNumber": 4,
     "undocument": true,
     "type": {
       "types": [
@@ -89,28 +89,28 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/components/_component.app/app.component.js",
+    "name": "app/components/_component.app/_ng.js",
     "memberof": null,
-    "longname": "app/components/_component.app/app.component.js",
+    "longname": "app/components/_component.app/_ng.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import template from './app.html!text';\n\n\nlet appComponent = ()=>{\n\treturn {\n\t\ttemplate, // because we have a variable name template we can use the shorcut here\n\t\trestrict: 'E'\n\t};\n};\n\nexport default appComponent;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport Views from '../../views/_ng.views';\nimport Components from '../../components/_ng.components';\nimport Services from '../../services/_ng.services';\nimport LayoutHome from '../../layouts/_ng.layouts';\nimport AppComponent from './_ng.component';\n\nlet appModule = angular.module('app', [\n    'ui.router',\n    Views.name,\n    Components.name,\n    Services.name,\n    LayoutHome.name\n]).run(['$rootScope', '$state', function($rootScope, $state) {\n        $rootScope.$on('$stateChangeStart', function(evt, to, params) {\n            if (to.redirectTo) {\n                evt.preventDefault();\n                $state.go(to.redirectTo, params);\n            }\n        });\n    }])\n    .directive('app', AppComponent);\n\nexport default appModule;\n"
   },
   {
     "__docId__": 6,
     "kind": "variable",
     "static": true,
     "variation": null,
-    "name": "appComponent",
-    "memberof": "app/components/_component.app/app.component.js",
-    "longname": "app/components/_component.app/app.component.js~appComponent",
+    "name": "appModule",
+    "memberof": "app/components/_component.app/_ng.js",
+    "longname": "app/components/_component.app/_ng.js~appModule",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/components/_component.app/app.component.js",
-    "importStyle": "appComponent",
+    "importPath": "angular-jspm-starter/app/components/_component.app/_ng.js",
+    "importStyle": "appModule",
     "description": null,
-    "lineNumber": 4,
+    "lineNumber": 9,
     "undocument": true,
     "type": {
       "types": [
@@ -157,16 +157,52 @@
     "kind": "file",
     "static": true,
     "variation": null,
+    "name": "app/components/component.hero/_ng.component.js",
+    "memberof": null,
+    "longname": "app/components/component.hero/_ng.component.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import template from './hero.html!text';\nimport controller from './hero.controller';\nimport './hero.css!';\n\nlet heroComponent = function(){\n\treturn {\n\t\ttemplate,\n\t\tcontroller,\n\t\trestrict: 'E',\n\t\tcontrollerAs: 'vm',\n\t\tscope: {},\n\t\tbindToController: true\n\t};\n};\n\nexport default heroComponent;"
+  },
+  {
+    "__docId__": 10,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "heroComponent",
+    "memberof": "app/components/component.hero/_ng.component.js",
+    "longname": "app/components/component.hero/_ng.component.js~heroComponent",
+    "access": null,
+    "export": true,
+    "importPath": "angular-jspm-starter/app/components/component.hero/_ng.component.js",
+    "importStyle": "heroComponent",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 11,
+    "kind": "file",
+    "static": true,
+    "variation": null,
     "name": "app/components/component.hero/_ng.js",
     "memberof": null,
     "longname": "app/components/component.hero/_ng.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport heroComponent from './hero.component';\n\nlet heroModule = angular.module('hero', [\n\t'ui.router'\n])\n.directive('hero', heroComponent);\n\nexport default heroModule;"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport heroComponent from './_ng.component';\n\nlet heroModule = angular.module('hero', [\n\t'ui.router'\n])\n.directive('hero', heroComponent);\n\nexport default heroModule;\n"
   },
   {
-    "__docId__": 10,
+    "__docId__": 12,
     "kind": "variable",
     "static": true,
     "variation": null,
@@ -185,42 +221,6 @@
         "*"
       ]
     }
-  },
-  {
-    "__docId__": 11,
-    "kind": "file",
-    "static": true,
-    "variation": null,
-    "name": "app/components/component.hero/hero.component.js",
-    "memberof": null,
-    "longname": "app/components/component.hero/hero.component.js",
-    "access": null,
-    "description": null,
-    "lineNumber": 1,
-    "content": "import template from './hero.html!text';\nimport controller from './hero.controller';\nimport './hero.css!';\n\nlet heroComponent = function(){\n\treturn {\n\t\ttemplate,\n\t\tcontroller,\n\t\trestrict: 'E',\n\t\tcontrollerAs: 'vm',\n\t\tscope: {},\n\t\tbindToController: true\n\t};\n};\n\nexport default heroComponent;"
-  },
-  {
-    "__docId__": 12,
-    "kind": "function",
-    "static": true,
-    "variation": null,
-    "name": "heroComponent",
-    "memberof": "app/components/component.hero/hero.component.js",
-    "longname": "app/components/component.hero/hero.component.js~heroComponent",
-    "access": null,
-    "export": true,
-    "importPath": "angular-jspm-starter/app/components/component.hero/hero.component.js",
-    "importStyle": "heroComponent",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    },
-    "generator": false
   },
   {
     "__docId__": 13,
@@ -303,16 +303,52 @@
     "kind": "file",
     "static": true,
     "variation": null,
+    "name": "app/components/component.navbar/_ng.component.js",
+    "memberof": null,
+    "longname": "app/components/component.navbar/_ng.component.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import template from './navbar.html!text';\nimport controller from './navbar.controller';\nimport './navbar.css!';\n\nlet navbarComponent = function(){\n\treturn {\n\t\ttemplate,\n\t\tcontroller,\n\t\trestrict: 'E',\n\t\tcontrollerAs: 'vm',\n\t\tscope: {},\n\t\tbindToController: true\n\t};\n};\n\nexport default navbarComponent;\n"
+  },
+  {
+    "__docId__": 19,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "navbarComponent",
+    "memberof": "app/components/component.navbar/_ng.component.js",
+    "longname": "app/components/component.navbar/_ng.component.js~navbarComponent",
+    "access": null,
+    "export": true,
+    "importPath": "angular-jspm-starter/app/components/component.navbar/_ng.component.js",
+    "importStyle": "navbarComponent",
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 20,
+    "kind": "file",
+    "static": true,
+    "variation": null,
     "name": "app/components/component.navbar/_ng.js",
     "memberof": null,
     "longname": "app/components/component.navbar/_ng.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport navbarComponent from './navbar.component';\n\nlet navbarModule = angular.module('component.navbar', [\n\t'ui.router'\n])\n.directive('navbar', navbarComponent);\n\nexport default navbarModule;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport navbarComponent from './_ng.component';\n\nlet navbarModule = angular.module('component.navbar', [\n\t'ui.router'\n])\n.directive('navbar', navbarComponent);\n\nexport default navbarModule;\n"
   },
   {
-    "__docId__": 19,
+    "__docId__": 21,
     "kind": "variable",
     "static": true,
     "variation": null,
@@ -331,42 +367,6 @@
         "*"
       ]
     }
-  },
-  {
-    "__docId__": 20,
-    "kind": "file",
-    "static": true,
-    "variation": null,
-    "name": "app/components/component.navbar/navbar.component.js",
-    "memberof": null,
-    "longname": "app/components/component.navbar/navbar.component.js",
-    "access": null,
-    "description": null,
-    "lineNumber": 1,
-    "content": "import template from './navbar.html!text';\nimport controller from './navbar.controller';\nimport './navbar.css!';\n\nlet navbarComponent = function(){\n\treturn {\n\t\ttemplate,\n\t\tcontroller,\n\t\trestrict: 'E',\n\t\tcontrollerAs: 'vm',\n\t\tscope: {},\n\t\tbindToController: true\n\t};\n};\n\nexport default navbarComponent;\n"
-  },
-  {
-    "__docId__": 21,
-    "kind": "function",
-    "static": true,
-    "variation": null,
-    "name": "navbarComponent",
-    "memberof": "app/components/component.navbar/navbar.component.js",
-    "longname": "app/components/component.navbar/navbar.component.js~navbarComponent",
-    "access": null,
-    "export": true,
-    "importPath": "angular-jspm-starter/app/components/component.navbar/navbar.component.js",
-    "importStyle": "navbarComponent",
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    },
-    "generator": false
   },
   {
     "__docId__": 22,
@@ -1132,16 +1132,52 @@
     "kind": "file",
     "static": true,
     "variation": null,
+    "name": "app/components/component.sampleTwo/_ng.component.js",
+    "memberof": null,
+    "longname": "app/components/component.sampleTwo/_ng.component.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import template from './sampleTwo.html!text';\nimport controller from './sampleTwo.controller';\nimport './sampleTwo.css!';\n\ncontroller.$inject = ['$log', '$timeout', 'angularES6Class', 'johnPapaService'];\n\nlet aboutComponent = function(){\n\treturn {\n\t\ttemplate,\n\t\tcontroller,\n\t\trestrict: 'E',\n\t\tcontrollerAs: 'vm',\n\t\tscope: {},\n\t\tbindToController: true\n\t};\n};\n\n\nexport default aboutComponent;\n"
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "aboutComponent",
+    "memberof": "app/components/component.sampleTwo/_ng.component.js",
+    "longname": "app/components/component.sampleTwo/_ng.component.js~aboutComponent",
+    "access": null,
+    "export": true,
+    "importPath": "angular-jspm-starter/app/components/component.sampleTwo/_ng.component.js",
+    "importStyle": "aboutComponent",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "static": true,
+    "variation": null,
     "name": "app/components/component.sampleTwo/_ng.js",
     "memberof": null,
     "longname": "app/components/component.sampleTwo/_ng.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport sampleTwoComponent from './sampleTwo.component';\nimport johnPapaService from '../../../app/services/factory.johnPapa/_ng'\nimport angularES6Class from '../../../app/services/factory.angularES6Class/_ng'\n\nlet sampleTwoModule = angular.module('component.sampleTwo', [\n\t'ui.router',\n\tjohnPapaService.name,\n\tangularES6Class.name\n])\n.directive('ixSampleTwo', sampleTwoComponent);\n\nexport default sampleTwoModule;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport sampleTwoComponent from './_ng.component';\nimport johnPapaService from '../../../app/services/factory.johnPapa/_ng'\nimport angularES6Class from '../../../app/services/factory.angularES6Class/_ng'\n\nlet sampleTwoModule = angular.module('component.sampleTwo', [\n\t'ui.router',\n\tjohnPapaService.name,\n\tangularES6Class.name\n])\n.directive('ixSampleTwo', sampleTwoComponent);\n\nexport default sampleTwoModule;\n"
   },
   {
-    "__docId__": 62,
+    "__docId__": 64,
     "kind": "variable",
     "static": true,
     "variation": null,
@@ -1160,42 +1196,6 @@
         "*"
       ]
     }
-  },
-  {
-    "__docId__": 63,
-    "kind": "file",
-    "static": true,
-    "variation": null,
-    "name": "app/components/component.sampleTwo/sampleTwo.component.js",
-    "memberof": null,
-    "longname": "app/components/component.sampleTwo/sampleTwo.component.js",
-    "access": null,
-    "description": null,
-    "lineNumber": 1,
-    "content": "import template from './sampleTwo.html!text';\nimport controller from './sampleTwo.controller';\nimport './sampleTwo.css!';\n\ncontroller.$inject = ['$log', '$timeout', 'angularES6Class', 'johnPapaService'];\n\nlet aboutComponent = function(){\n\treturn {\n\t\ttemplate,\n\t\tcontroller,\n\t\trestrict: 'E',\n\t\tcontrollerAs: 'vm',\n\t\tscope: {},\n\t\tbindToController: true\n\t};\n};\n\n\nexport default aboutComponent;\n"
-  },
-  {
-    "__docId__": 64,
-    "kind": "function",
-    "static": true,
-    "variation": null,
-    "name": "aboutComponent",
-    "memberof": "app/components/component.sampleTwo/sampleTwo.component.js",
-    "longname": "app/components/component.sampleTwo/sampleTwo.component.js~aboutComponent",
-    "access": null,
-    "export": true,
-    "importPath": "angular-jspm-starter/app/components/component.sampleTwo/sampleTwo.component.js",
-    "importStyle": "aboutComponent",
-    "description": null,
-    "lineNumber": 7,
-    "undocument": true,
-    "params": [],
-    "return": {
-      "types": [
-        "*"
-      ]
-    },
-    "generator": false
   },
   {
     "__docId__": 65,
@@ -1519,7 +1519,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport layoutHomeRoutes from './_routes';\n\n\nlayoutHomeRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet layoutHomeModule = angular.module('layout.home', [\n        'ui.router'\n    ]).config(layoutHomeRoutes);\n\nexport default layoutHomeModule;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport layoutHomeRoutes from './_ng.routes';\n\n\nlayoutHomeRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet layoutHomeModule = angular.module('layout.home', [\n        'ui.router'\n    ]).config(layoutHomeRoutes);\n\nexport default layoutHomeModule;\n"
   },
   {
     "__docId__": 83,
@@ -1547,9 +1547,9 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/layouts/layout.home/_routes.js",
+    "name": "app/layouts/layout.home/_ng.routes.js",
     "memberof": null,
-    "longname": "app/layouts/layout.home/_routes.js",
+    "longname": "app/layouts/layout.home/_ng.routes.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
@@ -1561,11 +1561,11 @@
     "static": true,
     "variation": null,
     "name": "layoutHomeRoutes",
-    "memberof": "app/layouts/layout.home/_routes.js",
-    "longname": "app/layouts/layout.home/_routes.js~layoutHomeRoutes",
+    "memberof": "app/layouts/layout.home/_ng.routes.js",
+    "longname": "app/layouts/layout.home/_ng.routes.js~layoutHomeRoutes",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/layouts/layout.home/_routes.js",
+    "importPath": "angular-jspm-starter/app/layouts/layout.home/_ng.routes.js",
     "importStyle": "layoutHomeRoutes",
     "description": null,
     "lineNumber": 4,
@@ -1597,7 +1597,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport layoutSupportRoutes from './_routes';\n\n\nlayoutSupportRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet layoutSupportModule = angular.module('layout.support', [\n        'ui.router'\n    ]).config(layoutSupportRoutes);\n\nexport default layoutSupportModule;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport layoutSupportRoutes from './_ng.routes';\n\n\nlayoutSupportRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet layoutSupportModule = angular.module('layout.support', [\n        'ui.router'\n    ]).config(layoutSupportRoutes);\n\nexport default layoutSupportModule;\n"
   },
   {
     "__docId__": 87,
@@ -1625,9 +1625,9 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/layouts/layout.support/_routes.js",
+    "name": "app/layouts/layout.support/_ng.routes.js",
     "memberof": null,
-    "longname": "app/layouts/layout.support/_routes.js",
+    "longname": "app/layouts/layout.support/_ng.routes.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
@@ -1639,11 +1639,11 @@
     "static": true,
     "variation": null,
     "name": "layoutSupportRoutes",
-    "memberof": "app/layouts/layout.support/_routes.js",
-    "longname": "app/layouts/layout.support/_routes.js~layoutSupportRoutes",
+    "memberof": "app/layouts/layout.support/_ng.routes.js",
+    "longname": "app/layouts/layout.support/_ng.routes.js~layoutSupportRoutes",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/layouts/layout.support/_routes.js",
+    "importPath": "angular-jspm-starter/app/layouts/layout.support/_ng.routes.js",
     "importStyle": "layoutSupportRoutes",
     "description": null,
     "lineNumber": 4,
@@ -1743,7 +1743,7 @@
     "access": null,
     "description": null,
     "lineNumber": 2,
-    "content": "// import forOwn from 'lodash/lodash/forOwn';\nimport { forOwn } from 'lodash/lodash';\n\nconst LOG = new WeakMap();\nconst TIMEOUT = new WeakMap();\n\nclass SampleClassFactory {\n    constructor($log, $timeout) {\n        this._cache = '';\n        this.subscribers = {};\n\n        LOG.set(this, $log);\n        TIMEOUT.set(this, $timeout);\n\n        LOG.get(this).log('Instantiating SampleClassFactory');\n\n    }\n\n    set data(newValue) {\n        this._cache = newValue.data;\n        this.notify(newValue.id);\n    }\n\n    get data() {\n        return this._cache;\n    }\n\n    publish(id, newValue) {\n        this._cache = newValue;\n        this.notify(id);\n    }\n\n    subscribe(uniqueName, callback) {\n        this.subscribers[uniqueName] = callback;\n\n        if (this._cache.length) {\n            this.notify();\n        }\n    }\n\n    notify(id) {\n        let $timeout = TIMEOUT.get(this);\n        let cache = this._cache;\n\n        forOwn(this.subscribers, function(subscriber, key) {\n\n            /**\n             * Make sure subscriber is a function.\n             *\n             * To minimize $digest cycles, only publish to\n             * subscribers that do not have the\n             * same id as the publisher.\n             */\n            if (typeof subscriber === 'function' && (!id || id && id !== key)) {\n                $timeout(function() {\n                    subscriber.call(null, cache);\n                }, 0, true)\n            }\n        });\n    }\n\n    unsubscribe(id) {\n        delete this.subscribers[id];\n    }\n\n    /**\n     * Angular factory requires a function, not a class.\n     *\n     * @param $log\n     * @param $timeout\n     * @returns {SampleClassFactory}\n     */\n    static factory($log, $timeout) {\n        return new SampleClassFactory($log, $timeout);\n    }\n}\n\nexport default SampleClassFactory;\n"
+    "content": "// _ map in jspm.config for convenience\nimport forOwn from '_/forOwn';\n\n// imports only forOwn feature\n// import forOwn from 'lodash/lodash/forOwn';\n\n// imports entire lodash library\n// import { forOwn } from 'lodash/lodash';\n\nconst LOG = new WeakMap();\nconst TIMEOUT = new WeakMap();\n\nclass SampleClassFactory {\n    constructor($log, $timeout) {\n        this._cache = '';\n        this.subscribers = {};\n\n        LOG.set(this, $log);\n        TIMEOUT.set(this, $timeout);\n\n        LOG.get(this).log('Instantiating SampleClassFactory');\n\n    }\n\n    set data(newValue) {\n        this._cache = newValue.data;\n        this.notify(newValue.id);\n    }\n\n    get data() {\n        return this._cache;\n    }\n\n    publish(id, newValue) {\n        this._cache = newValue;\n        this.notify(id);\n    }\n\n    subscribe(uniqueName, callback) {\n        this.subscribers[uniqueName] = callback;\n\n        if (this._cache.length) {\n            this.notify();\n        }\n    }\n\n    notify(id) {\n        let $timeout = TIMEOUT.get(this);\n        let cache = this._cache;\n\n        forOwn(this.subscribers, function(subscriber, key) {\n\n            /**\n             * Make sure subscriber is a function.\n             *\n             * To minimize $digest cycles, only publish to\n             * subscribers that do not have the\n             * same id as the publisher.\n             */\n            if (typeof subscriber === 'function' && (!id || id && id !== key)) {\n                $timeout(function() {\n                    subscriber.call(null, cache);\n                }, 0, true)\n            }\n        });\n    }\n\n    unsubscribe(id) {\n        delete this.subscribers[id];\n    }\n\n    /**\n     * Angular factory requires a function, not a class.\n     *\n     * @param $log\n     * @param $timeout\n     * @returns {SampleClassFactory}\n     */\n    static factory($log, $timeout) {\n        return new SampleClassFactory($log, $timeout);\n    }\n}\n\nexport default SampleClassFactory;\n"
   },
   {
     "__docId__": 95,
@@ -1758,7 +1758,7 @@
     "importPath": "angular-jspm-starter/app/services/factory.angularES6Class/angularES6Class.factory.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 4,
+    "lineNumber": 10,
     "undocument": true,
     "type": {
       "types": [
@@ -1779,7 +1779,7 @@
     "importPath": "angular-jspm-starter/app/services/factory.angularES6Class/angularES6Class.factory.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 5,
+    "lineNumber": 11,
     "undocument": true,
     "type": {
       "types": [
@@ -1800,7 +1800,7 @@
     "importPath": "angular-jspm-starter/app/services/factory.angularES6Class/angularES6Class.factory.js",
     "importStyle": "SampleClassFactory",
     "description": null,
-    "lineNumber": 7,
+    "lineNumber": 13,
     "undocument": true,
     "interface": false
   },
@@ -1814,7 +1814,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#constructor",
     "access": null,
     "description": null,
-    "lineNumber": 8,
+    "lineNumber": 14,
     "undocument": true,
     "params": [
       {
@@ -1842,7 +1842,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#_cache",
     "access": null,
     "description": null,
-    "lineNumber": 9,
+    "lineNumber": 15,
     "undocument": true,
     "type": {
       "types": [
@@ -1860,7 +1860,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#subscribers",
     "access": null,
     "description": null,
-    "lineNumber": 10,
+    "lineNumber": 16,
     "undocument": true,
     "type": {
       "types": [
@@ -1878,7 +1878,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#data",
     "access": null,
     "description": null,
-    "lineNumber": 19,
+    "lineNumber": 25,
     "undocument": true,
     "type": {
       "types": [
@@ -1897,7 +1897,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#_cache",
     "access": null,
     "description": null,
-    "lineNumber": 20,
+    "lineNumber": 26,
     "undocument": true,
     "type": {
       "types": [
@@ -1915,7 +1915,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#data",
     "access": null,
     "description": null,
-    "lineNumber": 24,
+    "lineNumber": 30,
     "undocument": true,
     "type": {
       "types": [
@@ -1934,7 +1934,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#publish",
     "access": null,
     "description": null,
-    "lineNumber": 28,
+    "lineNumber": 34,
     "undocument": true,
     "params": [
       {
@@ -1962,7 +1962,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#_cache",
     "access": null,
     "description": null,
-    "lineNumber": 29,
+    "lineNumber": 35,
     "undocument": true,
     "type": {
       "types": [
@@ -1980,7 +1980,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#subscribe",
     "access": null,
     "description": null,
-    "lineNumber": 33,
+    "lineNumber": 39,
     "undocument": true,
     "params": [
       {
@@ -2008,7 +2008,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#notify",
     "access": null,
     "description": null,
-    "lineNumber": 41,
+    "lineNumber": 47,
     "undocument": true,
     "params": [
       {
@@ -2030,7 +2030,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory#unsubscribe",
     "access": null,
     "description": null,
-    "lineNumber": 62,
+    "lineNumber": 68,
     "undocument": true,
     "params": [
       {
@@ -2052,7 +2052,7 @@
     "longname": "app/services/factory.angularES6Class/angularES6Class.factory.js~SampleClassFactory.factory",
     "access": null,
     "description": "Angular factory requires a function, not a class.",
-    "lineNumber": 73,
+    "lineNumber": 79,
     "unknown": [
       {
         "tagName": "@returns",
@@ -2115,7 +2115,7 @@
     "access": null,
     "description": null,
     "lineNumber": 2,
-    "content": "// import forOwn from 'lodash/lodash/forOwn';\nimport { forOwn } from 'lodash/lodash';\n// import _ from 'lodash/lodash';\n\nclass ES6FactoryClass {\n    constructor() {\n        this._cache = '';\n        this.subscribers = {};\n    }\n\n    get data() {\n        return this._cache;\n    }\n\n    publish(id, newValue) {\n        this._cache = newValue;\n        this.notify(id);\n    }\n\n    subscribe(uniqueName, callback) {\n        this.subscribers[uniqueName] = callback;\n\n        if (this._cache.length) {\n            this.notify();\n        }\n    }\n\n    notify(id) {\n        let cache = this._cache;\n\n        forOwn(this.subscribers, function(subscriber, key) {\n\n            /**\n             * Make sure subscriber is a function.\n             *\n             * To minimize $digest cycles, only publish to \n             * subscribers that do not have the \n             * same id as the publisher. \n             */\n            if (typeof subscriber === 'function' && (!id || id && id !== key)) {\n                subscriber.call(null, cache);\n            }\n        });\n    }\n\n    unsubscribe(id) {\n        delete this.subscribers[id];\n    }\n}\n\nlet es6FactorySingleton = null;\nexport default function es6Factory() {\n    if (!es6FactorySingleton) {\n        es6FactorySingleton = new ES6FactoryClass();\n    }\n\n    return es6FactorySingleton;\n};\n"
+    "content": "// _ map in jspm.config for convenience\nimport forOwn from '_/forOwn';\n\n// imports only forOwn feature\n// import forOwn from 'lodash/lodash/forOwn';\n\n// imports entire lodash library\n// import { forOwn } from 'lodash/lodash';\n\nclass ES6FactoryClass {\n    constructor() {\n        this._cache = '';\n        this.subscribers = {};\n    }\n\n    get data() {\n        return this._cache;\n    }\n\n    publish(id, newValue) {\n        this._cache = newValue;\n        this.notify(id);\n    }\n\n    subscribe(uniqueName, callback) {\n        this.subscribers[uniqueName] = callback;\n\n        if (this._cache.length) {\n            this.notify();\n        }\n    }\n\n    notify(id) {\n        let cache = this._cache;\n\n        forOwn(this.subscribers, function(subscriber, key) {\n\n            /**\n             * Make sure subscriber is a function.\n             *\n             * To minimize $digest cycles, only publish to\n             * subscribers that do not have the\n             * same id as the publisher.\n             */\n            if (typeof subscriber === 'function' && (!id || id && id !== key)) {\n                subscriber.call(null, cache);\n            }\n        });\n    }\n\n    unsubscribe(id) {\n        delete this.subscribers[id];\n    }\n}\n\nlet es6FactorySingleton = null;\nexport default function es6Factory() {\n    if (!es6FactorySingleton) {\n        es6FactorySingleton = new ES6FactoryClass();\n    }\n\n    return es6FactorySingleton;\n};\n"
   },
   {
     "__docId__": 112,
@@ -2130,7 +2130,7 @@
     "importPath": "angular-jspm-starter/app/services/factory.es6/es6.factory.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 5,
+    "lineNumber": 10,
     "undocument": true,
     "interface": false
   },
@@ -2144,7 +2144,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#constructor",
     "access": null,
     "description": null,
-    "lineNumber": 6,
+    "lineNumber": 11,
     "undocument": true,
     "params": [],
     "generator": false
@@ -2159,7 +2159,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#_cache",
     "access": null,
     "description": null,
-    "lineNumber": 7,
+    "lineNumber": 12,
     "undocument": true,
     "type": {
       "types": [
@@ -2177,7 +2177,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#subscribers",
     "access": null,
     "description": null,
-    "lineNumber": 8,
+    "lineNumber": 13,
     "undocument": true,
     "type": {
       "types": [
@@ -2195,7 +2195,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#data",
     "access": null,
     "description": null,
-    "lineNumber": 11,
+    "lineNumber": 16,
     "undocument": true,
     "type": {
       "types": [
@@ -2214,7 +2214,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#publish",
     "access": null,
     "description": null,
-    "lineNumber": 15,
+    "lineNumber": 20,
     "undocument": true,
     "params": [
       {
@@ -2242,7 +2242,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#_cache",
     "access": null,
     "description": null,
-    "lineNumber": 16,
+    "lineNumber": 21,
     "undocument": true,
     "type": {
       "types": [
@@ -2260,7 +2260,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#subscribe",
     "access": null,
     "description": null,
-    "lineNumber": 20,
+    "lineNumber": 25,
     "undocument": true,
     "params": [
       {
@@ -2288,7 +2288,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#notify",
     "access": null,
     "description": null,
-    "lineNumber": 28,
+    "lineNumber": 33,
     "undocument": true,
     "params": [
       {
@@ -2310,7 +2310,7 @@
     "longname": "app/services/factory.es6/es6.factory.js~ES6FactoryClass#unsubscribe",
     "access": null,
     "description": null,
-    "lineNumber": 46,
+    "lineNumber": 51,
     "undocument": true,
     "params": [
       {
@@ -2335,7 +2335,7 @@
     "importPath": "angular-jspm-starter/app/services/factory.es6/es6.factory.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 51,
+    "lineNumber": 56,
     "undocument": true,
     "type": {
       "types": [
@@ -2356,7 +2356,7 @@
     "importPath": "angular-jspm-starter/app/services/factory.es6/es6.factory.js",
     "importStyle": "es6Factory",
     "description": null,
-    "lineNumber": 52,
+    "lineNumber": 57,
     "undocument": true,
     "params": [],
     "return": {
@@ -2424,7 +2424,7 @@
     "access": null,
     "description": null,
     "lineNumber": 2,
-    "content": "// import forOwn from 'lodash/lodash/forOwn';\nimport { forOwn } from 'lodash/lodash';\n\n// (function() {\n//     \"use strict\";\n//\n//     angular\n//         .module('app.services')\n//         .factory('factory.johnPapa', factoryJohnPapa);\n\nfactoryJohnPapa.$inject = ['$log', '$timeout'];\nexport default function factoryJohnPapa($log, $timeout) {\n\n    /**\n     * Factory API\n     */\n    var service = {\n        publish: publish,\n        getData: getData,\n        subscribe: subscribe,\n        unsubscribe: unsubscribe\n    };\n\n    var _cache = '';\n    var subscribers = {};\n\n    function getData() {\n        return _cache;\n    }\n\n    function publish(id, newValue) {\n        _cache = newValue;\n        notify(id);\n    }\n\n    function subscribe(uniqueName, callback) {\n        subscribers[uniqueName] = callback;\n\n        if (_cache.length) {\n            notify();\n        }\n    }\n\n    function notify(id) {\n        forOwn(subscribers, function(subscriber, key) {\n\n            /**\n             * Make sure subscriber is a function.\n             *\n             * To minimize $digest cycles, only publish to\n             * subscribers that do not have the\n             * same id as the publisher.\n             */\n            if (typeof subscriber === 'function' && (!id || id && id !== key)) {\n                $timeout(function() {\n                    subscriber.call(null, _cache);\n                }, 0, true)\n            }\n        });\n    }\n\n    function unsubscribe(id) {\n        delete subscribers[id];\n    }\n\n    return service;\n}\n\n// })();\n"
+    "content": "// _ map in jspm.config for convenience\nimport forOwn from '_/forOwn';\n\n// imports only forOwn feature\n// import forOwn from 'lodash-es/forOwn';\n\n// imports entire lodash library\n// import { forOwn } from 'lodash/lodash';\n\n\n// (function() {\n//     \"use strict\";\n//\n//     angular\n//         .module('app.services')\n//         .factory('factory.johnPapa', factoryJohnPapa);\n\nfactoryJohnPapa.$inject = ['$log', '$timeout'];\nexport default function factoryJohnPapa($log, $timeout) {\n\n    /**\n     * Factory API\n     */\n    var service = {\n        publish: publish,\n        getData: getData,\n        subscribe: subscribe,\n        unsubscribe: unsubscribe\n    };\n\n    var _cache = '';\n    var subscribers = {};\n\n    function getData() {\n        return _cache;\n    }\n\n    function publish(id, newValue) {\n        _cache = newValue;\n        notify(id);\n    }\n\n    function subscribe(uniqueName, callback) {\n        subscribers[uniqueName] = callback;\n\n        if (_cache.length) {\n            notify();\n        }\n    }\n\n    function notify(id) {\n        forOwn(subscribers, function(subscriber, key) {\n\n            /**\n             * Make sure subscriber is a function.\n             *\n             * To minimize $digest cycles, only publish to\n             * subscribers that do not have the\n             * same id as the publisher.\n             */\n            if (typeof subscriber === 'function' && (!id || id && id !== key)) {\n                $timeout(function() {\n                    subscriber.call(null, _cache);\n                }, 0, true)\n            }\n        });\n    }\n\n    function unsubscribe(id) {\n        delete subscribers[id];\n    }\n\n    return service;\n}\n\n// })();\n"
   },
   {
     "__docId__": 128,
@@ -2439,7 +2439,7 @@
     "importPath": "angular-jspm-starter/app/services/factory.johnPapa/johnPapa.factory.js",
     "importStyle": "factoryJohnPapa",
     "description": null,
-    "lineNumber": 12,
+    "lineNumber": 19,
     "undocument": true,
     "params": [
       {
@@ -2616,7 +2616,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\n\nimport viewAboutRoutes from './_routes';\n\nviewAboutRoutes.$inject = ['$stateProvider'];\n\nlet viewHomeModule = angular.module('view.about', [\n\t'ui.router'\n])\n.config(viewAboutRoutes);\n\nexport default viewHomeModule;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\n\nimport viewAboutRoutes from './_ng.routes';\n\nviewAboutRoutes.$inject = ['$stateProvider'];\n\nlet viewHomeModule = angular.module('view.about', [\n\t'ui.router'\n])\n.config(viewAboutRoutes);\n\nexport default viewHomeModule;\n"
   },
   {
     "__docId__": 139,
@@ -2644,9 +2644,9 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/views/view.about/_routes.js",
+    "name": "app/views/view.about/_ng.routes.js",
     "memberof": null,
-    "longname": "app/views/view.about/_routes.js",
+    "longname": "app/views/view.about/_ng.routes.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
@@ -2658,11 +2658,11 @@
     "static": true,
     "variation": null,
     "name": "layoutAboutRoutes",
-    "memberof": "app/views/view.about/_routes.js",
-    "longname": "app/views/view.about/_routes.js~layoutAboutRoutes",
+    "memberof": "app/views/view.about/_ng.routes.js",
+    "longname": "app/views/view.about/_ng.routes.js~layoutAboutRoutes",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/views/view.about/_routes.js",
+    "importPath": "angular-jspm-starter/app/views/view.about/_ng.routes.js",
     "importStyle": "layoutAboutRoutes",
     "description": null,
     "lineNumber": 6,
@@ -2822,7 +2822,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\n\nimport viewContactRoutes from './_routes';\n\nviewContactRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet viewContactModule = angular.module('view.contact', [\n\t'ui.router'\n])\n.config(viewContactRoutes);\n\nexport default viewContactModule;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\n\nimport viewContactRoutes from './_ng.routes';\n\nviewContactRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet viewContactModule = angular.module('view.contact', [\n\t'ui.router'\n])\n.config(viewContactRoutes);\n\nexport default viewContactModule;\n"
   },
   {
     "__docId__": 151,
@@ -2850,9 +2850,9 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/views/view.contact/_routes.js",
+    "name": "app/views/view.contact/_ng.routes.js",
     "memberof": null,
-    "longname": "app/views/view.contact/_routes.js",
+    "longname": "app/views/view.contact/_ng.routes.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
@@ -2864,11 +2864,11 @@
     "static": true,
     "variation": null,
     "name": "layoutHomeRoutes",
-    "memberof": "app/views/view.contact/_routes.js",
-    "longname": "app/views/view.contact/_routes.js~layoutHomeRoutes",
+    "memberof": "app/views/view.contact/_ng.routes.js",
+    "longname": "app/views/view.contact/_ng.routes.js~layoutHomeRoutes",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/views/view.contact/_routes.js",
+    "importPath": "angular-jspm-starter/app/views/view.contact/_ng.routes.js",
     "importStyle": "layoutHomeRoutes",
     "description": null,
     "lineNumber": 4,
@@ -2970,7 +2970,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\n\nimport viewHomeRoutes from './_routes';\n\nviewHomeRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet viewHomeModule = angular.module('view.home', [\n\t'ui.router'\n])\n.config(viewHomeRoutes);\n\nexport default viewHomeModule;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\n\nimport viewHomeRoutes from './_ng.routes';\n\nviewHomeRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet viewHomeModule = angular.module('view.home', [\n\t'ui.router'\n])\n.config(viewHomeRoutes);\n\nexport default viewHomeModule;\n"
   },
   {
     "__docId__": 160,
@@ -2998,9 +2998,9 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/views/view.home/_routes.js",
+    "name": "app/views/view.home/_ng.routes.js",
     "memberof": null,
-    "longname": "app/views/view.home/_routes.js",
+    "longname": "app/views/view.home/_ng.routes.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
@@ -3012,11 +3012,11 @@
     "static": true,
     "variation": null,
     "name": "layoutHomeRoutes",
-    "memberof": "app/views/view.home/_routes.js",
-    "longname": "app/views/view.home/_routes.js~layoutHomeRoutes",
+    "memberof": "app/views/view.home/_ng.routes.js",
+    "longname": "app/views/view.home/_ng.routes.js~layoutHomeRoutes",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/views/view.home/_routes.js",
+    "importPath": "angular-jspm-starter/app/views/view.home/_ng.routes.js",
     "importStyle": "layoutHomeRoutes",
     "description": null,
     "lineNumber": 4,
@@ -3124,7 +3124,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport './johnPapa.css!';\n\nimport viewJohnPapaRoutes from './_routes';\n\nviewJohnPapaRoutes.$inject = ['$stateProvider'];\n\nlet viewJohnPapa = angular.module('view.johnPapa', [\n\t'ui.router'\n])\n.config(viewJohnPapaRoutes);\n\nexport default viewJohnPapa;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\nimport './johnPapa.css!';\n\nimport viewJohnPapaRoutes from './_ng.routes';\n\nviewJohnPapaRoutes.$inject = ['$stateProvider'];\n\nlet viewJohnPapa = angular.module('view.johnPapa', [\n\t'ui.router'\n])\n.config(viewJohnPapaRoutes);\n\nexport default viewJohnPapa;\n"
   },
   {
     "__docId__": 169,
@@ -3152,9 +3152,9 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/views/view.johnPapa/_routes.js",
+    "name": "app/views/view.johnPapa/_ng.routes.js",
     "memberof": null,
-    "longname": "app/views/view.johnPapa/_routes.js",
+    "longname": "app/views/view.johnPapa/_ng.routes.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
@@ -3166,11 +3166,11 @@
     "static": true,
     "variation": null,
     "name": "routesConfig",
-    "memberof": "app/views/view.johnPapa/_routes.js",
-    "longname": "app/views/view.johnPapa/_routes.js~routesConfig",
+    "memberof": "app/views/view.johnPapa/_ng.routes.js",
+    "longname": "app/views/view.johnPapa/_ng.routes.js~routesConfig",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/views/view.johnPapa/_routes.js",
+    "importPath": "angular-jspm-starter/app/views/view.johnPapa/_ng.routes.js",
     "importStyle": "routesConfig",
     "description": null,
     "lineNumber": 14,
@@ -3253,7 +3253,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import angular from 'angular';\nimport 'angular-ui-router';\n\nimport viewSharedRoutes from './_routes';\n\nviewSharedRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet viewSharedModule= angular.module('view.shared', [\n\t'ui.router'\n])\n.config(viewSharedRoutes);\n\nexport default viewSharedModule;\n"
+    "content": "import angular from 'angular';\nimport 'angular-ui-router';\n\nimport viewSharedRoutes from './_ng.routes';\n\nviewSharedRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];\n\nlet viewSharedModule= angular.module('view.shared', [\n\t'ui.router'\n])\n.config(viewSharedRoutes);\n\nexport default viewSharedModule;\n"
   },
   {
     "__docId__": 176,
@@ -3281,9 +3281,9 @@
     "kind": "file",
     "static": true,
     "variation": null,
-    "name": "app/views/view.shared/_routes.js",
+    "name": "app/views/view.shared/_ng.routes.js",
     "memberof": null,
-    "longname": "app/views/view.shared/_routes.js",
+    "longname": "app/views/view.shared/_ng.routes.js",
     "access": null,
     "description": null,
     "lineNumber": 1,
@@ -3295,11 +3295,11 @@
     "static": true,
     "variation": null,
     "name": "layoutHomeRoutes",
-    "memberof": "app/views/view.shared/_routes.js",
-    "longname": "app/views/view.shared/_routes.js~layoutHomeRoutes",
+    "memberof": "app/views/view.shared/_ng.routes.js",
+    "longname": "app/views/view.shared/_ng.routes.js~layoutHomeRoutes",
     "access": null,
     "export": true,
-    "importPath": "angular-jspm-starter/app/views/view.shared/_routes.js",
+    "importPath": "angular-jspm-starter/app/views/view.shared/_ng.routes.js",
     "importStyle": "layoutHomeRoutes",
     "description": null,
     "lineNumber": 4,

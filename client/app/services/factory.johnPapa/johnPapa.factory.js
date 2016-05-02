@@ -1,10 +1,19 @@
+'use strict';
+
+// unit tests pass
+import forOwn from 'lodash/forOwn';
+
 // _ map in jspm.config for convenience
-import forOwn from '_/forOwn';
+// es6 import
+// unit tests fails
+// import forOwn from '_/forOwn';
 
 // imports only forOwn feature
-// import forOwn from 'lodash-es/forOwn';
+// unit tests fails
+// import forOwn from 'lodash/lodash/forOwn';
 
 // imports entire lodash library
+// Pass unit tests
 // import { forOwn } from 'lodash/lodash';
 
 

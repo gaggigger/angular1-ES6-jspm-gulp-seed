@@ -1,7 +1,7 @@
 import angular from 'angular';
 import 'angular-ui-router';
 
-import viewContactRoutes from './_routes';
+import viewContactRoutes from './_ng.routes';
 
 viewContactRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];
 

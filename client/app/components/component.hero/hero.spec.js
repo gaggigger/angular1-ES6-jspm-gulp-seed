@@ -4,7 +4,7 @@ import angular from 'angular';
 import 'angular-mocks';
 import HeroModule from './_ng';
 import HeroController from './hero.controller';
-import HeroComponent from './hero.component';
+import HeroComponent from './_ng.component';
 import HeroTemplate from './hero.html!text';
 
 describe('Hero Component', ()=>{

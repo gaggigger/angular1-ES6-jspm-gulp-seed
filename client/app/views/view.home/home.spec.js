@@ -3,7 +3,7 @@
 import angular from 'angular';
 import 'angular-mocks';
 import HomeModule from './_ng'
-import HomeRoutes from './_routes';
+import HomeRoutes from './_ng.routes';
 import HomeController from './home.controller';
 import HomeTemplate from './home.html!text';
 

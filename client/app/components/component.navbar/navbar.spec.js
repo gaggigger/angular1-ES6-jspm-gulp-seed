@@ -4,7 +4,7 @@ import angular from 'angular';
 import 'angular-mocks';
 import NavbarModule from './_ng';
 import NavbarController from './navbar.controller';
-import NavbarComponent from './navbar.component';
+import NavbarComponent from './_ng.component';
 import NavbarTemplate from './navbar.html!text';
 
 describe('Navbar Component', ()=>{

@@ -3,7 +3,7 @@
 import angular from 'angular';
 import 'angular-mocks';
 import <%= name %>Module from './_ng'
-import <%= name %>Routes from './_routes';
+import <%= name %>Routes from './_ng.routes';
 import <%= InitialCaseName %>Controller from './<%= name %>.controller';
 import <%= name %>Template from './<%= name %>.html!text';
 

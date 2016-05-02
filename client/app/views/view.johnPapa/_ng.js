@@ -2,7 +2,7 @@ import angular from 'angular';
 import 'angular-ui-router';
 import './johnPapa.css!';
 
-import viewJohnPapaRoutes from './_routes';
+import viewJohnPapaRoutes from './_ng.routes';
 
 viewJohnPapaRoutes.$inject = ['$stateProvider'];
 

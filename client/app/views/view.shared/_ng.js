@@ -1,7 +1,7 @@
 import angular from 'angular';
 import 'angular-ui-router';
 
-import viewSharedRoutes from './_routes';
+import viewSharedRoutes from './_ng.routes';
 
 viewSharedRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];
 

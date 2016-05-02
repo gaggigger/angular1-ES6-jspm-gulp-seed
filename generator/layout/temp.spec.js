@@ -3,7 +3,7 @@
 import angular from 'angular';
 import 'angular-mocks';
 import <%= camelCaseName %>Module from './_ng'
-import <%= camelCaseName %>Routes from './_routes';
+import <%= camelCaseName %>Routes from './_ng.routes';
 import <%= camelCaseName %>Template from './<%= name %>.html!text';
 
 describe('<%= camelCaseName %> Layout', ()=>{

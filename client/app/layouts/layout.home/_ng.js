@@ -1,6 +1,6 @@
 import angular from 'angular';
 import 'angular-ui-router';
-import layoutHomeRoutes from './_routes';
+import layoutHomeRoutes from './_ng.routes';
 
 
 layoutHomeRoutes.$inject = ['$stateProvider', '$urlRouterProvider'];

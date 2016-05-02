@@ -3,7 +3,7 @@
 import angular from 'angular';
 import 'angular-mocks';
 import ContactModule from './_ng'
-import ContactRoutes from './_routes';
+import ContactRoutes from './_ng.routes';
 import ContactController from './contact.controller';
 import ContactTemplate from './contact.html!text';
 

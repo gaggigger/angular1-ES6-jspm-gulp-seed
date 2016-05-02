@@ -444,8 +444,8 @@
       ],
       "source": {
         "type": "Literal",
-        "value": "./app.component",
-        "raw": "'./app.component'",
+        "value": "./_ng.component",
+        "raw": "'./_ng.component'",
         "range": [
           289,
           306

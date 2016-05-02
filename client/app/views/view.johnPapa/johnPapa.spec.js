@@ -3,7 +3,7 @@
 import angular from 'angular';
 import 'angular-mocks';
 import JohnPapaModule from './_ng'
-import JohnPapaRoutes from './_routes';
+import JohnPapaRoutes from './_ng.routes';
 import JohnPapaController from './johnPapa.controller';
 import JohnPapaTemplate from './johnPapa.html!text';
 

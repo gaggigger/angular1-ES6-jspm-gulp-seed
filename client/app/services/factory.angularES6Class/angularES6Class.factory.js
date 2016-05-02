@@ -1,10 +1,18 @@
+'use strict';
+
+// unit tests pass
+import forOwn from 'lodash/forOwn';
+
 // _ map in jspm.config for convenience
-import forOwn from '_/forOwn';
+// unit tests fails
+// import forOwn from '_/forOwn';
 
 // imports only forOwn feature
+// unit tests fails
 // import forOwn from 'lodash/lodash/forOwn';
 
 // imports entire lodash library
+// Pass unit tests
 // import { forOwn } from 'lodash/lodash';
 
 const LOG = new WeakMap();

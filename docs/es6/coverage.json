@@ -54,15 +54,15 @@
       "expectCount": 10,
       "actualCount": 1,
       "undocumentLines": [
-        7,
-        8,
-        24,
-        19,
-        41,
-        28,
-        33,
-        10,
-        62
+        13,
+        14,
+        30,
+        25,
+        47,
+        34,
+        39,
+        16,
+        68
       ]
     },
     "app/components/component.sampleOne/sampleOne.controller.js": {
@@ -131,14 +131,14 @@
         1
       ]
     },
-    "app/components/component.sampleTwo/sampleTwo.component.js": {
+    "app/components/component.sampleTwo/_ng.component.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         7
       ]
     },
-    "app/components/_component.app/app.component.js": {
+    "app/components/_component.app/_ng.component.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
@@ -170,17 +170,17 @@
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        52
+        57
       ]
     },
     "app/services/factory.johnPapa/johnPapa.factory.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
-        12
+        19
       ]
     },
-    "app/components/component.hero/hero.component.js": {
+    "app/components/component.hero/_ng.component.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
@@ -201,7 +201,7 @@
         5
       ]
     },
-    "app/views/view.about/_routes.js": {
+    "app/views/view.about/_ng.routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
@@ -215,28 +215,28 @@
         8
       ]
     },
-    "app/views/view.shared/_routes.js": {
+    "app/views/view.shared/_ng.routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         4
       ]
     },
-    "app/layouts/layout.home/_routes.js": {
+    "app/layouts/layout.home/_ng.routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         4
       ]
     },
-    "app/views/view.contact/_routes.js": {
+    "app/views/view.contact/_ng.routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
         4
       ]
     },
-    "app/views/view.home/_routes.js": {
+    "app/views/view.home/_ng.routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
@@ -257,7 +257,7 @@
         8
       ]
     },
-    "app/layouts/layout.support/_routes.js": {
+    "app/layouts/layout.support/_ng.routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
@@ -272,7 +272,7 @@
         7
       ]
     },
-    "app/components/component.navbar/navbar.component.js": {
+    "app/components/component.navbar/_ng.component.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
@@ -286,7 +286,7 @@
         5
       ]
     },
-    "app/views/view.johnPapa/_routes.js": {
+    "app/views/view.johnPapa/_ng.routes.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [

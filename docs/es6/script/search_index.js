@@ -72,15 +72,15 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "angular-jspm-starter/app/components/component.sampletwo/sampletwo.component.js~aboutcomponent",
+    "angular-jspm-starter/app/components/component.sampletwo/_ng.component.js~aboutcomponent",
     "function/index.html#static-function-aboutComponent",
-    "<span>aboutComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleTwo/sampleTwo.component.js</span>",
+    "<span>aboutComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.sampleTwo/_ng.component.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/components/_component.app/app.component.js~appcomponent",
+    "angular-jspm-starter/app/components/_component.app/_ng.component.js~appcomponent",
     "variable/index.html#static-variable-appComponent",
-    "<span>appComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/_component.app/app.component.js</span>",
+    "<span>appComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/_component.app/_ng.component.js</span>",
     "variable"
   ],
   [
@@ -114,9 +114,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "angular-jspm-starter/app/components/component.hero/hero.component.js~herocomponent",
+    "angular-jspm-starter/app/components/component.hero/_ng.component.js~herocomponent",
     "function/index.html#static-function-heroComponent",
-    "<span>heroComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.hero/hero.component.js</span>",
+    "<span>heroComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.hero/_ng.component.js</span>",
     "function"
   ],
   [
@@ -132,9 +132,9 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
-    "angular-jspm-starter/app/views/view.about/_routes.js~layoutaboutroutes",
+    "angular-jspm-starter/app/views/view.about/_ng.routes.js~layoutaboutroutes",
     "function/index.html#static-function-layoutAboutRoutes",
-    "<span>layoutAboutRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.about/_routes.js</span>",
+    "<span>layoutAboutRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.about/_ng.routes.js</span>",
     "function"
   ],
   [
@@ -144,27 +144,27 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
-    "angular-jspm-starter/app/layouts/layout.home/_routes.js~layouthomeroutes",
+    "angular-jspm-starter/app/layouts/layout.home/_ng.routes.js~layouthomeroutes",
     "function/index.html#static-function-layoutHomeRoutes",
-    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/layout.home/_routes.js</span>",
+    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/layout.home/_ng.routes.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/views/view.contact/_routes.js~layouthomeroutes",
+    "angular-jspm-starter/app/views/view.contact/_ng.routes.js~layouthomeroutes",
     "function/index.html#static-function-layoutHomeRoutes",
-    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.contact/_routes.js</span>",
+    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.contact/_ng.routes.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/views/view.home/_routes.js~layouthomeroutes",
+    "angular-jspm-starter/app/views/view.home/_ng.routes.js~layouthomeroutes",
     "function/index.html#static-function-layoutHomeRoutes",
-    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.home/_routes.js</span>",
+    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.home/_ng.routes.js</span>",
     "function"
   ],
   [
-    "angular-jspm-starter/app/views/view.shared/_routes.js~layouthomeroutes",
+    "angular-jspm-starter/app/views/view.shared/_ng.routes.js~layouthomeroutes",
     "function/index.html#static-function-layoutHomeRoutes",
-    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.shared/_routes.js</span>",
+    "<span>layoutHomeRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.shared/_ng.routes.js</span>",
     "function"
   ],
   [
@@ -180,9 +180,9 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
-    "angular-jspm-starter/app/layouts/layout.support/_routes.js~layoutsupportroutes",
+    "angular-jspm-starter/app/layouts/layout.support/_ng.routes.js~layoutsupportroutes",
     "function/index.html#static-function-layoutSupportRoutes",
-    "<span>layoutSupportRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/layout.support/_routes.js</span>",
+    "<span>layoutSupportRoutes</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/layouts/layout.support/_ng.routes.js</span>",
     "function"
   ],
   [
@@ -192,9 +192,9 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "angular-jspm-starter/app/components/component.navbar/navbar.component.js~navbarcomponent",
+    "angular-jspm-starter/app/components/component.navbar/_ng.component.js~navbarcomponent",
     "function/index.html#static-function-navbarComponent",
-    "<span>navbarComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.navbar/navbar.component.js</span>",
+    "<span>navbarComponent</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/components/component.navbar/_ng.component.js</span>",
     "function"
   ],
   [
@@ -204,9 +204,9 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
-    "angular-jspm-starter/app/views/view.johnpapa/_routes.js~routesconfig",
+    "angular-jspm-starter/app/views/view.johnpapa/_ng.routes.js~routesconfig",
     "function/index.html#static-function-routesConfig",
-    "<span>routesConfig</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.johnPapa/_routes.js</span>",
+    "<span>routesConfig</span> <span class=\"search-result-import-path\">angular-jspm-starter/app/views/view.johnPapa/_ng.routes.js</span>",
     "function"
   ],
   [
@@ -618,15 +618,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/components/_component.app/_ng.js",
-    "file/app/components/_component.app/_ng.js.html",
-    "app/components/_component.app/_ng.js",
+    "app/components/_component.app/_ng.component.js",
+    "file/app/components/_component.app/_ng.component.js.html",
+    "app/components/_component.app/_ng.component.js",
     "file"
   ],
   [
-    "app/components/_component.app/app.component.js",
-    "file/app/components/_component.app/app.component.js.html",
-    "app/components/_component.app/app.component.js",
+    "app/components/_component.app/_ng.js",
+    "file/app/components/_component.app/_ng.js.html",
+    "app/components/_component.app/_ng.js",
     "file"
   ],
   [
@@ -636,15 +636,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/components/component.hero/_ng.js",
-    "file/app/components/component.hero/_ng.js.html",
-    "app/components/component.hero/_ng.js",
+    "app/components/component.hero/_ng.component.js",
+    "file/app/components/component.hero/_ng.component.js.html",
+    "app/components/component.hero/_ng.component.js",
     "file"
   ],
   [
-    "app/components/component.hero/hero.component.js",
-    "file/app/components/component.hero/hero.component.js.html",
-    "app/components/component.hero/hero.component.js",
+    "app/components/component.hero/_ng.js",
+    "file/app/components/component.hero/_ng.js.html",
+    "app/components/component.hero/_ng.js",
     "file"
   ],
   [
@@ -672,15 +672,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/components/component.navbar/_ng.js",
-    "file/app/components/component.navbar/_ng.js.html",
-    "app/components/component.navbar/_ng.js",
+    "app/components/component.navbar/_ng.component.js",
+    "file/app/components/component.navbar/_ng.component.js.html",
+    "app/components/component.navbar/_ng.component.js",
     "file"
   ],
   [
-    "app/components/component.navbar/navbar.component.js",
-    "file/app/components/component.navbar/navbar.component.js.html",
-    "app/components/component.navbar/navbar.component.js",
+    "app/components/component.navbar/_ng.js",
+    "file/app/components/component.navbar/_ng.js.html",
+    "app/components/component.navbar/_ng.js",
     "file"
   ],
   [
@@ -846,15 +846,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/components/component.sampletwo/_ng.js",
-    "file/app/components/component.sampleTwo/_ng.js.html",
-    "app/components/component.sampleTwo/_ng.js",
+    "app/components/component.sampletwo/_ng.component.js",
+    "file/app/components/component.sampleTwo/_ng.component.js.html",
+    "app/components/component.sampleTwo/_ng.component.js",
     "file"
   ],
   [
-    "app/components/component.sampletwo/sampletwo.component.js",
-    "file/app/components/component.sampleTwo/sampleTwo.component.js.html",
-    "app/components/component.sampleTwo/sampleTwo.component.js",
+    "app/components/component.sampletwo/_ng.js",
+    "file/app/components/component.sampleTwo/_ng.js.html",
+    "app/components/component.sampleTwo/_ng.js",
     "file"
   ],
   [
@@ -924,9 +924,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/layouts/layout.home/_routes.js",
-    "file/app/layouts/layout.home/_routes.js.html",
-    "app/layouts/layout.home/_routes.js",
+    "app/layouts/layout.home/_ng.routes.js",
+    "file/app/layouts/layout.home/_ng.routes.js.html",
+    "app/layouts/layout.home/_ng.routes.js",
     "file"
   ],
   [
@@ -936,9 +936,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/layouts/layout.support/_routes.js",
-    "file/app/layouts/layout.support/_routes.js.html",
-    "app/layouts/layout.support/_routes.js",
+    "app/layouts/layout.support/_ng.routes.js",
+    "file/app/layouts/layout.support/_ng.routes.js.html",
+    "app/layouts/layout.support/_ng.routes.js",
     "file"
   ],
   [
@@ -1086,9 +1086,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/views/view.about/_routes.js",
-    "file/app/views/view.about/_routes.js.html",
-    "app/views/view.about/_routes.js",
+    "app/views/view.about/_ng.routes.js",
+    "file/app/views/view.about/_ng.routes.js.html",
+    "app/views/view.about/_ng.routes.js",
     "file"
   ],
   [
@@ -1134,9 +1134,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/views/view.contact/_routes.js",
-    "file/app/views/view.contact/_routes.js.html",
-    "app/views/view.contact/_routes.js",
+    "app/views/view.contact/_ng.routes.js",
+    "file/app/views/view.contact/_ng.routes.js.html",
+    "app/views/view.contact/_ng.routes.js",
     "file"
   ],
   [
@@ -1170,9 +1170,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/views/view.home/_routes.js",
-    "file/app/views/view.home/_routes.js.html",
-    "app/views/view.home/_routes.js",
+    "app/views/view.home/_ng.routes.js",
+    "file/app/views/view.home/_ng.routes.js.html",
+    "app/views/view.home/_ng.routes.js",
     "file"
   ],
   [
@@ -1206,9 +1206,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/views/view.johnpapa/_routes.js",
-    "file/app/views/view.johnPapa/_routes.js.html",
-    "app/views/view.johnPapa/_routes.js",
+    "app/views/view.johnpapa/_ng.routes.js",
+    "file/app/views/view.johnPapa/_ng.routes.js.html",
+    "app/views/view.johnPapa/_ng.routes.js",
     "file"
   ],
   [
@@ -1230,9 +1230,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "app/views/view.shared/_routes.js",
-    "file/app/views/view.shared/_routes.js.html",
-    "app/views/view.shared/_routes.js",
+    "app/views/view.shared/_ng.routes.js",
+    "file/app/views/view.shared/_ng.routes.js.html",
+    "app/views/view.shared/_ng.routes.js",
     "file"
   ],
   [

@@ -4,7 +4,7 @@ import Views from '../../views/_ng.views';
 import Components from '../../components/_ng.components';
 import Services from '../../services/_ng.services';
 import LayoutHome from '../../layouts/_ng.layouts';
-import AppComponent from './app.component';
+import AppComponent from './_ng.component';
 
 let appModule = angular.module('app', [
     'ui.router',

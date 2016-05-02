@@ -13,8 +13,6 @@ function loadTasks(gulp, plugins) {
     gulp.task('factory', factory(gulp, plugins));
 
     gulp.task('view', view(gulp, plugins));
-
-    gulp.task('view', view(gulp, plugins));
     
     gulp.task('layout', layout(gulp, plugins));
 

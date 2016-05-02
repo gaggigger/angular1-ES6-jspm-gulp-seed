@@ -3,7 +3,7 @@
 import angular from 'angular';
 import 'angular-mocks';
 import SharedModule from './_ng'
-import SharedRoutes from './_routes';
+import SharedRoutes from './_ng.routes';
 import SharedController from './shared.controller';
 import SharedTemplate from './shared.html!text';
 

@@ -2,10 +2,10 @@
 @import 'scss/styleguide_helpers.scss';
 
 /* begin-scss-inject:js */
-@import 'app/components/component.hero/hero.scss';
 @import 'app/components/component.navbar/navbar.scss';
-@import 'app/components/component.sampleOne/sampleOne.scss';
+@import 'app/components/component.hero/hero.scss';
 @import 'app/components/component.sampleTwo/sampleTwo.scss';
+@import 'app/components/component.sampleOne/sampleOne.scss';
 @import 'app/layouts/layout.home/home.scss';
 @import 'app/layouts/layout.support/support.scss';
 @import 'app/views/view.about/about.scss';

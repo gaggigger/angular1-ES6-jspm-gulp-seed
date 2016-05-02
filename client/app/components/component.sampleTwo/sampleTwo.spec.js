@@ -5,7 +5,7 @@ import 'angular-mocks';
 import createES6Factory from '../../services/factory.es6/es6.factory';
 import SampleTwoModule from './_ng'
 import SampleTwoController from './sampleTwo.controller';
-import SampleTwoComponent from './sampleTwo.component';
+import SampleTwoComponent from './_ng.component';
 import SampleTwoTemplate from './sampleTwo.html!text';
 
 describe('SampleTwo Component', ()=>{

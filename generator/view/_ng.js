@@ -1,7 +1,7 @@
 import angular from 'angular';
 import 'angular-ui-router';
 
-import view<%= name %>Routes from './_routes';
+import view<%= name %>Routes from './_ng.routes';
 
 view<%= name %>Routes.$inject = ['$stateProvider'];
 
