@@ -49,6 +49,7 @@ const paths = {
         views:          `${root}/client/app/views/`,
         layouts:        `${root}/client/app/layouts/`,
         UIDK:           `${root}/client/UIDK/`,
+        json:           `${root}/client/app/**/*.json`,
         html: [
                         `${root}/client/app/**/*.html`,
                         `${root}/client/index.html`

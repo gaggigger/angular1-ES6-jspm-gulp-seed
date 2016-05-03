@@ -18,6 +18,7 @@ export default function(gulp, plugins) {
       open: true,
       files: [].concat(
         [paths.client.styles.css],
+        [paths.client.json],
         paths.client.html
       ),
       server: {

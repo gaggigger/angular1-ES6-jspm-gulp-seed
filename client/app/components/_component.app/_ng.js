@@ -4,6 +4,7 @@ import Views from '../../views/_ng.views';
 import Components from '../../components/_ng.components';
 import Services from '../../services/_ng.services';
 import LayoutHome from '../../layouts/_ng.layouts';
+import configs from '../../config/_ng.configs';
 import AppComponent from './_ng.component';
 
 let appModule = angular.module('app', [
@@ -11,7 +12,8 @@ let appModule = angular.module('app', [
     Views.name,
     Components.name,
     Services.name,
-    LayoutHome.name
+    LayoutHome.name,
+    configs.name
 ]).run(['$rootScope', '$state', function($rootScope, $state) {
         $rootScope.$on('$stateChangeStart', function(evt, to, params) {
             if (to.redirectTo) {
