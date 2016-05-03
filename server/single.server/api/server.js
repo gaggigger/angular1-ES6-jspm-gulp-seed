@@ -13,22 +13,24 @@ let endPoints = [
 ];
 
 export default {
-    start: function(port, endpointPrefix){
+    start: function(port){
         if (port === 443){
             // var https_server = restify.createServer(config.ssl.server_options);
             // setup(https_server, 443);
         } else {
             var server = restify.createServer();
-            setup(server, port, endpointPrefix);
+            setup(server, port);
         }
     }
 };
 
-function setup(server, port, endpointPrefix){
+function setup(server, port){
     server.use(restify.bodyParser());
     server.use(restify.queryParser());
     server.use(restify.CORS(config.CORS.options));
     server.use(CookieParser.parse);
+
+    setEndpoints(server);
 
     server.get(/\/?.*/, restify.serveStatic({
         directory: path.resolve(process.cwd(), '../../', 'dist'),
@@ -38,13 +40,11 @@ function setup(server, port, endpointPrefix){
     server.listen(port, function() {
         console.log('%s listening at %s', server.name, server.url);
     });
-
-    setEndpoints(server, endpointPrefix);
 }
 
-function setEndpoints(server, endpointPrefix){
+function setEndpoints(server){
     each(endPoints, function(endpoint){
-        endpoint.setEndpoint(server, endpointPrefix);
+        endpoint.setEndpoint(server);
     });
 }
 

@@ -14,9 +14,11 @@
     "bluebird": "^3.3.5",
     "http-proxy": "^1.13.2",
     "mssql": "^3.2.1",
-    "node-static": "^0.7.7",
     "request": "^2.72.0",
     "restify": "^4.0.4",
     "websocket": "^1.0.22"
+  },
+  "dependencies": {
+    "node-static": "^0.7.7"
   }
 }

@@ -6,9 +6,9 @@ import {successResponse, errorResponse} from '../common/successResponse';
 
 export default {
 
-    setEndpoint: function(server, endpointPrefix){
+    setEndpoint: function(server){
 
-        server.get(endpointPrefix + '/v1/data', function(req, res, next){
+        server.get('v1/data', function(req, res, next){
             
             let someParam = req.params.someParam;
             

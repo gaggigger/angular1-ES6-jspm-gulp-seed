@@ -4,6 +4,7 @@ import http from 'http';
 import httpProxy from 'http-proxy';
 import services from './services';
 import url from 'url';
+import nodeStatic from 'node-static';
 import path from 'path';
 import fs from 'fs';
 
@@ -16,100 +17,41 @@ export default {
 
 function setup(proxy, port){
 
-    var server = http.createServer(function(req, res) {
+    // let staticPath = path.resolve(process.cwd(), '../../../', 'dist');
+    let staticPath = path.resolve('../../../', 'dist');
+    let fileServer = new nodeStatic.Server(staticPath, { cache: false });
+    let server = http.createServer(function(req, res) {
 
         let pathName = url.parse(req.url).pathname;
-        let serviceName;
+        let serviceName = null;
         let parts =  pathName.split('/');
 
         if (parts.length > 0) {
             serviceName = pathName.split('/')[1];
         }
 
-        let service;
+        let service = services.get(serviceName);
 
-        if (serviceName === 'public' || serviceName === 'assets' || serviceName === 'fonts' || pathName === '/') {
-
-            let staticPath = path.resolve(process.cwd(), '../../../', 'dist');
-
-            let file = parts[parts.length - 1];
-
-            if (file.length === 0) {
-                file = 'index.html';
-            }
-
-            let filePath = path.join(staticPath, file);
-
-            switch (serviceName) {
-                case 'assets':
-                    filePath = path.join(staticPath, pathName);
-                    break;
-                case 'fonts':
-                    filePath = path.join(staticPath, pathName);
-                    break;
-                default:
-                    filePath = path.join(staticPath, file);
-            }
-
-            let extname = path.extname(filePath);
-            let contentType = 'text/html';
-            switch (extname) {
-                case '.js':
-                    contentType = 'text/javascript';
-                    break;
-                case '.css':
-                    contentType = 'text/css';
-                    break;
-                case '.json':
-                    contentType = 'application/json';
-                    break;
-                case '.png':
-                    contentType = 'image/png';
-                    break;
-                case '.jpg':
-                    contentType = 'image/jpg';
-                    break;
-                case '.wav':
-                    contentType = 'audio/wav';
-                    break;
-                case '.svg':
-                    contentType = 'image/svg+xml';
-                    break;
-            }
-
-            fs.readFile(filePath, function(error, content) {
-                if (error) {
-                    if(error.code == 'ENOENT'){
-                        fs.readFile('./404.html', function(error, content) {
-                            res.writeHead(200, { 'Content-Type': contentType });
-                            res.end(content, 'utf-8');
-                        });
-                    }
-                    else {
-                        res.writeHead(500);
-                        res.end('Sorry, check with the site admin for error: '+error.code+' ..\n');
-                        res.end();
-                    }
-                }
-                else {
-                    res.writeHead(200, { 'Content-Type': contentType });
-                    res.end(content, 'utf-8');
-                }
+        if (service){
+            proxy.web(req, res, {
+                target: service.url
             });
-
         } else {
+            // serve static
+            req.addListener('end', function () {
+                fileServer.serve(req, res, function (err, result) {
+                    if (err) { // There was an error serving the file
+                        console.error("Error serving " + req.url + " - " + err.message);
 
-            service     = services.get(serviceName);
-
-            if (service){
-                proxy.web(req, res, {
-                    target: service.url
+                        res.setHeader('Content-Type', 'text/html');
+                        res.writeHead(404, {'Content-Type': 'text/plain'});
+                        res.end('service not found:' + serviceName);
+                        
+                    } else {
+                        // console.log(result);
+                    }
                 });
-            } else {
-                res.setHeader('Content-Type', 'text/html');
-                res.writeHead(404, {'Content-Type': 'text/plain'});
-                res.end('service not found:' + serviceName);
-            }
+            }).resume();
         }
 
     });
