@@ -6,7 +6,7 @@ Launch the index file with node: `node index`.
 
 Use a rest client to call the endpoint serverOne/v1/data:
 
-`http://localhost:8000/serverOne/v1/data?someParam=100`
+`http://localhost:8000/v1/data?someParam=100`
 
 The response will be:
 
