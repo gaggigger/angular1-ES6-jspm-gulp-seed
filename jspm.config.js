@@ -13,7 +13,7 @@ System.config({
   },
 
   map: {
-    "UIUXEngineering/uidk-ng-1x-translation": "github:UIUXEngineering/uidk-ng-1x-translation@0.0.113",
+    "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.122",
     "angular": "github:angular/bower-angular@1.5.5",
     "angular-animate": "github:angular/bower-angular-animate@1.5.3",
     "angular-cookies": "github:angular/bower-angular-cookies@1.5.5",
@@ -35,14 +35,6 @@ System.config({
     "normalize.css": "github:necolas/normalize.css@3.0.3",
     "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.7",
     "text": "github:systemjs/plugin-text@0.0.4",
-    "github:UIUXEngineering/uidk-ng-1x-translation@0.0.113": {
-      "angular-cookies": "github:angular/bower-angular-cookies@1.5.5",
-      "angular-sanitize": "github:angular/bower-angular-sanitize@1.5.5",
-      "angular-translate": "github:angular-translate/bower-angular-translate@2.11.0",
-      "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.11.0",
-      "angular-translate-storage-cookie": "github:angular-translate/bower-angular-translate-storage-cookie@2.11.0",
-      "angular-translate-storage-local": "github:angular-translate/bower-angular-translate-storage-local@2.11.0"
-    },
     "github:angular-translate/bower-angular-translate-loader-static-files@2.11.0": {
       "angular-translate": "github:angular-translate/bower-angular-translate@2.11.0"
     },
@@ -148,6 +140,14 @@ System.config({
     },
     "github:necolas/normalize.css@3.0.3": {
       "css": "github:systemjs/plugin-css@0.1.20"
+    },
+    "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.122": {
+      "angular-cookies": "github:angular/bower-angular-cookies@1.5.5",
+      "angular-sanitize": "github:angular/bower-angular-sanitize@1.5.5",
+      "angular-translate": "github:angular-translate/bower-angular-translate@2.11.0",
+      "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.11.0",
+      "angular-translate-storage-cookie": "github:angular-translate/bower-angular-translate-storage-cookie@2.11.0",
+      "angular-translate-storage-local": "github:angular-translate/bower-angular-translate-storage-local@2.11.0"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
