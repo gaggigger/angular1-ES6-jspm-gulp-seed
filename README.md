@@ -5,9 +5,22 @@
 Credit goes to [NG6 Stater](https://github.com/angularclass/NG6-starter/tree/jspm) for the basic structure of [Angular](https://angularjs.org) + [ES6](https://git.io/es6features) + [JSPM](http://jspm.io/).
 Modifications have been made to push the structure to facilitate stable, scalable, mature software.
 
-This repo serves as an extremely minimal starter for anyone looking to 
+The focus of this architecture is _forward compatibility_ while maintaining current modern 
+browser standards. This means creating modularization by enabling SOLID principles as needed. 
+It also means there should be an easier upgrade path to Angular 2 or Aurelia through the inherent
+modularization of components.
+
+Unit and E2E testing capabilities are built in, and core to this architecture.
+
+To start, this repo serves as an extremely minimal but scalable starter for anyone looking to 
 get up and running with Angular and ES6. Using a combo of [JSPM](http://jspm.io/) 
-and [Gulp](http://gulpjs.com/) for building our files and assisting with boilerplate.
+and [Gulp](http://gulpjs.com/) for building our files and assisting with boilerplate. The angular
+directives in the sample and generator are in a MVC format ( moving away from MVVM slightly ) to 
+create components that maintain state. Services may be native ES6, or angular services utilizing ES6.
+You may use flowjs to add data typing.
+
+What you will need to add is a visual framework such as Angular Material, Twitter Bootstrap, 
+Zurb Foundation, etc.
 
 
 **This seed is not a yeoman generator!** Its just a minimal starter with tasks 
