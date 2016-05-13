@@ -2,6 +2,7 @@
 // https://github.com/Workiva/karma-jspm/issues/23
 import angular from 'angular';
 import 'angular-mocks';
+import configTranslate from '@uiuxengineering/uidk-ng-1x-translation';
 import HeroModule from './_ng';
 import HeroController from './hero.controller';
 import HeroComponent from './_ng.component';
@@ -12,6 +13,7 @@ describe('Hero Component', ()=>{
 	makeController;
 
 	beforeEach(angular.mock.module(HeroModule.name));
+	beforeEach(angular.mock.module(configTranslate.name));
 	beforeEach(angular.mock.inject((_$rootScope_)=>{
 		$rootScope = _$rootScope_;
 		makeController = ()=> new HeroController();

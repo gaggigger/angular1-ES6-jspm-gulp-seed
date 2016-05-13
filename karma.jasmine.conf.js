@@ -51,7 +51,8 @@ module.exports = function(config) {
             serveFiles: [
                 'client/app/**/*.js',
                 'client/app/**/*.html',
-                'client/app/**/*.css'
+                'client/app/**/*.css',
+                'client/app/**/*.json'
             ],
             paths: {
                 '*': 'base/*.js'

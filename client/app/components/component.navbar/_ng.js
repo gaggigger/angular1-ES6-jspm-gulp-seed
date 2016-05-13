@@ -4,7 +4,8 @@ import navbarComponent from './_ng.component';
 import config from './_ng.config';
 
 let navbarModule = angular.module('component.navbar', [
-	'ui.router'
+	'ui.router',
+	'config.translation'
 ]);
 config.$inject = ['$translateProvider'];
 navbarModule.config(config);
