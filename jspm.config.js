@@ -13,7 +13,7 @@ System.config({
   },
 
   map: {
-    "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.122",
+    "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.124",
     "angular": "github:angular/bower-angular@1.5.5",
     "angular-animate": "github:angular/bower-angular-animate@1.5.3",
     "angular-cookies": "github:angular/bower-angular-cookies@1.5.5",
@@ -141,7 +141,7 @@ System.config({
     "github:necolas/normalize.css@3.0.3": {
       "css": "github:systemjs/plugin-css@0.1.20"
     },
-    "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.122": {
+    "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.124": {
       "angular-cookies": "github:angular/bower-angular-cookies@1.5.5",
       "angular-sanitize": "github:angular/bower-angular-sanitize@1.5.5",
       "angular-translate": "github:angular-translate/bower-angular-translate@2.11.0",

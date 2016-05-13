@@ -21,7 +21,7 @@
     },
     "configFile": "jspm.config.js",
     "dependencies": {
-      "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@^0.0.122",
+      "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@^0.0.124",
       "angular": "github:angular/bower-angular@^1.5.4",
       "angular-animate": "github:angular/bower-angular-animate@1.5.3",
       "angular-cookies": "github:angular/bower-angular-cookies@^1.5.5",
