@@ -12,6 +12,17 @@ Following a good practice allows us to guarantee certain things. We can take adv
 
 To generate a view, we must use the `gulp view --name viewName --route routeName --layout layoutName` task.
 
+To generate a layout, view:
+
+
+```
+    gulp view --name [name] --route [route] --layout [layoutName]
+    
+    # for example
+    
+    gulp view --name test --route admin --layout layoutHome
+```
+
 The `--name` (REQUIRED) flag is the name of the view you want to create. Be sure to be unique, or it will override an existing view.
 
 The `--layout` (REQUIRED) flag is the name of the layout state you want to reference as the parent state. This state must exist.

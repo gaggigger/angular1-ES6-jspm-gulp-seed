@@ -6,10 +6,10 @@ controller.$inject = ['$log'];
 let view<%= name %>Routes = function($stateProvider){
 
     $stateProvider
-        .state('layout<%= layout %>.<%= name %>', {
+        .state('<%= layout %>.<%= name %>', {
             url: '/<%= route %>',
             views: {
-                'content@layout<%= layout %>': {
+                'content@<%= layout %>': {
                     template: template,
                     controller: controller,
                     controllerAs: 'vm',

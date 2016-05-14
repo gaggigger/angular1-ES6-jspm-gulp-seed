@@ -7,7 +7,11 @@ Following a good practice allows us to guarantee certain things. We can take adv
 * Factory service
 * Factory spec with passing tests already written
 
-To generate a factory, we must use the `gulp factory --name viewName --route routeName --layout layoutName` task.
+To generate a factory, we must use the `gulp factory --name [factoryname]` task.
+
+```
+    gulp factory --name [factoryName]
+```
 
 The `--name` (REQUIRED) flag is the name of the factory you want to create. Be sure to be unique, or it will override an existing factory.
 

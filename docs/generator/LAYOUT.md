@@ -9,7 +9,16 @@ Following a good practice allows us to guarantee certain things. We can take adv
 * Layout scss
 * Layout spec with passing tests already written
 
-To generate a layout, we must use the `gulp layout --name layoutName --route routeName` task.
+To generate a layout, run:
+
+
+```
+    gulp layout --name [layoutName] --route [routeName] --redirectTo [state which to redirect to]
+    
+    # for example:
+    
+    gulp layout --name layoutHome --route home --redirectTo layoutHome.home
+```
 
 The `--name` (REQUIRED) flag is the name of the view you want to create. Be sure to be unique, or it will override an existing view.
 

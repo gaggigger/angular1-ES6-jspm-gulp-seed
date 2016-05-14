@@ -37,7 +37,7 @@ export default function(gulp, plugins) {
                 name: name,
                 InitialCaseName: cap(camel(name)),
                 camelCaseName: camel(name),
-                layout: cap(layout),
+                layout: layout,
                 route: route
             }))
             .pipe(plugins.rename(function(path) {
