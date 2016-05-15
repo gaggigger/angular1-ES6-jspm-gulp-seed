@@ -14,6 +14,7 @@ System.config({
 
   map: {
     "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.124",
+    "@uiuxengineering/uidk-ng-1x-view.sample": "npm:@uiuxengineering/uidk-ng-1x-view.sample@0.0.7",
     "angular": "github:angular/bower-angular@1.5.5",
     "angular-animate": "github:angular/bower-angular-animate@1.5.3",
     "angular-cookies": "github:angular/bower-angular-cookies@1.5.5",
@@ -148,6 +149,9 @@ System.config({
       "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.11.0",
       "angular-translate-storage-cookie": "github:angular-translate/bower-angular-translate-storage-cookie@2.11.0",
       "angular-translate-storage-local": "github:angular-translate/bower-angular-translate-storage-local@2.11.0"
+    },
+    "npm:@uiuxengineering/uidk-ng-1x-view.sample@0.0.7": {
+      "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.124"
     },
     "npm:amdefine@1.0.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",

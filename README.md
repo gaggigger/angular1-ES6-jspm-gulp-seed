@@ -6,11 +6,13 @@ Credit goes to [NG6 Stater](https://github.com/angularclass/NG6-starter/tree/jsp
 Modifications have been made to push the structure to facilitate stable, scalable, mature software.
 
 The focus of this architecture is _forward compatibility_ while maintaining current modern 
-browser standards. This means creating modularization by enabling SOLID principles as needed. 
+browser standards. This means creating modularization by enabling SOLID. 
 It also means there should be an easier upgrade path to Angular 2 or Aurelia through the inherent
-modularization of components.
+modularization of components. 
 
-Unit and E2E testing capabilities are built in, and core to this architecture.
+At the core of this architecture are documentation generators for a styleguide and es6 docs. Unit and E2E testing capabilities both
+include coverage reporters.
+
 
 To start, this repo serves as an extremely minimal but scalable starter for anyone looking to 
 get up and running with Angular and ES6. Using a combo of [JSPM](http://jspm.io/) 
@@ -45,6 +47,7 @@ ___
         * [Views](#views)
         * [Components](#components)
         * [Services](#services)
+* [NPM](#npm)
 * [Testing](#Testing-Setup)
 * [Getting Started](#getting-started)
     * [Dependencies](#dependencies)
@@ -95,7 +98,7 @@ directive. Layouts, views, and services are also components because
 they are self-contained angular modules ( apps ), though designed
 for a very specific purpose and namespaced accordingly.
 
-The basic architecture of components may be:
+The basic functional architecture of components may be:
 
 __app
        |__layouts
@@ -106,6 +109,8 @@ __app
                 |                   |__service B
                 |__serviceA
                 |__serviceB
+                
+The file structure is modularized to compose components fluidly.                
 
 ### ng prefix
 Files that contain angular specific code are prefixed with `_ng`. This 
@@ -174,6 +179,14 @@ client
 ----------home.scss * styles for home
 ----------home.spec.js * specs for home
 ```
+
+# NPM
+[UI Software Development Kit](https://github.com/UIUXEngineering/uidk-ng-1x-src) is used to generate components for this architecture:
+
+The two sample components installed are:
+
+* @uiuxengineering/uidk-ng-1x-translation
+* @uiuxengineering/uidk-ng-1x-view.sample
 
 # Testing Setup
 All test are written in ES6 too because why not! We use JSPM to take care of all the logistics of getting those files run in browsers just like our client files. Our setup is:
