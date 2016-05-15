@@ -47,6 +47,7 @@ ___
         * [Views](#views)
         * [Components](#components)
         * [Services](#services)
+* [Commitizen](#commitizen)
 * [NPM](#npm)
 * [Testing](#Testing-Setup)
 * [Getting Started](#getting-started)
@@ -179,6 +180,16 @@ client
 ----------home.scss * styles for home
 ----------home.spec.js * specs for home
 ```
+
+# Commitizen
+[Commitizen](https://github.com/commitizen/cz-cli) is installed and initted
+by default. To use it to `git commit`, run:
+
+```
+    git cz
+```
+
+Then answer the questions.
 
 # NPM
 [UI Software Development Kit](https://github.com/UIUXEngineering/uidk-ng-1x-src) is used to generate components for this architecture:
