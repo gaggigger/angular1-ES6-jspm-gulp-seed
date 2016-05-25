@@ -44,15 +44,15 @@ module.exports = function(config) {
 
         jspm: {
             // Edit this to your needs
-            config: 'jspm.config.js',
+            config: 'src/client/jspm.config.js',
             loadFiles: [
-                'client/app/**/*.spec.js'
+                'src/client/app/**/*.spec.js'
             ],
             serveFiles: [
-                'client/app/**/*.js',
-                'client/app/**/*.html',
-                'client/app/**/*.css',
-                'client/app/**/*.json'
+                'src/client/app/**/*.js',
+                'src/client/app/**/*.html',
+                'src/client/app/**/*.css',
+                'src/client/app/**/*.json'
             ],
             paths: {
                 '*': 'base/*.js'
@@ -60,8 +60,8 @@ module.exports = function(config) {
         },
 
         proxies: {
-            '/jspm_packages': '/base/client/jspm_packages',
-            '/app'  : '/base/client/app'
+            '/jspm_packages': '/base/src/client/jspm_packages',
+            '/app'  : '/base/src/client/app'
         },
 
         // list of files to exclude
@@ -105,7 +105,7 @@ module.exports = function(config) {
         preprocessors: {
             // source files, that you wanna generate coverage for - do not include tests or libraries
             // (these files will be instrumented by Istanbul)
-            'client/app/**/!(*.spec|*.mock|*-mock|*.e2e|*.po|*.test).js': ['babel', 'coverage']
+            'src/client/app/**/!(*.spec|*.mock|*-mock|*.e2e|*.po|*.test).js': ['babel', 'coverage']
         },
 
         // transpile with babel since the coverage reporter throws error on ES6 syntax
@@ -118,7 +118,7 @@ module.exports = function(config) {
         coverageReporter: {
             instrumenters: {isparta: require('isparta')},
             instrumenter: {
-                'client/app/**/*.js': 'isparta'
+                'src/client/app/**/*.js': 'isparta'
             },
             dir: 'test-reports/coverage/',
             subdir: normalizationBrowserName,

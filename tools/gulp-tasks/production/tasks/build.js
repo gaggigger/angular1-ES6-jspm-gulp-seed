@@ -22,7 +22,7 @@ export default function(gulp, plugins) {
       })
       .then(function() {
         // Inject minified script into index
-        return gulp.src('client/index.html')
+        return gulp.src('src/client/index.html')
           .pipe(plugins.htmlReplace({
             'js': 'app.min.js'
           }))

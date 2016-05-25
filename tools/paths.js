@@ -28,31 +28,31 @@ const paths = {
      * - 'config'       contains Angular app config files
      */
     client: {
-        basePath:       `${root}/client`,
+        basePath:       `${root}/src/client`,
         app: {
-            basePath:   `${root}/client/app`,
-            app:        `${root}/client/app/app.js`
+            basePath:   `${root}/src/client/app`,
+            app:        `${root}/src/client/app/app.js`
         },
         styles: {
-          basePath:     `${root}/client/scss`,
-          styleguide:   `${root}/client/styleguide.scss`,
-          global:       `${root}/client/scss/global.scss`,
-          globalCss:    `${root}/client/scss/**/*.css`,  // clean task
-          all:          [`${root}/client/**/*.scss`, `!${root}/client/jspm_packages/**/*`], // styleguide
-          app:          `${root}/client/app/**/*.scss`, 
-          css:          `${root}/client/app/**/*.css`
+          basePath:     `${root}/src/client/scss`,
+          styleguide:   `${root}/src/client/styleguide.scss`,
+          global:       `${root}/src/client/scss/global.scss`,
+          globalCss:    `${root}/src/client/scss/**/*.css`,  // clean task
+          all:          [`${root}/src/client/**/*.scss`, `!${root}/src/client/jspm_packages/**/*`], // styleguide
+          app:          `${root}/src/client/app/**/*.scss`, 
+          css:          `${root}/src/client/app/**/*.css`
         },
-        fonts:          `${root}/client/scss/**/*.{eot,svg,ttf,woff,woff2}`,
-        assets:         `${root}/client/assets/**/*`,
-        components:     `${root}/client/app/components/`,
-        services:       `${root}/client/app/services/`,
-        views:          `${root}/client/app/views/`,
-        layouts:        `${root}/client/app/layouts/`,
-        UIDK:           `${root}/client/UIDK/`,
-        json:           `${root}/client/app/**/*.json`,
+        fonts:          `${root}/src/client/scss/**/*.{eot,svg,ttf,woff,woff2}`,
+        assets:         `${root}/src/client/assets/**/*`,
+        components:     `${root}/src/client/app/components/`,
+        services:       `${root}/src/client/app/services/`,
+        views:          `${root}/src/client/app/views/`,
+        layouts:        `${root}/src/client/app/layouts/`,
+        UIDK:           `${root}/src/client/UIDK/`,
+        json:           `${root}/src/client/app/**/*.json`,
         html: [
-                        `${root}/client/app/**/*.html`,
-                        `${root}/client/index.html`
+                        `${root}/src/client/app/**/*.html`,
+                        `${root}/src/client/index.html`
         ]
     },
 
@@ -88,9 +88,9 @@ const paths = {
     dist:               `${root}/dist/`,
 
     watch: {
-        scss:           `client/app/**/*.scss`,
-        js:             `client/app/**/*.js`,
-        html:           `client/app/**/*.html`
+        scss:           `src/client/app/**/*.scss`,
+        js:             `src/client/app/**/*.js`,
+        html:           `src/client/app/**/*.html`
     },
 
     /**
@@ -112,9 +112,9 @@ const paths = {
             coverage:   `${root}/test-reports/coverage/`
         },
         platoReports:   `${root}/test/plato`,
-        mock:           `${root}/client/app/**/*.mock.js`,
-        unit:           `${root}/client/app/**/*.spec.js`,
-        // e2e:            `[${root}/test/e2e/**/*.e2e.js, ${root}/client/app/**/*.e2e.js]`
+        mock:           `${root}/src/client/app/**/*.mock.js`,
+        unit:           `${root}/src/client/app/**/*.spec.js`,
+        // e2e:            `[${root}/test/e2e/**/*.e2e.js, ${root}/src/client/app/**/*.e2e.js]`
         e2e:            `[${root}/test/e2e/**/*.e2e.js]`
     },
     /**

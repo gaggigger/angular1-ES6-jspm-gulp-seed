@@ -17,9 +17,9 @@
   "license": "ISC",
   "jspm": {
     "directories": {
-      "baseURL": "client"
+      "baseURL": "src/client"
     },
-    "configFile": "jspm.config.js",
+    "configFile": "src/client/jspm.config.js",
     "dependencies": {
       "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@^0.0.124",
       "@uiuxengineering/uidk-ng-1x-view.sample": "npm:@uiuxengineering/uidk-ng-1x-view.sample@^0.0.7",
