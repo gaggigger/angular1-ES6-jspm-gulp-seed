@@ -7,6 +7,11 @@ and teams in an organization. Developers may easily create sharable modules that
 organizational npm registry. This seed is designed to work with the [UI Software Development Kit](https://github.com/UIUXEngineering/uidk-ng-1x-src),
 a similar architecture that quickly publishes components to NPM for ease of development distribution.
 
+Most teams focus on how to deploy features now. The focus of this architecture is _forward compatibility_ while maintaining current modern
+browser standards. Think business first, then an app to support the business as a whole. This means creating modularization by enabling [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
+It also means there should be an easier upgrade path to Angular 2 or Aurelia through the inherent
+modularization of components.
+
 **Features include**:
 * Modularization with [UI Software Development Kit](https://github.com/UIUXEngineering/uidk-ng-1x-src)
 * Code sharing with [NPM](https://www.npmjs.com/org/uiuxengineering)
@@ -20,11 +25,6 @@ a similar architecture that quickly publishes components to NPM for ease of deve
 
 Credit goes to [NG6 Stater](https://github.com/angularclass/NG6-starter/tree/jspm) for the basic structure of [Angular](https://angularjs.org) + [ES6](https://git.io/es6features) + [JSPM](http://jspm.io/).
 Modifications have been made to extend the structure to facilitate stable, scalable, mature software.
-
-Most teams focus on how to deploy features now. The focus of this architecture is _forward compatibility_ while maintaining current modern
-browser standards. Think business first, then an app to support the business as a whole. This means creating modularization by enabling [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
-It also means there should be an easier upgrade path to Angular 2 or Aurelia through the inherent
-modularization of components.
 
 At the core of this architecture are documentation generators for a styleguide and es6 docs. Unit and E2E testing capabilities both
 include coverage reporters.
