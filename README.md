@@ -2,31 +2,14 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-Credit goes to [NG6 Stater](https://github.com/angularclass/NG6-starter/tree/jspm) for the basic structure of [Angular](https://angularjs.org) + [ES6](https://git.io/es6features) + [JSPM](http://jspm.io/).
-Modifications have been made to push the structure to facilitate stable, scalable, mature software.
+This seed enables a modularized architecture that is intended to be flexible enough to scale among multiple apps
+and teams in an organization. Developers may easily create sharable modules that are installable via an
+organizational npm registry. This seed is designed to work with the [UI Software Development Kit](https://github.com/UIUXEngineering/uidk-ng-1x-src),
+a similar architecture that quickly publishes components to NPM for ease of development distribution.
 
-The focus of this architecture is _forward compatibility_ while maintaining current modern 
-browser standards. This means creating modularization by enabling SOLID. 
-It also means there should be an easier upgrade path to Angular 2 or Aurelia through the inherent
-modularization of components. 
-
-At the core of this architecture are documentation generators for a styleguide and es6 docs. Unit and E2E testing capabilities both
-include coverage reporters.
-
-
-To start, this repo serves as an extremely minimal but scalable starter for anyone looking to 
-get up and running with Angular and ES6. Using a combo of [JSPM](http://jspm.io/) 
-and [Gulp](http://gulpjs.com/) for building our files and assisting with boilerplate. The angular
-directives in the sample and generator are in a MVC format ( moving away from MVVM slightly ) to 
-create components that maintain state. Services may be native ES6, or angular services utilizing ES6.
-You may use flowjs to add data typing.
-
-What you will need to add is a visual framework such as Angular Material, Twitter Bootstrap, 
-Zurb Foundation, etc.
-
-
-**This seed is not a yeoman generator!** Its just a minimal starter with tasks 
-to build and create boilerplate. **Features include**:
+**Features include**:
+* Modularization with [UI Software Development Kit](https://github.com/UIUXEngineering/uidk-ng-1x-src)
+* Code sharing with [NPM](https://www.npmjs.com/org/uiuxengineering)
 * Best practice in file organization for Angular
 * Frictionless package management and module loader with [JSPM](http://jspm.io)
 * Ready to go build system for working with [ES6](https://git.io/es6features)
@@ -35,6 +18,28 @@ to build and create boilerplate. **Features include**:
 * Task for generating components, views, layouts, and services boilerplate with angular, including tests.
 * Testing system ready to go
 
+Credit goes to [NG6 Stater](https://github.com/angularclass/NG6-starter/tree/jspm) for the basic structure of [Angular](https://angularjs.org) + [ES6](https://git.io/es6features) + [JSPM](http://jspm.io/).
+Modifications have been made to extend the structure to facilitate stable, scalable, mature software.
+
+Most teams focus on how to deploy features now. The focus of this architecture is _forward compatibility_ while maintaining current modern
+browser standards. Think business first, then an app to support the business as a whole. This means creating modularization by enabling [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles.
+It also means there should be an easier upgrade path to Angular 2 or Aurelia through the inherent
+modularization of components.
+
+At the core of this architecture are documentation generators for a styleguide and es6 docs. Unit and E2E testing capabilities both
+include coverage reporters.
+
+
+To start, this repo serves as an extremely minimal but scalable starter for anyone looking to
+get up and running with Angular and ES6. Using a combo of [JSPM](http://jspm.io/)
+and [Gulp](http://gulpjs.com/) for building our files and assisting with boilerplate. The angular
+directives in the sample and generator are in a MVC format ( moving away from MVVM slightly ) to
+create components that maintain state. Services may be native ES6, or angular services utilizing ES6.
+You may use flowjs to add data typing.
+
+What you will need to add is a visual framework such as Angular Material, Twitter Bootstrap,
+Zurb Foundation, etc.
+
 ___
 
 # TOC
@@ -42,7 +47,7 @@ ___
     * [What about Webpack?](#how-is-this-different-than-webpack)
     * [Build system](#build-system)
     * [File structure](#file-structure)
-        * [ng prefix](#ng-prefix)        
+        * [ng prefix](#ng-prefix)
         * [Layouts](#layouts)
         * [Views](#views)
         * [Components](#components)
@@ -85,16 +90,16 @@ This branch of NG6 uses the power of JSPM and Gulp together for its build system
 * Building a production version of our app ready for deployment
 
 ## File Structure
-We use the component approach in NG6. This will be a standard if using 
-the new router in angular and a great way to ensure easy transition to 
-Angular 2. Everything or mostly everything is a component. A component 
-is a self contained app basically. It has its own style, template, 
+We use the component approach in NG6. This will be a standard if using
+the new router in angular and a great way to ensure easy transition to
+Angular 2. Everything or mostly everything is a component. A component
+is a self contained app basically. It has its own style, template,
 controllers, routing, specs, etc. All capsulated in its own folder.
 
-A component architecture may look a little different based on it's 
+A component architecture may look a little different based on it's
 purpose. Some will be a directives, a ui-router view, or an angular service.
 
-A component in this architecture is an angular 1.x 
+A component in this architecture is an angular 1.x
 directive. Layouts, views, and services are also components because
 they are self-contained angular modules ( apps ), though designed
 for a very specific purpose and namespaced accordingly.
@@ -110,12 +115,12 @@ __app
                 |                   |__service B
                 |__serviceA
                 |__serviceB
-                
-The file structure is modularized to compose components fluidly.                
+
+The file structure is modularized to compose components fluidly.
 
 ### ng prefix
-Files that contain angular specific code are prefixed with `_ng`. This 
-isolates angular 1.x code to files for ease of upgrading to another 
+Files that contain angular specific code are prefixed with `_ng`. This
+isolates angular 1.x code to files for ease of upgrading to another
 architecture -- angular 2.x.
 
 ### Layouts
@@ -126,8 +131,8 @@ A layout has a `ui-view="content"` container for views.
 ### Views
 A `view` is the routing endpoint of a view that comprises a layout. For example,
 if two layouts -- one for sales and one for support, each have it's own nav
-components -- you may have a generic contact form that may receive different 
-information for sales and support, you can place this contact view in both the 
+components -- you may have a generic contact form that may receive different
+information for sales and support, you can place this contact view in both the
 sales layout and support layouts and have different routes to map the forms:
 
 >   `#/sales/contact`
@@ -138,7 +143,7 @@ A component is an angular directive using a controller with a scope object
 to isolate scope. Done.
 
 ### Services
-A service is an angular factory with an ES6 class. Care is taken to 
+A service is an angular factory with an ES6 class. Care is taken to
 keep the class separate from angular's architecture for ease of upgrade
 to angular 2.
 
@@ -224,8 +229,8 @@ Once you have those, you should install these globals with `npm i -g`:
 * `karma-cli`
 
 # Commitizen
-Commitizen is installed locally, along with the cz-conventional-changelog adapater. 
-See the [Commitizen README.md](https://github.com/commitizen/cz-cli) for usage 
+Commitizen is installed locally, along with the cz-conventional-changelog adapater.
+See the [Commitizen README.md](https://github.com/commitizen/cz-cli) for usage
 and configuration.
 
 

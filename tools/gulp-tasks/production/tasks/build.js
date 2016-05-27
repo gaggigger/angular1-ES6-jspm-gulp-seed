@@ -10,7 +10,10 @@ export default function(gulp, plugins) {
 
     var dist = paths.dist + 'app.js';
     rimraf.sync(paths.dist + '*');
-    // Use JSPM to bundle our app
+    /**
+     * JSPM bundles js, css, and html into one file.
+     * It finds jspm.config.js from the package.json file.
+     */
     return jspm.bundleSFX(paths.client.app.app, dist, {})
       .then(function() {
         // Also create a fully annotated minified copy
