@@ -44,15 +44,15 @@ module.exports = function(config) {
 
         jspm: {
             // Edit this to your needs
-            config: 'src/client/jspm.config.js',
+            config: 'client/system.config.js',
             loadFiles: [
-                'src/client/app/**/*.spec.js'
+                'client/app/**/*.spec.js'
             ],
             serveFiles: [
-                'src/client/app/**/*.js',
-                'src/client/app/**/*.html',
-                'src/client/app/**/*.css',
-                'src/client/app/**/*.json'
+                'client/app/**/*.js',
+                'client/app/**/*.html',
+                'client/app/**/*.css',
+                'client/app/**/*.json'
             ],
             paths: {
                 '*': 'base/*.js'
@@ -60,8 +60,8 @@ module.exports = function(config) {
         },
 
         proxies: {
-            '/jspm_packages': '/base/src/client/jspm_packages',
-            '/app'  : '/base/src/client/app'
+            '/jspm_packages': '/base/client/jspm_packages',
+            '/app'  : '/base/client/app'
         },
 
         // list of files to exclude
@@ -105,7 +105,7 @@ module.exports = function(config) {
         preprocessors: {
             // source files, that you wanna generate coverage for - do not include tests or libraries
             // (these files will be instrumented by Istanbul)
-            'src/client/app/**/!(*.spec|*.mock|*-mock|*.e2e|*.po|*.test).js': ['babel', 'coverage']
+            'client/app/**/!(*.spec|*.mock|*-mock|*.e2e|*.po|*.test).js': ['babel', 'coverage']
         },
 
         // transpile with babel since the coverage reporter throws error on ES6 syntax
@@ -118,7 +118,7 @@ module.exports = function(config) {
         coverageReporter: {
             instrumenters: {isparta: require('isparta')},
             instrumenter: {
-                'src/client/app/**/*.js': 'isparta'
+                'client/app/**/*.js': 'isparta'
             },
             dir: 'test-reports/coverage/',
             subdir: normalizationBrowserName,

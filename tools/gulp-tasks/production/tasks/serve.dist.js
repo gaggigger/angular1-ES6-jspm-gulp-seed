@@ -1,13 +1,13 @@
 'use strict';
 
-import paths from '../../../paths';
 import serve from 'browser-sync';
+import emitter from 'chokidar-socket-emitter';
 
 export default function(gulp, plugins) {
 
   return function(done) {
     'use strict';
-    require('chokidar-socket-emitter')({
+    emitter({
       port: 8082,
       path: 'dist',
       relativeTo: 'dist',

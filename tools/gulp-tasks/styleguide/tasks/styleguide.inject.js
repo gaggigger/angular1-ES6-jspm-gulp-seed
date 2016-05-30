@@ -19,7 +19,7 @@ export default function(gulp, plugins) {
                 endtag: '/* end-scss-inject:js */',
                 transform: function(filepath, file, i, length) {
 
-                    var clientPath = filepath.split('/').slice(4).join('/');
+                    var clientPath = filepath.split('/').slice(3).join('/');
 
                     var pathToStyle = "@import \'app/" + clientPath + "\';";
 

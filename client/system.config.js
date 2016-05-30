@@ -12,6 +12,13 @@ System.config({
     "npm:*": "jspm_packages/npm/*"
   },
 
+  packages: {
+    "app": {
+      "main": "app",
+      "defaultExtension": "js"
+    }
+  },
+
   map: {
     "@uiuxengineering/uidk-ng-1x-translation": "npm:@uiuxengineering/uidk-ng-1x-translation@0.0.124",
     "@uiuxengineering/uidk-ng-1x-view.sample": "npm:@uiuxengineering/uidk-ng-1x-view.sample@0.0.7",

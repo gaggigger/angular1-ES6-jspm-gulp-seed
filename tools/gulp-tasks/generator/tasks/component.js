@@ -14,7 +14,7 @@ export default function(gulp, plugins) {
     var name = yargs.name;
     var parentPath = yargs.parent || '';
     parentPath = (parentPath.length) ? parentPath + '/' : parentPath;
-    var destPath = paths.client.components + parentPath + name;
+    var destPath = paths.client.components + parentPath + 'component.' + name;
 
     return gulp.src(paths.blankTemplates.component)
       .pipe(plugins.template({

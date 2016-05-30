@@ -106,6 +106,7 @@ for a very specific purpose and namespaced accordingly.
 
 The basic functional architecture of components may be:
 
+```
 __app
        |__layouts
                 |__views
@@ -115,6 +116,7 @@ __app
                 |                   |__service B
                 |__serviceA
                 |__serviceB
+```
 
 The file structure is modularized to compose components fluidly.
 

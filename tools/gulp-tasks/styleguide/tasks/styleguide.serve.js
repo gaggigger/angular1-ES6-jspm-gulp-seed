@@ -1,7 +1,5 @@
 'use strict';
 
-import paths from '../../../paths';
-import serve from 'browser-sync';
 import open from 'open';
 
 export default function(gulp, plugins) {
