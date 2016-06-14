@@ -11,6 +11,7 @@ export default function(gulp, plugins) {
             .pipe(styleguide.generate({
                 title: 'Angular ES6 Styleguide',
                 server: true,
+                port: 4000,
                 rootPath: 'tmp/styleguide',
                 overviewPath: 'README.md'
             }))
