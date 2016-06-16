@@ -28,6 +28,7 @@ factoryJohnPapa.$inject = ['$log', '$timeout'];
 export default function factoryJohnPapa($log, $timeout) {
 
     /**
+     *
      * Factory API
      */
     var service = {
